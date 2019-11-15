@@ -3,7 +3,7 @@ nav {
     border-bottom-right-radius: 1vw;
     /* display: inline-flex; */
     justify-content: end;
-    /* padding: 4vw; */
+    padding: 3vw;
 }
 
 .nav-tabs {
@@ -19,25 +19,87 @@ nav {
 .navbutton {
     /* display: block; */
     /* margin-left: inherit; */
-    float: right ;
+    float: right;
     font-size: inherit;
+    /* padding-left: 0; */
     /* display: inline-flex; */
     /* color: blue; */
     background-color: transparent;
     border: none;
     /* position: right !important; */
-    /* justify-content: space-between; */
+    /* justify-content: space-between; */float: inline-end;
 }
-.collapse{
+.navbar{
+    /* justify-content: space-evenly; */
+}
+.sme{
+    justify-content: space-between;
+    display: inline-flex;
+}
+
+.collapse {
     /* justify-content: end; */
     /* float:right; */
     /* display: inline-flex; */
     animation-name: initial;
     /* animation-direction: reverse; */
-
 }
-/* button.navbutton:hover{
-    display:inline-flex;
+
+#searchOverlay {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    float:right;
+    /* z-index: 3; */
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+#searchIcon img {
+    /* background-image: url("../Images/search.png"); */
+    /* font-size: inherit; */ width: inherit;
+    height:  inherit;
+    size: inherit;
+    
+    /* display: inline; */
+}
+.dropbtn{
+    justify-content: space-around;
+    display: inline-flex;
+}
+
+
+.searchbtn {
+    /* font-size: inherit; */
+    /* size: 20%; */
+    /* height: 20px; */
+    /* width: initial;
+    height: initial;
+   
+    background-position: center;
+    float: right ;
+    font-size: inherit; */
+    /* background-image: url("../Images/search.png"); */
+    /* float: right; */
+    height: 50px;
+    width: 50px;
+    float: right;
+    position: absolute;
+    /* display: block; */
+    /* font-size: inherit; */
+    
+    /* padding-left: 0; */
+    /* display: inline-flex; */
+    /* color: blue; */
+    background-color: transparent;
+    border: none;
+}
+/* img{
+    width: 50px;
+    height:  50px;
 } */
 
 @media all and (max-width: 800px) {
@@ -47,16 +109,14 @@ nav {
         right: 0;
         text-align: right;
         /* padding-top: 30px; */
-
     }
     nav.dropbtn {
         margin-top: 40px;
     }
-
     #navitems ul {
         flex-direction: column;
     }
-    .nav{
+    .nav {
         background-color: brown;
     }
     /* .nav-item{
