@@ -10,3 +10,15 @@ function on() {
   function off() {
     document.getElementById("searchOverlay").style.display = "none";
   }
+
+  //  $(function navBackground() {
+  //       $(document).scroll(function() {
+  //           $('nav').toggleClass('scrolled', $(this).scrollTop() > 800);
+  //       });
+  //     }
+//   (function () {
+//   (window).scrolled(function () {
+//     var $nav = (".navbar-fixed-top");
+//     $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+//   });
+// });
