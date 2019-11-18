@@ -3,8 +3,13 @@ nav {
     border-bottom-right-radius: 1vw;
     /* background-color: whitesmoke; */
     font-family: 'Permanent Marker', cursive;
-    font-size: larger;
+    font-size: medium;
 }
+
+
+/* body {
+    background-color: whitesmoke;
+} */
 
 .navbar-brand {
     font-size: 1.58vw;
@@ -26,6 +31,9 @@ nav {
 .navbar.scrolled {
     background-color: whitesmoke;
 }
+
+
+/* /////////////////////////////////////////////////////// */
 
 .navbutton:active {
     border: none;
@@ -61,6 +69,7 @@ nav {
     left: 0;
     background-color: rgb(0, 0, 0, 0.2);
     cursor: pointer;
+    font-family: 'Permanent Marker', cursive;
 }
 
 #searchIcon img {
@@ -70,8 +79,8 @@ nav {
 }
 
 .searchbtn {
-    height: 50px;
-    width: 50px;
+    height: 30px;
+    width: 30px;
     background-color: transparent;
     border: none;
 }
@@ -79,8 +88,8 @@ nav {
 
 /* ////////////////////////////////////////////////////////////////REQUIRES EDITTING */
 
-input[type=text] {
-    /* width: 100%; */
+input[type=search] {
+    width: 100%;
     box-sizing: border-box;
     border: 2px solid #ccc;
     border-radius: 4px;
@@ -92,14 +101,15 @@ input[type=text] {
     padding: 12px 20px 12px 40px;
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
-    justify-content: center;
-    display: inline;
+    /* justify-content: center; */
+    margin-top: 30%;
+    /* display: inline; */
 }
 
 
 /* When the input field gets focus, change its width to 100% */
 
-input[type=text]:focus {
+input[type=search]:focus {
     width: 100%;
 }
 

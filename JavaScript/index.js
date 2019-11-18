@@ -7,6 +7,10 @@ function off() {
     document.getElementById("searchOverlay").style.display = "none";
 }
 
+function stay() {
+    document.getElementById("searchForm").style.display = "block";
+}
+
 
 // $document.scroll(function(){
 //   scroll_start=$(this).scrollTop();
