@@ -2,6 +2,12 @@ nav {
     border-bottom-left-radius: 1vw;
     border-bottom-right-radius: 1vw;
     /* background-color: whitesmoke; */
+    font-family: 'Permanent Marker', cursive;
+    font-size: larger;
+}
+
+.navbar-brand {
+    font-size: 1.58vw;
 }
 
 .nav-tabs {
@@ -10,9 +16,12 @@ nav {
 
 .navbar {
     /* display: flex; */
-    padding: 3vw;
-    background-color: transparent;
+    padding: 2vw;
+    background-color: white;
 }
+
+
+/* Doesn't work. Should allow to change collor upon scroll */
 
 .navbar.scrolled {
     background-color: whitesmoke;
@@ -71,7 +80,7 @@ nav {
 /* ////////////////////////////////////////////////////////////////REQUIRES EDITTING */
 
 input[type=text] {
-    width: 100%;
+    /* width: 100%; */
     box-sizing: border-box;
     border: 2px solid #ccc;
     border-radius: 4px;
@@ -140,6 +149,13 @@ input[type=text]:focus {
     /* .collapse {
         display: block;
     } */
+    .jumbotron {
+        margin: 100px;
+        display: flex;
+        padding: 0;
+        justify-content: flex-end;
+        margin: 50px;
+    }
 }
 
 
@@ -212,6 +228,7 @@ li.dropdown {
 .jumbotron {
     background-color: white;
     display: inline-flex;
+    /* padding: 0; */
     /* justify-content: center; */
     /* align-content: center !important;
     height: fit-content; */
