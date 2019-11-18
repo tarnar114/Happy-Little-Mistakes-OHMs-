@@ -7,12 +7,6 @@
 
 <body>
 
-<!-- Floarting button @ bottom corner of page -->
-  <a class="floatbtn" href="#">
-    <img src="../Images/round_post_add_black_18dp.png" alt="Upload">
-  </a>
-
-
   <div class="container">
     <div class="card-columns">
       <div class="card">
