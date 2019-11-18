@@ -84,7 +84,7 @@ input[type=text] {
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
     justify-content: center;
-    /* display: inline; */
+    display: inline;
 }
 
 
@@ -108,18 +108,38 @@ input[type=text]:focus {
         text-align: right;
         /* display: inline; */
     }
-    nav.dropbtn {
-        margin-top: auto;
-        /* justify-content: end;
+    /* nav.dropbtn { */
+    /* margin-top: auto;
+        margin-right: 0;
+        position: absolute;
+        right: 0;
+        top: 47px;
+        text-align: right;
+        padding: 20px 0;
+        z-index: 5; */
+    /* background: #6cbb23; */
+    /* justify-content: end;
         align-content: flex-end;
         display: inline-end; */
-    }
+    /* } */
     #navitems ul {
         flex-direction: column;
+        text-align: end;
     }
     .nav {
-        background-color: brown;
+        /* background-color: brown; */
+        margin-right: 0;
+        position: absolute;
+        right: -30px;
+        top: 46px;
+        /* text-align: right; */
+        padding: 20px 0;
+        z-index: 5;
+        background: #6cbb23;
     }
+    /* .collapse {
+        display: block;
+    } */
 }
 
 
@@ -189,7 +209,19 @@ li.dropdown {
     display: inline-grid;
 }
 
+.jumbotron {
+    background-color: white;
+    display: inline-flex;
+    /* justify-content: center; */
+    /* align-content: center !important;
+    height: fit-content; */
+}
 
-/* .my-float{
-	margin-top:22px;
-} */
+
+/* shares the space with bob ross */
+
+.share {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
