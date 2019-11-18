@@ -245,10 +245,10 @@ li.dropdown {
 .jumbotron {
     background-color: white;
     display: inline-flex;
-    /* padding: 0; */
-    /* justify-content: center; */
-    /* align-content: center !important;
-    height: fit-content; */
+}
+
+h2 {
+    font-weight: 200;
 }
 
 
