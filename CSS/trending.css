@@ -6,11 +6,15 @@ body {
   
   h1 {
     text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    font-size: large;
     margin-top: 50px;
   }
   
   p {
     text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    font-size: medium;
     margin-bottom:60px;
   }
   
