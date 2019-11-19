@@ -18,9 +18,9 @@ body {
     text-align:center; 
     line-height:80px;
     font-weight:normal;
-  
+
   }
-  
+
   .masonry {
       -webkit-column-count: 4;
     -moz-column-count:4;
