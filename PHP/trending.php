@@ -11,54 +11,90 @@
 <h1>Trending Now!</h1>
 
 <div class="container masonry">
+<a href="../PHP/trending.php">
   <div class="item">
-    1
+    <p>@Cameron</p>
     <img src="../Images/o_A8fBmg.jpeg">
   </div>
+</a>
+
+<a href="../PHP/trending.php">
   <div class="item">
-    2
+    <p>@Cameron</p>
     <img src="../Images/o_A8fBmg.jpeg">
   </div>
+</a>
+  
+<a href="../PHP/trending.php">
   <div class="item">
-    3
+    <p>@Tiwa</p>
     <img src="../Images/o_A8fBmg.jpeg">
   </div>
+</a>
+  
+<a href="../PHP/trending.php">
   <div class="item">
-    4
+    <p>@Deepak</p>
     <img src="../Images/o_A8fBmg.jpeg">
   </div>
+</a>
+  
+<a href="../PHP/trending.php">
   <div class="item">
-    5
+    <p>@Tiwa</p>
     <img src="../Images/o_A8fBmg.jpeg">
   </div>
+</a>
+  
+<a href="../PHP/trending.php">
   <div class="item">
-    6
+    <p>@John</p>
     <img src="../Images/o_A8fBmg.jpeg">
   </div>
+</a>
+  
+<a href="../PHP/trending.php">
   <div class="item">
-    7
+    <p>@Tanzir</p>
     <img src="../Images/o_A8fBmg.jpeg">
   </div>
+</a>
+
+<a href="../PHP/trending.php">
   <div class="item">
-    8
+    <p>@Tiwa</p>
     <img src="../Images/o_A8fBmg.jpeg">
   </div>
+</a>
+
+<a href="../PHP/trending.php">
   <div class="item">
-    9
+   <p>@Tanzir</p>
     <img src="../Images/o_A8fBmg.jpeg">
   </div>
+</a>
+  
+<a href="../PHP/trending.php">
   <div class="item">
-    10
+    <p>@Chris</p>
     <img src="../Images/o_A8fBmg.jpeg">
   </div>
+</a>
+  
+<a href="../PHP/trending.php">
   <div class="item">
-    11
+    <p>@Cameron</p>
     <img src="../Images/o_A8fBmg.jpeg">
   </div>
+</a>
+
+<a href="../PHP/trending.php">
     <div class="item">
-    12
+    <p>@Deepak</p>
     <img src="../Images/o_A8fBmg.jpeg">
   </div>
+</a>
+
 </div>
 
 
