@@ -8,7 +8,7 @@
 
 <body>
 
-<h1>Trending Now!</h1>
+<h1>Landscape</h1>
 
 <div class="container masonry">
 <a href="../PHP/trending.php">
