@@ -3,7 +3,7 @@
 <?php include '../HTML/nav.html'; ?>
 
 <style>
-<?php include '../CSS/vis_art.css'; ?>
+<?php include '../CSS/trending.css'; ?>
 </style>
 
 <body>
