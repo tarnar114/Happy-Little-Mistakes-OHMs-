@@ -23,4 +23,5 @@
   <button type="submit" class="btn btn-primary">Submit</button>
 </form></div>
 </body>
+<?php include_once '../HTML/foot.html'; ?>
 </html>
