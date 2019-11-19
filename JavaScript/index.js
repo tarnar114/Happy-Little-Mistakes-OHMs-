@@ -1,11 +1,18 @@
 function on() {
-    document.getElementById("searchOverlay").style.display = "block";
-    // document.getElementById("searchOverlay").
+    document.getElementById("overlay").style.display = "block";
+    // document.getElementById("overlay").
 }
+// function onSign_log() {
+//     document.getElementsByClassName("sign").style.display = "block";
+//     // document.getElementById("overlay").
+// }
 
 function off() {
-    document.getElementById("searchOverlay").style.display = "none";
+    document.getElementById("overlay").style.display = "none";
 }
+// function offSign_log() {
+//     document.getElementsByClassName("overlay").style.display = "none";
+// }
 
 
 // $document.scroll(function(){

@@ -63,5 +63,5 @@
 
 
 </body>
-
+<?php include_once '../HTML/foot.html'; ?>
 </html>

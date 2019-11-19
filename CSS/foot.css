@@ -1,0 +1,14 @@
+/* Footer contact links w/ icons */
+
+#socialmedia {
+    font-size: x-large;
+    text-align: center;
+}
+
+
+/* Footer Line divide */
+
+footer hr {
+    display: block;
+    height: 6px;
+}

@@ -60,7 +60,7 @@ nav {
 
 /* Search bar icon and its overlay */
 
-#searchOverlay {
+#overlay {
     height: 100%;
     width: 100%;
     display: none;
@@ -128,7 +128,9 @@ input[type=search]:focus {
         text-align: right;
         /* display: inline; */
     }
-    .navbar-brand {}
+    .navbar-brand {
+        /* ADD ICON */
+    }
     /* nav.dropbtn { */
     /* margin-top: auto;
         margin-right: 0;
@@ -207,7 +209,7 @@ li.dropdown {
 .dropdown-menu a {
     color: black;
     /* padding: 12px 16px; */
-    text-decoration: none;
+    /* text-decoration: none; */
     display: block;
     text-align: left;
 }
