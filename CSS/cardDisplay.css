@@ -1,0 +1,25 @@
+.gal {
+    -webkit-column-count: 3;
+    /* Chrome, Safari, Opera */
+    -moz-column-count: 3;
+    /* Firefox */
+    column-count: 3;
+}
+
+.gal img {
+    width: 100%;
+    padding: 7px 0;
+    border-radius: 1vw;
+    /* box-shadow: 2px 2px 2px 2px( darkslategrey, 0.2); */
+    /* box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2); */
+}
+
+@media (max-width: 500px) {
+    .gal {
+        -webkit-column-count: 1;
+        /* Chrome, Safari, Opera */
+        -moz-column-count: 1;
+        /* Firefox */
+        column-count: 1;
+    }
+}

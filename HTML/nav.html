@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <!-- Navbar CSS -->
     <link rel="stylesheet" href="../CSS/nav.css">
-<!-- trending -->
+    <!-- trending -->
     <!--Cards Display CSS-->
     <link rel="stylesheet" href="../CSS/cardDisplay.css">
 
@@ -38,7 +38,7 @@
                 <!-- <img src="#" alt="#"> -->
             </a>
 
-            <nav class="dropbtn">
+            <nav class="dropbtn navbar-light">
                 <!-- <div class="dropdown"> -->
                 <div class="collapse w3-animate-left" id="navitems">
                     <ul class="nav nav-pills">
@@ -49,7 +49,7 @@
                                 Categories
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                
+
                                 <!-- RECENTLY UPLOADED PAGE NAV-LINK -->
                                 <a class="dropdown-item" href="recentlyuploaded.php">
                                     RECENTLY UPLOADED
@@ -74,7 +74,7 @@
                                 <a class="dropdown-item" onclick="on()">
                                     OR SEARCH FOR A CATEGORY
                                 </a>
-                                
+
                             </div>
                         </li>
                         <!-- Trending -->
@@ -87,7 +87,7 @@
                             <a class="nav-link" href="../PHP/sign_up.php">SignUp
                                 <span class="sr-only">(current)</span></a>
                         </li>
-                       
+
 
                     </ul>
                 </div>
@@ -106,7 +106,10 @@
 
         </nav>
         <div id="overlay" ondblclick="off()">
-            <h2 style="text-align: center;padding-top:5px;color:darkslategray;font-weight: bolder;">Double click To Exit</h2>
+            <!-- <h2 font-weight: bolder;">Double click To Exit</h2> -->
+            <h2 class=" container mb-4 alert alert-primary" role="alert" style="text-align: center;padding-top:5px;">
+                Double click to Exit!
+            </h2>
             <form class="container py-4" action="" method="get" id="searchForm" onclick="on()">
                 <input type="search" name="search" placeholder="Search">
 
@@ -116,7 +119,7 @@
     </div>
 
     <!-- Floarting button @ bottom corner of page -->
-    <a class="floatbtn" ondblclick="offSign_log()">
+    <a class="floatbtn">
         <img src="../Images/round_post_add_black_18dp.png" alt="Upload">
     </a>
 
