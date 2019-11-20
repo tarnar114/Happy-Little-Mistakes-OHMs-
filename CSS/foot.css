@@ -15,6 +15,7 @@
 /* Footer Line divide */
 
 footer hr {
-    display: block;
-    height: 6px;
+    border: lightblue;
+    border-style: solid;
+    border-width: thin;
 }
