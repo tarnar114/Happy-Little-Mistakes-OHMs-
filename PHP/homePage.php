@@ -26,73 +26,75 @@
 
 
 
-<div id="trending">
-  <div style="height:100px"></div>
-  <div class="container " >
-    <div class="row">
-
-
-      <div class="col-md">
-        <hr class="my-4">
-      </div>
-
-      <!-- Contact links -->
-      <div class="col-sm-3">
-        <h1>Top Trending</h1>
-      </div>
-
-      <div class="col-md">
-        <hr class="my-4">
-      </div>
-
-    </div>
-
-
-    <div class="col-md-12">
+  <div id="trending">
+    <div style="height:100px"></div>
+    <div class="container ">
       <div class="row">
-        <hr>
-
-        <div class="gal">
-
-          <img src="https://preview.ibb.co/i0PmHk/1.jpg" alt="">
-
-          <img src="https://preview.ibb.co/mWpE3Q/2.jpg" alt="">
-
-          <img src="https://preview.ibb.co/i0PmHk/1.jpg" alt="">
-
-          <img src="https://preview.ibb.co/mysOxk/3.jpg" alt="">
 
 
+        <div class="col-md">
+          <hr class="my-4">
+        </div>
 
-          <img src="https://preview.ibb.co/i0PmHk/1.jpg" alt="">
-          <img src="https://preview.ibb.co/mWpE3Q/2.jpg" alt="">
+        <!-- Contact links -->
+        <div class="col-sm-3">
+          <h1>Top Trending</h1>
+        </div>
 
-          <img src="https://preview.ibb.co/i0PmHk/1.jpg" alt="">
-
-          <img src="https://preview.ibb.co/mysOxk/3.jpg" alt="">
-
-          <img src="https://preview.ibb.co/i0PmHk/1.jpg" alt="">
-          <img src="https://preview.ibb.co/i0PmHk/1.jpg" alt=""><img src="https://preview.ibb.co/i0PmHk/1.jpg" alt="">
-          <img src="https://preview.ibb.co/i0PmHk/1.jpg" alt="">
-
-          <img src="https://preview.ibb.co/i0PmHk/1.jpg" alt="">
-          <img src="https://preview.ibb.co/i0PmHk/1.jpg" alt="">
-          <img src="https://preview.ibb.co/i0PmHk/1.jpg" alt="">
-          <img src="https://preview.ibb.co/mysOxk/3.jpg" alt="">
-
-          <img src="https://preview.ibb.co/mysOxk/3.jpg" alt="">
-
-          <img src="https://preview.ibb.co/i0PmHk/1.jpg" alt="">
-          <img src="https://preview.ibb.co/i0PmHk/1.jpg" alt="">
-          <img src="https://preview.ibb.co/i0PmHk/1.jpg" alt="">
-          <img src="https://preview.ibb.co/mWpE3Q/2.jpg" alt="">
-
+        <div class="col-md">
+          <hr class="my-4">
         </div>
 
       </div>
+
+
+      <div class="col-md-12">
+        <div class="row">
+          <hr>
+          <!-- <div id="mdb-lightbox-ui"></div> -->
+          <div class="mdb-lightbox gal">
+            <figure>
+              <a href="https://preview.ibb.co/i0PmHk/1.jpg" data-size="1600x1067">
+                <img src="https://preview.ibb.co/i0PmHk/1.jpg" alt=""></a>
+            </figure>
+            
+            <img src="https://preview.ibb.co/mWpE3Q/2.jpg" alt="">
+
+            <img src="https://preview.ibb.co/i0PmHk/1.jpg" alt="">
+
+            <img src="https://preview.ibb.co/mysOxk/3.jpg" alt="">
+
+
+
+            <img src="https://preview.ibb.co/i0PmHk/1.jpg" alt="">
+            <img src="https://preview.ibb.co/mWpE3Q/2.jpg" alt="">
+
+            <img src="https://preview.ibb.co/i0PmHk/1.jpg" alt="">
+
+            <img src="https://preview.ibb.co/mysOxk/3.jpg" alt="">
+
+            <img src="https://preview.ibb.co/i0PmHk/1.jpg" alt="">
+            <img src="https://preview.ibb.co/i0PmHk/1.jpg" alt=""><img src="https://preview.ibb.co/i0PmHk/1.jpg" alt="">
+            <img src="https://preview.ibb.co/i0PmHk/1.jpg" alt="">
+
+            <img src="https://preview.ibb.co/i0PmHk/1.jpg" alt="">
+            <img src="https://preview.ibb.co/i0PmHk/1.jpg" alt="">
+            <img src="https://preview.ibb.co/i0PmHk/1.jpg" alt="">
+            <img src="https://preview.ibb.co/mysOxk/3.jpg" alt="">
+
+            <img src="https://preview.ibb.co/mysOxk/3.jpg" alt="">
+
+            <img src="https://preview.ibb.co/i0PmHk/1.jpg" alt="">
+            <img src="https://preview.ibb.co/i0PmHk/1.jpg" alt="">
+            <img src="https://preview.ibb.co/i0PmHk/1.jpg" alt="">
+            <img src="https://preview.ibb.co/mWpE3Q/2.jpg" alt="">
+
+          </div>
+
+        </div>
+      </div>
     </div>
   </div>
-</div>
 
 
 
@@ -112,6 +114,12 @@
         var $nav = $(".navbar-fixed-top");
         $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
       });
+    });
+
+
+
+    $(function() {
+      $("#trending").load("mdb-addons/mdb-lightbox-ui.html");
     });
   </script>
 </body>
