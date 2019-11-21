@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<<<<<<< HEAD
 <?php include '../HTML/nav.html';?>
 <head>
     <link rel="stylesheet" type="text/css" href="register.css">
