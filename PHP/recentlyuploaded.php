@@ -8,7 +8,23 @@
 
 <body>
 
-<h1>Trending Now!</h1>
+<div style="height:50px"></div>
+    <div class="container ">
+      <div class="row">
+        <div class="col-md">
+          <hr class="my-4">
+        </div>
+
+        <!-- Contact links -->
+        <div class="col-sm-3">
+          <h1>Recently Uploaded</h1>
+        </div>
+
+        <div class="col-md">
+          <hr class="my-4">
+        </div>
+      </div>
+    </div>
 
 <div class="container masonry">
 <a href="../PHP/trending.php">

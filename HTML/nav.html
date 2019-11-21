@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <!-- Navbar CSS -->
     <link rel="stylesheet" href="../CSS/nav.css">
-
+    <!-- trending -->
     <!--Cards Display CSS-->
     <link rel="stylesheet" href="../CSS/cardDisplay.css">
 
@@ -50,30 +50,44 @@
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
 
-                                <!-- TRENDING PAGE NAV-LINK -->
-                                <a class="dropdown-item" href="../PHP/trending.php">
-                                    Trending
-                                </a>
-
-                                <!-- INTERIOR DESIGN PAGE NAV-LINK -->
-                                <a class="dropdown-item" href="#">
-                                    INTERIOR DESIGN
-                                </a>
-
-                                <div class="dropdown-divider"></div>
-
                                 <!-- RECENTLY UPLOADED PAGE NAV-LINK -->
-                                <a class="dropdown-item" href="#">
+                                <a class="dropdown-item" href="recentlyuploaded.php">
                                     RECENTLY UPLOADED
                                 </a>
+                                <div class="dropdown-divider"></div>
+                                <!-- INTERIOR DESIGN PAGE NAV-LINK -->
+                                <a class="dropdown-item" href="interiordesign.php">
+                                    INTERIOR DESIGN
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <!-- LANDSCAPE PAGE NAV-LINK -->
+                                <a class="dropdown-item" href="landscape.php">
+                                    LANDSCAPE
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <!-- PORTRAIT PAGE NAV-LINK -->
+                                <a class="dropdown-item" href="portrait.php">
+                                    PORTRAIT
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <!-- OR SEARCH PAGE NAV-LINK -->
+                                <a class="dropdown-item" onclick="on()">
+                                    OR SEARCH FOR A CATEGORY
+                                </a>
+
                             </div>
                         </li>
-
+                        <!-- Trending -->
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../PHP/trending.php">Trending
+                                <span class="sr-only">(current)</span></a>
+                        </li>
                         <!-- Sign Up/Login -->
                         <li class="nav-item active">
                             <a class="nav-link" href="../PHP/sign_up.php">SignUp
                                 <span class="sr-only">(current)</span></a>
                         </li>
+
 
                     </ul>
                 </div>
@@ -92,16 +106,20 @@
 
         </nav>
         <div id="overlay" ondblclick="off()">
-
-            <form class="container py4" action="" method="get" id="searchForm" onclick="on()">
-                <input type="search" name="search" placeholder="Search">
+            <!-- <h2 font-weight: bolder;">Double click To Exit</h2> -->
+            <h2 class=" container mb-4 alert alert-primary" role="alert" style="text-align: center;padding-top:5px;">
+                Double click to Exit!
+            </h2>
+            <form class="container py-4" action="" method="get" id="searchForm" onclick="on()">
+                <input type="search" name="searchSubmit" placeholder="Search">
+                <!-- value="<?php echo $_GET['searchSubmit'] ; ?>" -->
             </form>
 
         </div>
     </div>
 
     <!-- Floarting button @ bottom corner of page -->
-    <a class="floatbtn" ondblclick="offSign_log()">
+    <a class="floatbtn">
         <img src="../Images/round_post_add_black_18dp.png" alt="Upload">
     </a>
 
