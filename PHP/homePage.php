@@ -4,6 +4,17 @@
 <?php include_once '../HTML/nav.html'; ?>
 
 <body>
+<div class="container">
+
+  <div class="notice">
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+      <strong>Want to interact with content and art work?</strong> Signup <a href="../PHP/sign_up.php">here</a> now!
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+  </div>
+</div>
   <div class="container py-5 ">
     <div class="jumbotron">
       <div class="container share">
