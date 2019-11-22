@@ -6,9 +6,10 @@
     <link rel="stylesheet" href="UploadPgCSS.css">
   </head>
   <body>
+      <?php
       <fieldset>
-        <form action="uploadPage.php" method="post"enctype="multipart/form-data"id="inputForm">
-        <legend>IMG File Upload</legend>
+         <form action="uploadPage.php" method="post"enctype="multipart/form-data"id="inputForm">//chose a file,
+        echo '<legend>IMG File Upload</legend>'
         <input type="file"name="file"id="fileselect" >
         <br>
         <br>
@@ -17,7 +18,6 @@
         <br>
       </fieldset>
     </form>
-    <?php
     if (isset($_POST['submit'])){
       $file=$_FILES['file'];
       $fileName=$_FILES['file']['name'];
@@ -38,20 +38,6 @@
       }
     }
      ?>
-     <form>
-     <button class="searchbtn" id="searchIcon" type="button" data-toggle="collapse justify-content-end" data-target="#overlay" onclick="on()">
-                    <img src="../Images/search.png" alt="search">
-                </button>
-                <div id="overlay" ondblclick="off()">
-           <!-- <h2 font-weight: bolder;">Double click To Exit</h2> -->
-           <h2 class="container mb-4 alert alert-primary" role="alert" style="text-align: center;padding-top:5px;">
-               Double click to Exit!
-           </h2>
-           <form class="container py-4" action="../PHP/processSearch.php" method="GET" id="searchForm" onclick="on()">
-               <input type="search" name="searchSubmit" placeholder="Search">
-               <!-- value="<?php echo $_GET['searchSubmit'] ; ?>" -->
-           </form>
 
-       </div>
   </body>
 </html>
