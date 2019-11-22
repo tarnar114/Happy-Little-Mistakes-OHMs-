@@ -7,9 +7,10 @@ body {
   h1 {
     text-align: center;
     font-family: 'Permanent Marker', cursive;
-    margin-top: 50px;
+    font-size: medium;
+    margin-bottom:60px;
   }
-  
+
   p {
     text-align: center;
     font-family: 'Permanent Marker', cursive;
