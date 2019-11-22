@@ -107,7 +107,10 @@
     </div>
   </div>
   -->
-
+<?php
+$db_host = "localhost";
+$sb_username = "root";
+$sb_pass = "admin";
 <style>
 <?php include '../CSS/masonry.css'; ?>
 </style>
