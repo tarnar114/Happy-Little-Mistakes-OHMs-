@@ -8,11 +8,14 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- W3 School CSS -->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- Index Pages CSS -->
+    <link rel="stylesheet" href="../CSS/index.css">
     <!-- Navbar CSS -->
     <link rel="stylesheet" href="../CSS/nav.css">
     <!-- trending -->
     <!--Cards Display CSS-->
     <link rel="stylesheet" href="../CSS/cardDisplay.css">
+
 
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -34,10 +37,16 @@
         <nav class="navbar navbar-light">
 
             <a class="navbar-brand" href="../PHP/homePage.php">
+                <!-- <div class="fas fa-palette"> -->
+                <!-- <a ></a> -->
+                <img src="../Images/twotone_palette_black_18dp.png" alt="pallete">
+                <!-- </div> -->
                 Only Happy Mistakes
-                <!-- <img src="#" alt="#"> -->
             </a>
 
+            <a class="brand" href="../PHP/homePage.php">
+                <img src="../Images/twotone_palette_black_18dp.png" alt="pallete">
+            </a>
             <nav class="dropbtn">
                 <!-- <div class="dropdown"> -->
                 <div class="collapse w3-animate-left" id="navitems">
@@ -107,10 +116,10 @@
         </nav>
         <div id="overlay" ondblclick="off()">
             <!-- <h2 font-weight: bolder;">Double click To Exit</h2> -->
-            <h2 class=" container mb-4 alert alert-primary" role="alert" style="text-align: center;padding-top:5px;">
+            <h2 class="container mb-4 alert alert-primary" role="alert" style="text-align: center;padding-top:5px;">
                 Double click to Exit!
             </h2>
-            <form class="container py-4" action="" method="get" id="searchForm" onclick="on()">
+            <form class="container py-4" action="../PHP/processSearch.php" method="GET" id="searchForm" onclick="on()">
                 <input type="search" name="searchSubmit" placeholder="Search">
                 <!-- value="<?php echo $_GET['searchSubmit'] ; ?>" -->
             </form>
