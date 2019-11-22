@@ -128,10 +128,23 @@
     </div>
 
     <!-- Floarting button @ bottom corner of page -->
-    <a class="floatbtn">
+    <a class="floatbtn" onclick="onUpload()" type="button" href="../PHP/uploadPage.php">
         <img src="../Images/round_post_add_black_18dp.png" alt="Upload">
     </a>
 
+    <div id="upload" ondblclick="offUpload()">
+        <!-- <h2 font-weight: bolder;">Double click To Exit</h2> -->
+        <h2 class="container mb-4 alert alert-primary" role="alert" style="text-align: center;padding-top:5px;">
+            Double click to Exit!
+        </h2>
+        <form class="container py-4" action="#INSERT YOUR PHP FOR UPLOAD" method="GET" id="#" onclick="onUpload()">
+
+            <!-- INSERT YOUR UPLOAD.PHP -->
+            <!-- <input type="search" name="searchSubmit" placeholder="Search"> -->
+            <!-- value="<?php echo $_GET['searchSubmit'] ; ?>" -->
+        </form>
+
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

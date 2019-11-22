@@ -1,13 +1,21 @@
 function on() {
 
     document.getElementById("overlay").style.display = "block";
-
-    // document.getElementById("overlay").
 }
 
 
 function off() {
     document.getElementById("overlay").style.display = "none";
+}
+
+function onUpload() {
+
+    document.getElementById("upload").style.display = "block";
+}
+
+
+function offUpload() {
+    document.getElementById("upload").style.display = "none";
 }
 
 
