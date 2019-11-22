@@ -17,12 +17,16 @@ html {
 }
 
 
-/* body {
+/* body { h1
     background-color: whitesmoke;
 } */
 
 .navbar-brand {
     font-size: 1.58vw;
+}
+
+.brand {
+    display: none;
 }
 
 .nav-tabs {
@@ -96,25 +100,21 @@ html {
 }
 
 
-/* ////////////////////////////////////////////////////////////////REQUIRES EDITTING */
+/* Initial width is 25%, no border, */
 
 input[type=search] {
     width: 25%;
-    box-sizing: border-box;
     border: none;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
     border-radius: 2vw;
     font-size: 2vw;
-    background-color: whitesmoke;
+    color: black;
     background-image: url("../Images/search.png");
     background-position: 10px 10px;
     background-repeat: no-repeat;
     padding: 12px 20px 12px 40px;
-    -webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;
-    /* justify-content: center; */
+    transition: width 0.8s ease-in-out;
     margin-top: 10vw;
-    /* display: inline; */
 }
 
 
@@ -125,9 +125,6 @@ input[type=search]:focus {
 }
 
 
-/* /////////////////////////////////////////////////////////////// */
-
-
 /* Once the width of the window decreases past 800px changes will happen to the navbar and its contents*/
 
 @media all and (max-width: 800px) {
@@ -136,25 +133,20 @@ input[type=search]:focus {
         /* top: 0px; */
         right: 0;
         text-align: right;
+        min-height: initial;
         /* display: inline; */
     }
     .navbar-brand {
-        /* ADD ICON */
+        /* z-index: 500; */
+        display: none;
     }
-    /* nav.dropbtn { */
-    /* margin-top: auto;
-        margin-right: 0;
-        position: absolute;
-        right: 0;
-        top: 47px;
-        text-align: right;
-        padding: 20px 0;
-        z-index: 5; */
-    /* background: #6cbb23; */
-    /* justify-content: end;
-        align-content: flex-end;
-        display: inline-end; */
-    /* } */
+    .brand {
+        display: contents;
+        background-image: url("../Images/twotone_palette_black_18dp.png");
+        background-position: fixed;
+        background-repeat: no-repeat;
+        align-content: left;
+    }
     #navitems ul {
         flex-direction: column;
         text-align: end;
@@ -171,20 +163,10 @@ input[type=search]:focus {
         background: whitesmoke;
         border-radius: 2vw;
     }
-    /* .collapse {
-        display: block;
-    } */
-    .jumbotron {
-        margin: 100px;
-        display: flex;
-        padding: 0;
-        justify-content: flex-end;
-        margin: 50px;
-    }
 }
 
 
-/* Navbar Items */
+/* Navbar Items p */
 
 li a {
     color: inherit;
@@ -218,21 +200,42 @@ li.dropdown {
 
 .dropdown-menu a {
     color: black;
-    /* padding: 12px 16px; */
-    /* text-decoration: none; */
     display: block;
     text-align: left;
 }
 
-
-/* .dropdown-menu a:hover {
-    color: gray;
-    opacity: 0.5;
-    border-radius: 2vw;
-} */
-
 .dropdown:hover .dropdown-menu {
-    display: block !important;
+    display: block;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    /* margin-top: 50px; */
+}
+
+h2 {
+    font-weight: 200 !important;
+    font-family: 'Roboto', sans-serif;
+}
+
+hr {
+    border-color: #85a2df;
+    border-style: dashed;
+    border-top-width: thick;
+}
+
+
+/* Once the width of the window decreases past 800px changes will happen to the navbar and its contents*/
+
+@media all and (max-width: 800px) {
+    .jumbotron {
+        margin: 100px;
+        display: flex;
+        padding: 0;
+        justify-content: flex-end;
+        margin: 50px;
+    }
 }
 
 
@@ -244,7 +247,7 @@ li.dropdown {
     height: 60px;
     bottom: 20px;
     right: 20px;
-    background-color: #0C9;
+    background-color: #85a2df;
     color: #FFF;
     border-radius: 30px;
     text-align: center;
@@ -255,12 +258,12 @@ li.dropdown {
 }
 
 .jumbotron {
-    background-color: white;
+    background-color: transparent;
     display: inline-flex;
 }
 
-h2 {
-    font-weight: 200;
+.btn {
+    background-color: #85a2df;
 }
 
 
