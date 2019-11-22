@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<?php include_once '../HTML/nav.html'; ?>
+  <?php include_once '../HTML/nav.html'; ?>
 
 <body>
-<div class="container">
 
+<div class="container">
   <div class="notice">
     <div class="alert alert-warning alert-dismissible fade show" role="alert">
       <strong>Want to interact with content and art work?</strong> Signup <a href="../PHP/sign_up.php">here</a> now!
@@ -58,11 +58,11 @@
 
       </div>
 
-      
+
       <div class="col-md-12">
         <div class="row">
           <hr>
-           <div id="mdb-lightbox-ui"></div> 
+           <div id="mdb-lightbox-ui"></div>
           <div class="mdb-lightbox gal">
             <figure>
               <a href="https://preview.ibb.co/i0PmHk/1.jpg" data-size="1600x1067">
@@ -194,7 +194,7 @@ function photo8() {
 
 
 
-<div class="container masonry"> 
+<div class="container masonry">
 <div class="item" onClick=<?php mysql_query("UPDATE votecounter SET 'Vote1' = 'Vote1'+1"); ?>>
     <p>Amount of votes: <a id="vote1">0</a></p>
     <img src="../Images/o_A8fBmg.jpeg">
@@ -219,12 +219,12 @@ function photo8() {
     <p>Amount of votes: <a id="vote5">0</a></p>
     <img src="../Images/o_A8fBmg.jpeg">
   </div>
-  
+
   <div class="item" onClick="photo6()">
     <p>Amount of votes: <a id="vote6">0</a></p>
     <img src="../Images/o_A8fBmg.jpeg">
   </div>
-  
+
   <div class="item" onClick="photo7()">
     <p>Amount of votes: <a id="vote7">0</a></p>
     <img src="../Images/o_A8fBmg.jpeg">
