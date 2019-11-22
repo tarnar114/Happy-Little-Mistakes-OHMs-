@@ -168,6 +168,45 @@ function DescriptionAlert() {
 </div>
 <br><br>
 
+<script>
+function getVote(int) {
+  if (window.XMLHttpRequest) {
+    // code for IE7+, Firefox, Chrome, Opera, Safari
+    xmlhttp=new XMLHttpRequest();
+  } else {  // code for IE6, IE5
+    xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+  xmlhttp.onreadystatechange=function() {
+    if (this.readyState==4 && this.status==200) {
+      document.getElementById("vote").innerHTML=this.responseText;
+    }
+  }
+  xmlhttp.open("GET","VotingPoll.php?vote="+int,true);
+  xmlhttp.send();
+}
+</script>
+<div id="vote">
+<h3>Do you like PHP and AJAX so far?</h3>
+<form>
+Photo 1
+<input type="radio" name="vote" value="0" onclick="getVote(this.value)">
+<br>Photo 2
+<input type="radio" name="vote" value="1" onclick="getVote(this.value)">
+<br>Photo 3
+<input type="radio" name="vote" value="2" onclick="getVote(this.value)">
+<br>Photo 4
+<input type="radio" name="vote" value="3" onclick="getVote(this.value)">
+<br>Photo 5
+<input type="radio" name="vote" value="4" onclick="getVote(this.value)">
+<br>Photo 6
+<input type="radio" name="vote" value="5" onclick="getVote(this.value)">
+<br>Photo 7
+<input type="radio" name="vote" value="6" onclick="getVote(this.value)">
+<br>Photo 8
+<input type="radio" name="vote" value="7" onclick="getVote(this.value)">
+</form>
+</div>
+
 
 
 <!--
