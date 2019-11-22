@@ -15,7 +15,7 @@
     </div>
   </div>
 </div>
-  <div class="container py-5 ">
+  <div class="container">
     <div class="jumbotron">
       <div class="container share">
         <h1 class="display-4 text-right">Hello, world!</h1>
@@ -38,7 +38,7 @@
 
 
   <div id="trending">
-    <div style="height:100px"></div>
+    <div style="height:150px"></div>
     <div class="container ">
       <div class="row">
 
