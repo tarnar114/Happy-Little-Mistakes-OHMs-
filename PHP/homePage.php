@@ -107,14 +107,6 @@
     </div>
   </div>
   -->
-<?php
-$db_host = "localhost";
-$db_username = "root";
-$db_pass = "admin";
-$db_name = "votecounter";
-@mysql_connect("$db_host","$db_username","$db_pass");
-@mysql_select_db("$db_name");
-?>
 
 <style>
 <?php include '../CSS/masonry.css'; ?>
@@ -200,22 +192,22 @@ function photo8() {
     <img src="../Images/o_A8fBmg.jpeg">
   </div>
 
-  <div class="item" onClick="photo2()">
+  <div class="item">
     <p>Amount of votes: <a id="vote2">0</a></p>
     <img src="../Images/o_A8fBmg.jpeg">
   </div>
 
-  <div class="item" onClick="photo3()">
+  <div class="item">
     <p>Amount of votes: <a id="vote3">0</a></p>
     <img src="../Images/o_A8fBmg.jpeg">
   </div>
 
-  <div class="item" onClick="photo4()">
+  <div class="item">
     <p>Amount of votes: <a id="vote4">0</a></p>
     <img src="../Images/o_A8fBmg.jpeg">
   </div>
 
-  <div class="item" onClick="photo5()">
+  <div class="item">
     <p>Amount of votes: <a id="vote5">0</a></p>
     <img src="../Images/o_A8fBmg.jpeg">
   </div>
@@ -230,7 +222,7 @@ function photo8() {
     <img src="../Images/o_A8fBmg.jpeg">
   </div>
 
-  <div class="item" onClick="photo8()">
+  <div class="item">
     <p>Amount of votes: <a id="vote8">0</a></p>
     <img src="../Images/o_A8fBmg.jpeg">
   </div>
