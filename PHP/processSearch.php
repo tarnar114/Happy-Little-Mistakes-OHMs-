@@ -6,7 +6,7 @@ if (!empty($_GET)) {
     $servername = "localhost";
     $username = "root";
     $password = "admin";
-    $dbname = "assignment3";
+    $dbname = "OHMs";
     $connection = mysqli_connect($servername, $username, $password, $dbname);
     // Check connection
     if (!$connection) {
@@ -20,7 +20,7 @@ if (!empty($_GET)) {
 
     //  
     #endregionsearchQry
-    $sql = "SELECT * FROM users WHERE EmailAddress LIKE '%$searchFor%' OR LastName LIKE '%$searchFor%'";
+    $sql = "SELECT * FROM uploadtable WHERE FirstName LIKE '%$searchFor%' OR LastName LIKE '%$searchFor%' OR Username LIKE '%$searchFor%' OR EmailAddress LIKE '%$searchFor%'";
     $result = mysqli_query($connection,$sql);
 
     if (mysqli_num_rows($result) > 0) {
