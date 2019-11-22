@@ -68,7 +68,7 @@
               <a href="https://preview.ibb.co/i0PmHk/1.jpg" data-size="1600x1067">
                 <img src="https://preview.ibb.co/i0PmHk/1.jpg" alt=""></a>
             </figure>
-            
+
             <img src="https://preview.ibb.co/mWpE3Q/2.jpg" alt="">
 
             <img src="https://preview.ibb.co/i0PmHk/1.jpg" alt="">
