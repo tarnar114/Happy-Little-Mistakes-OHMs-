@@ -12,7 +12,7 @@
 		<div class="login-box">
 			<div class="login-left">
 				<h2> Login Here </h2><br>
-				<form action="checkuser.php" method="post">
+				<form action="sign_up.php" method="post">
 					<div class="form-group">
 						<label>Email Address</label><br>
 						<input type="text" name="email" placeholder="Enter Email Address" class="form-control" required>
@@ -27,7 +27,7 @@
 
 			<div class="login-right">
 				<h2> Signup Here </h2><br>
-				<form action="registration.php" method="post">
+				<form action="sign_up.php" method="post">
 					<div class="form-group">
 						<label>Username</label><br>
 						<input type="text" name="user" class="form-control" required>
@@ -51,6 +51,8 @@
 	</div>
 	</div>
 </body>
+
+
 <?php include '../HTML/foot.html'; ?>
 
 </html>
