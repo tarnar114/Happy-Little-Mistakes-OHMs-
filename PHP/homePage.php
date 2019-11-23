@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<?php include_once '../HTML/nav.html'; ?>
+  <?php include_once '../HTML/nav.html'; ?>
 
 <body>
-<div class="container">
 
+<div class="container">
   <div class="notice">
     <div class="alert alert-warning alert-dismissible fade show" role="alert">
       <strong>Want to interact with content and art work?</strong> Signup <a href="../PHP/sign_up.php">here</a> now!
@@ -58,11 +58,11 @@
 
       </div>
 
-      
+
       <div class="col-md-12">
         <div class="row">
           <hr>
-           <div id="mdb-lightbox-ui"></div> 
+           <div id="mdb-lightbox-ui"></div>
           <div class="mdb-lightbox gal">
             <figure>
               <a href="https://preview.ibb.co/i0PmHk/1.jpg" data-size="1600x1067">
@@ -124,8 +124,70 @@ function DescriptionAlert() {
 <br>
 
 
-<div class="container masonry"> 
-<div class="item">
+
+
+<script type="text/javascript">
+var vote1 = 0;
+function photo1() {
+  vote1 +=1;
+  document.getElementById("vote1").innerHTML = vote1;
+};
+</script>
+<script type="text/javascript">
+var vote2 = 0;
+function photo2() {
+  vote2 +=1;
+  document.getElementById("vote2").innerHTML = vote2;
+};
+</script>
+<script type="text/javascript">
+var vote3 = 0;
+function photo3() {
+  vote3 +=1;
+  document.getElementById("vote3").innerHTML = vote3;
+};
+</script>
+<script type="text/javascript">
+var vote4 = 0;
+function photo4() {
+  vote4 +=1;
+  document.getElementById("vote4").innerHTML = vote4;
+};
+</script>
+<script type="text/javascript">
+var vote5 = 0;
+function photo5() {
+  vote5 +=1;
+  document.getElementById("vote5").innerHTML = vote5;
+};
+</script>
+<script type="text/javascript">
+var vote6 = 0;
+function photo6() {
+  vote6 +=1;
+  document.getElementById("vote6").innerHTML = vote6;
+};
+</script>
+<script type="text/javascript">
+var vote7 = 0;
+function photo7() {
+  vote7 +=1;
+  document.getElementById("vote7").innerHTML = vote7;
+};
+</script>
+<script type="text/javascript">
+var vote8 = 0;
+function photo8() {
+  vote8 +=1;
+  document.getElementById("vote8").innerHTML = vote8;
+};
+</script>
+
+
+
+
+<div class="container masonry">
+<div class="item" onClick=<?php mysql_query("UPDATE votecounter SET 'Vote1' = 'Vote1'+1"); ?>>
     <p>Amount of votes: <a id="vote1">0</a></p>
     <img src="../Images/o_A8fBmg.jpeg">
   </div>
@@ -149,13 +211,13 @@ function DescriptionAlert() {
     <p>Amount of votes: <a id="vote5">0</a></p>
     <img src="../Images/o_A8fBmg.jpeg">
   </div>
-  
-  <div class="item">
+
+  <div class="item" onClick="photo6()">
     <p>Amount of votes: <a id="vote6">0</a></p>
     <img src="../Images/o_A8fBmg.jpeg">
   </div>
-  
-  <div class="item">
+
+  <div class="item" onClick="photo7()">
     <p>Amount of votes: <a id="vote7">0</a></p>
     <img src="../Images/o_A8fBmg.jpeg">
   </div>
@@ -167,6 +229,45 @@ function DescriptionAlert() {
 
 </div>
 <br><br>
+
+<script>
+function getVote(int) {
+  if (window.XMLHttpRequest) {
+    // code for IE7+, Firefox, Chrome, Opera, Safari
+    xmlhttp=new XMLHttpRequest();
+  } else {  // code for IE6, IE5
+    xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+  xmlhttp.onreadystatechange=function() {
+    if (this.readyState==4 && this.status==200) {
+      document.getElementById("vote").innerHTML=this.responseText;
+    }
+  }
+  xmlhttp.open("GET","VotingPoll.php?vote="+int,true);
+  xmlhttp.send();
+}
+</script>
+<div id="vote">
+<h3>Do you like PHP and AJAX so far?</h3>
+<form>
+Photo 1
+<input type="radio" name="vote" value="0" onclick="getVote(this.value)">
+<br>Photo 2
+<input type="radio" name="vote" value="1" onclick="getVote(this.value)">
+<br>Photo 3
+<input type="radio" name="vote" value="2" onclick="getVote(this.value)">
+<br>Photo 4
+<input type="radio" name="vote" value="3" onclick="getVote(this.value)">
+<br>Photo 5
+<input type="radio" name="vote" value="4" onclick="getVote(this.value)">
+<br>Photo 6
+<input type="radio" name="vote" value="5" onclick="getVote(this.value)">
+<br>Photo 7
+<input type="radio" name="vote" value="6" onclick="getVote(this.value)">
+<br>Photo 8
+<input type="radio" name="vote" value="7" onclick="getVote(this.value)">
+</form>
+</div>
 
 
 
