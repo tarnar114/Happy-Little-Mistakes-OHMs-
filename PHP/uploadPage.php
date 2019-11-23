@@ -1,6 +1,6 @@
 <?php include_once '../HTML/nav.html'; ?>
 <!-- <fieldset> -->
-<form class="container py-4" action="uploadPage.php" method="post" enctype="multipart/form-data" id="inputForm">
+<form class="container" action="uploadPage.php" method="post" enctype="multipart/form-data" id="inputForm">
   <legend>IMG File Upload</legend>
   <input type="file" name="file" id="fileselect">
   <br>

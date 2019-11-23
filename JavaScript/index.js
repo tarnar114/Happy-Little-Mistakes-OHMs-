@@ -8,15 +8,7 @@ function off() {
     document.getElementById("overlay").style.display = "none";
 }
 
-function onUpload() {
 
-    document.getElementById("upload").style.display = "block";
-}
-
-
-function offUpload() {
-    document.getElementById("upload").style.display = "none";
-}
 
 
 
