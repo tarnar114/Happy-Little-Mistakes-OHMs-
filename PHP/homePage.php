@@ -187,7 +187,7 @@ function photo8() {
 
 
 <div class="container masonry">
-<div class="item" onClick=<?php mysql_query("UPDATE votecounter SET 'Vote1' = 'Vote1'+1"); ?>>
+<div class="item">
     <p>Amount of votes: <a id="vote1">0</a></p>
     <img src="../Images/o_A8fBmg.jpeg">
   </div>
