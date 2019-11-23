@@ -123,107 +123,44 @@ function DescriptionAlert() {
 <p><button onclick="DescriptionAlert()">Description</button></p>
 <br>
 
-
-
-
-<script type="text/javascript">
-var vote1 = 0;
-function photo1() {
-  vote1 +=1;
-  document.getElementById("vote1").innerHTML = vote1;
-};
-</script>
-<script type="text/javascript">
-var vote2 = 0;
-function photo2() {
-  vote2 +=1;
-  document.getElementById("vote2").innerHTML = vote2;
-};
-</script>
-<script type="text/javascript">
-var vote3 = 0;
-function photo3() {
-  vote3 +=1;
-  document.getElementById("vote3").innerHTML = vote3;
-};
-</script>
-<script type="text/javascript">
-var vote4 = 0;
-function photo4() {
-  vote4 +=1;
-  document.getElementById("vote4").innerHTML = vote4;
-};
-</script>
-<script type="text/javascript">
-var vote5 = 0;
-function photo5() {
-  vote5 +=1;
-  document.getElementById("vote5").innerHTML = vote5;
-};
-</script>
-<script type="text/javascript">
-var vote6 = 0;
-function photo6() {
-  vote6 +=1;
-  document.getElementById("vote6").innerHTML = vote6;
-};
-</script>
-<script type="text/javascript">
-var vote7 = 0;
-function photo7() {
-  vote7 +=1;
-  document.getElementById("vote7").innerHTML = vote7;
-};
-</script>
-<script type="text/javascript">
-var vote8 = 0;
-function photo8() {
-  vote8 +=1;
-  document.getElementById("vote8").innerHTML = vote8;
-};
-</script>
-
-
-
-
 <div class="container masonry">
 <div class="item">
-    <p>Amount of votes: <a id="vote1">0</a></p>
+    <p>Image 1: by @cameron</p>
     <img src="../Images/o_A8fBmg.jpeg">
   </div>
 
   <div class="item">
-    <p>Amount of votes: <a id="vote2">0</a></p>
+    <p>Image 2: by @Tanqir</p>
     <img src="../Images/o_A8fBmg.jpeg">
   </div>
 
   <div class="item">
-    <p>Amount of votes: <a id="vote3">0</a></p>
+    <p>Image 3: by @johnny</p>
     <img src="../Images/o_A8fBmg.jpeg">
   </div>
 
   <div class="item">
-    <p>Amount of votes: <a id="vote4">0</a></p>
+    <p>Image 4: by @bobross</p>
     <img src="../Images/o_A8fBmg.jpeg">
   </div>
 
   <div class="item">
-    <p>Amount of votes: <a id="vote5">0</a></p>
+    <p>Image 5: by @Tiwa</p>
     <img src="../Images/o_A8fBmg.jpeg">
   </div>
 
   <div class="item" onClick="photo6()">
-    <p>Amount of votes: <a id="vote6">0</a></p>
+    <p>Image 6: by @Peter</p>
     <img src="../Images/o_A8fBmg.jpeg">
   </div>
 
   <div class="item" onClick="photo7()">
-    <p>Amount of votes: <a id="vote7">0</a></p>
+    <p>Image 7: by @Deepak</p>
     <img src="../Images/o_A8fBmg.jpeg">
   </div>
 
   <div class="item">
-    <p>Amount of votes: <a id="vote8">0</a></p>
+    <p>Image 8: by @Hassan</p>
     <img src="../Images/o_A8fBmg.jpeg">
   </div>
 
