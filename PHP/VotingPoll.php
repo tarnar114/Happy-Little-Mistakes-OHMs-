@@ -1,6 +1,9 @@
-<?php
+<!DOCTYPE html>
+<html lang="en">
 
+<?php
 $vote = $_REQUEST['vote'];
+
 $nameoffile = "voting.txt";
 $content = file($nameoffile);
 $array = explode("||", $content[0]);
@@ -43,55 +46,53 @@ $finalize = fopen($nameoffile,"w");
 fputs($finalize,$updatevote);
 fclose($finalize);
 ?>
-<h2>Result:</h2>
-<table>
-<tr>
-<td>Photo 1: </td>
-<td>
-<?php echo(100*round($photo1/($photo1+$photo2+$photo3+$photo4+$photo5+$photo6+$photo7+$photo8),2)); ?>%
-</td>
-</tr>
-<tr>
-<td>Photo 2: </td>
-<td>
-<?php echo(100*round($photo2/($photo1+$photo2+$photo3+$photo4+$photo5+$photo6+$photo7+$photo8),2)); ?>%
-</td>
-</tr>
-<tr>
-<td>Photo 3: </td>
-<td>
-<?php echo(100*round($photo3/($photo1+$photo2+$photo3+$photo4+$photo5+$photo6+$photo7+$photo8),2)); ?>%
-</td>
-</tr>
-<tr>
-<td>Photo 4: </td>
-<td>
-<?php echo(100*round($photo4/($photo1+$photo2+$photo3+$photo4+$photo5+$photo6+$photo7+$photo8),2)); ?>%
-</td>
-</tr>
-<tr>
-<td>Photo 5: </td>
-<td>
-<?php echo(100*round($photo5/($photo1+$photo2+$photo3+$photo4+$photo5+$photo6+$photo7+$photo8),2)); ?>%
-</td>
-</tr>
-<tr>
-<td>Photo 6: </td>
-<td>
-<?php echo(100*round($photo6/($photo1+$photo2+$photo3+$photo4+$photo5+$photo6+$photo7+$photo8),2)); ?>%
-</td>
-</tr>
-<tr>
-<td>Photo 7: </td>
-<td>
-<?php echo(100*round($photo7/($photo1+$photo2+$photo3+$photo4+$photo5+$photo6+$photo7+$photo8),2)); ?>%
-</td>
-</tr>
-<tr>
-<td>Photo 8: </td>
-<td>
-<?php echo(100*round($photo8/($photo1+$photo2+$photo3+$photo4+$photo5+$photo6+$photo7+$photo8),2)); ?>%
-</td>
-</tr>
-</table>
 
+<body>
+
+    <style>
+      <?php include '../CSS/masonry.css'; ?>
+    </style>
+  <div class="container masonry">
+    <div class="item">
+      <p>Votes: <?php echo(100*round($photo1/($photo1+$photo2+$photo3+$photo4+$photo5+$photo6+$photo7+$photo8),2)); ?>%</p>
+      <img src="../Images/o_A8fBmg.jpeg">
+    </div>
+
+    <div class="item">
+      <p>Votes: <?php echo(100*round($photo2/($photo1+$photo2+$photo3+$photo4+$photo5+$photo6+$photo7+$photo8),2)); ?>%</p>
+      <img src="../Images/o_A8fBmg.jpeg">
+    </div>
+
+    <div class="item">
+      <p>Votes: <?php echo(100*round($photo3/($photo1+$photo2+$photo3+$photo4+$photo5+$photo6+$photo7+$photo8),2)); ?>%</p>
+      <img src="../Images/o_A8fBmg.jpeg">
+    </div>
+
+    <div class="item">
+      <p>Votes: <?php echo(100*round($photo4/($photo1+$photo2+$photo3+$photo4+$photo5+$photo6+$photo7+$photo8),2)); ?>%</p>
+      <img src="../Images/o_A8fBmg.jpeg">
+    </div>
+
+    <div class="item">
+      <p>Votes: <?php echo(100*round($photo5/($photo1+$photo2+$photo3+$photo4+$photo5+$photo6+$photo7+$photo8),2)); ?>%</p>
+      <img src="../Images/o_A8fBmg.jpeg">
+    </div>
+
+    <div class="item" onClick="photo6()">
+      <p>Votes: <?php echo(100*round($photo6/($photo1+$photo2+$photo3+$photo4+$photo5+$photo6+$photo7+$photo8),2)); ?>%</p>
+      <img src="../Images/o_A8fBmg.jpeg">
+    </div>
+
+    <div class="item" onClick="photo7()">
+      <p>Votes: <?php echo(100*round($photo7/($photo1+$photo2+$photo3+$photo4+$photo5+$photo6+$photo7+$photo8),2)); ?>%</p>
+      <img src="../Images/o_A8fBmg.jpeg">
+    </div>
+
+    <div class="item">
+      <p>Votes: <?php echo(100*round($photo8/($photo1+$photo2+$photo3+$photo4+$photo5+$photo6+$photo7+$photo8),2)); ?>%</p>
+      <img src="../Images/o_A8fBmg.jpeg">
+    </div>
+
+  </div>
+</body>
+</html>
