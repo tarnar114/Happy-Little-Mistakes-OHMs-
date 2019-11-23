@@ -108,7 +108,6 @@
   </div>
   -->
 
-<<<<<<< HEAD
   <style>
     <?php include '../CSS/masonry.css'; ?>
   </style>
@@ -222,7 +221,7 @@
 
 
   <div class="container masonry">
-    <div class="item" onClick=<?php mysql_query("UPDATE votecounter SET 'Vote1' = 'Vote1'+1"); ?>>
+    <div class="item" onClick="<?php mysql_query("UPDATE votecounter SET 'Vote1' = 'Vote1'+1"); ?>">
       <p>Amount of votes: <a id="vote1">0</a></p>
       <img src="../Images/o_A8fBmg.jpeg">
     </div>
@@ -262,62 +261,6 @@
       <img src="../Images/o_A8fBmg.jpeg">
     </div>
 
-=======
-<style>
-<?php include '../CSS/masonry.css'; ?>
-</style>
-<hr /><hr /><br><br><br>
-
-<script>
-function DescriptionAlert() {
-  alert("Welcome to the Editor's Choice section! Here at Only Happy Mistakes, we choose our favourite art each week, and set a voting poll for you to pick a winner! If you are featured, everyone who visits our Home Page can see your work!")
-}
-</script>
-
-<h1>Editors Choices!</h1>
-<p><button onclick="DescriptionAlert()">Description</button></p>
-<br>
-
-<div class="container masonry">
-<div class="item">
-    <p>Image 1: by @cameron</p>
-    <img src="../Images/o_A8fBmg.jpeg">
-  </div>
-
-  <div class="item">
-    <p>Image 2: by @Tanqir</p>
-    <img src="../Images/o_A8fBmg.jpeg">
-  </div>
-
-  <div class="item">
-    <p>Image 3: by @johnny</p>
-    <img src="../Images/o_A8fBmg.jpeg">
-  </div>
-
-  <div class="item">
-    <p>Image 4: by @bobross</p>
-    <img src="../Images/o_A8fBmg.jpeg">
-  </div>
-
-  <div class="item">
-    <p>Image 5: by @Tiwa</p>
-    <img src="../Images/o_A8fBmg.jpeg">
-  </div>
-
-  <div class="item" onClick="photo6()">
-    <p>Image 6: by @Peter</p>
-    <img src="../Images/o_A8fBmg.jpeg">
-  </div>
-
-  <div class="item" onClick="photo7()">
-    <p>Image 7: by @Deepak</p>
-    <img src="../Images/o_A8fBmg.jpeg">
-  </div>
-
-  <div class="item">
-    <p>Image 8: by @Hassan</p>
-    <img src="../Images/o_A8fBmg.jpeg">
->>>>>>> f25abee754fcb52c71e07c3f8f7f354198b309b5
   </div>
   <br><br>
 
