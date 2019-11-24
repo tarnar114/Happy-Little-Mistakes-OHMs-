@@ -239,13 +239,35 @@ hr {
 }
 
 
-/* Floating Button @ the bottom right of the screen*/
+/* Floating Buttons @ the bottom right of the screen*/
 
-.floatbtn {
+
+/* For upload */
+
+.uploadbtn {
     position: fixed;
     width: 60px;
     height: 60px;
     bottom: 20px;
+    right: 20px;
+    background-color: #85a2df;
+    color: #FFF;
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: 2px 2px 3px #999;
+    align-content: center;
+    justify-content: center;
+    display: inline-grid;
+}
+
+
+/* For Profiles */
+
+.profilebtn {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 100px;
     right: 20px;
     background-color: #85a2df;
     color: #FFF;

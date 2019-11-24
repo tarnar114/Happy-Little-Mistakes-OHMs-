@@ -1,3 +1,4 @@
+<?php include '../HTML/nav.html'; ?>
 <?php
 
 if (!empty($_POST)) {
@@ -5,7 +6,7 @@ if (!empty($_POST)) {
   $servername = "localhost";
   $dbuser = "root";
   $password = "admin";
-  $dbname = "OHMs";
+  $dbname = "assignment3";
 
   $con = mysqli_connect($servername, $dbuser, $password, $dbname);
 
@@ -18,14 +19,22 @@ if (!empty($_POST)) {
     $pass = $_POST['password'];
   }
 
-  $sql = "SELECT * FROM uploadtable WHERE EmailAddress='" . $email . "' AND Password='" . $pass . "' LIMIT 1";
+  $sql = "SELECT * FROM users WHERE EmailAddress='" . $email . "' AND Password='" . $pass . "' LIMIT 1";
 
   $result = mysqli_query($con, $sql);
 
   if (mysqli_num_rows($result) > 0) {
     while ($row = mysqli_fetch_assoc($result)) {
-      echo "<h1>Welcome!</h1>" . $row["FirstName"] . "<br>" . $row["LastName"];
+      
+      $fname = $row['FirstName'];
+      $lname = $row['LastName'];
+      $uname = $row['Username'];
+      $email = $row['EmailAddress'];
+      global $ID;
+      $ID = $row["Id"];
+      echo "'<h1> Name: " . $fname . " " . $lname. "</h1>'";
     }
+    
   } else {
     echo "Incorrect login.";
   }

@@ -28,7 +28,7 @@
     </div>
     <!-- <h1></h1> -->
 
-    <div class="container masonry">
+    <div class="container masonry w3-animate-opacity">
       <a href="../PHP/trending.php">
         <div class="item">
           <p>@Cameron</p>
