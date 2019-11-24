@@ -122,147 +122,14 @@
   <!-- <div style="height:50px"></div> -->
 
 
-
-  <div id="trending">
-    <div style="height:150px"></div>
-    <div class="container ">
-      <div class="row">
-
-
-        <div class="col-md">
-          <hr class="my-4">
-        </div>
-
-
-        <div class="col-sm-3">
-          <h1>Editors Choices!</h1>
-        </div>
-
-        <div class="col-md">
-          <hr class="my-4">
-        </div>
-
-      </div>
-    </div>
-  </div>
+  
   <!-- <h1></h1> -->
+  
+
+  <h1>Editors Choices!</h1>
+
   <p><button onclick="DescriptionAlert()">Description</button></p>
   <br>
-
-
-
-
-  <script type="text/javascript">
-    var vote1 = 0;
-
-    function photo1() {
-      vote1 += 1;
-      document.getElementById("vote1").innerHTML = vote1;
-    };
-  </script>
-  <script type="text/javascript">
-    var vote2 = 0;
-
-    function photo2() {
-      vote2 += 1;
-      document.getElementById("vote2").innerHTML = vote2;
-    };
-  </script>
-  <script type="text/javascript">
-    var vote3 = 0;
-
-    function photo3() {
-      vote3 += 1;
-      document.getElementById("vote3").innerHTML = vote3;
-    };
-  </script>
-  <script type="text/javascript">
-    var vote4 = 0;
-
-    function photo4() {
-      vote4 += 1;
-      document.getElementById("vote4").innerHTML = vote4;
-    };
-  </script>
-  <script type="text/javascript">
-    var vote5 = 0;
-
-    function photo5() {
-      vote5 += 1;
-      document.getElementById("vote5").innerHTML = vote5;
-    };
-  </script>
-  <script type="text/javascript">
-    var vote6 = 0;
-
-    function photo6() {
-      vote6 += 1;
-      document.getElementById("vote6").innerHTML = vote6;
-    };
-  </script>
-  <script type="text/javascript">
-    var vote7 = 0;
-
-    function photo7() {
-      vote7 += 1;
-      document.getElementById("vote7").innerHTML = vote7;
-    };
-  </script>
-  <script type="text/javascript">
-    var vote8 = 0;
-
-    function photo8() {
-      vote8 += 1;
-      document.getElementById("vote8").innerHTML = vote8;
-    };
-  </script>
-
-
-
-
-  <div class="container masonry">
-    <div class="item" onClick="<?php mysql_query("UPDATE votecounter SET 'Vote1' = 'Vote1'+1"); ?>">
-      <p>Amount of votes: <a id="vote1">0</a></p>
-      <img src="../Images/o_A8fBmg.jpeg">
-    </div>
-
-    <div class="item">
-      <p>Amount of votes: <a id="vote2">0</a></p>
-      <img src="../Images/o_A8fBmg.jpeg">
-    </div>
-
-    <div class="item">
-      <p>Amount of votes: <a id="vote3">0</a></p>
-      <img src="../Images/o_A8fBmg.jpeg">
-    </div>
-
-    <div class="item">
-      <p>Amount of votes: <a id="vote4">0</a></p>
-      <img src="../Images/o_A8fBmg.jpeg">
-    </div>
-
-    <div class="item">
-      <p>Amount of votes: <a id="vote5">0</a></p>
-      <img src="../Images/o_A8fBmg.jpeg">
-    </div>
-
-    <div class="item" onClick="photo6()">
-      <p>Amount of votes: <a id="vote6">0</a></p>
-      <img src="../Images/o_A8fBmg.jpeg">
-    </div>
-
-    <div class="item" onClick="photo7()">
-      <p>Amount of votes: <a id="vote7">0</a></p>
-      <img src="../Images/o_A8fBmg.jpeg">
-    </div>
-
-    <div class="item">
-      <p>Amount of votes: <a id="vote8">0</a></p>
-      <img src="../Images/o_A8fBmg.jpeg">
-    </div>
-
-  </div>
-  <br><br>
 
   <script>
     function getVote(int) {
@@ -274,34 +141,61 @@
       }
       xmlhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
-          document.getElementById("vote").innerHTML = this.responseText;
+          document.getElementById("votingpoll").innerHTML = this.responseText;
         }
       }
-      xmlhttp.open("GET", "VotingPoll.php?vote=" + int, true);
+      xmlhttp.open("GET", "VotingPoll.php?vote="+int,true);
       xmlhttp.send();
     }
   </script>
-  <div id="vote">
-    <h3>Do you like PHP and AJAX so far?</h3>
-    <form>
-      Photo 1
-      <input type="radio" name="vote" value="0" onclick="getVote(this.value)">
-      <br>Photo 2
-      <input type="radio" name="vote" value="1" onclick="getVote(this.value)">
-      <br>Photo 3
-      <input type="radio" name="vote" value="2" onclick="getVote(this.value)">
-      <br>Photo 4
-      <input type="radio" name="vote" value="3" onclick="getVote(this.value)">
-      <br>Photo 5
-      <input type="radio" name="vote" value="4" onclick="getVote(this.value)">
-      <br>Photo 6
-      <input type="radio" name="vote" value="5" onclick="getVote(this.value)">
-      <br>Photo 7
-      <input type="radio" name="vote" value="6" onclick="getVote(this.value)">
-      <br>Photo 8
-      <input type="radio" name="vote" value="7" onclick="getVote(this.value)">
-    </form>
+
+<form>
+  <div class="container masonry" id="votingpoll">
+    <div class="item">
+      <p><input type="radio" name="vote" value="0" onclick="getVote(this.value)"></p>
+      <img src="../Images/o_A8fBmg.jpeg">
+    </div>
+
+    <div class="item">
+      <p><input type="radio" name="vote" value="1" onclick="getVote(this.value)"></p>
+      <img src="../Images/o_A8fBmg.jpeg">
+    </div>
+
+    <div class="item">
+      <p><input type="radio" name="vote" value="2" onclick="getVote(this.value)"></p>
+      <img src="../Images/o_A8fBmg.jpeg">
+    </div>
+
+    <div class="item">
+      <p><input type="radio" name="vote" value="3" onclick="getVote(this.value)"></p>
+      <img src="../Images/o_A8fBmg.jpeg">
+    </div>
+
+    <div class="item">
+      <p><input type="radio" name="vote" value="4" onclick="getVote(this.value)"></p>
+      <img src="../Images/o_A8fBmg.jpeg">
+    </div>
+
+    <div class="item">
+      <p><input type="radio" name="vote" value="5" onclick="getVote(this.value)"></p>
+      <img src="../Images/o_A8fBmg.jpeg">
+    </div>
+
+    <div class="item">
+      <p><input type="radio" name="vote" value="6" onclick="getVote(this.value)"></p>
+      <img src="../Images/o_A8fBmg.jpeg">
+    </div>
+
+    <div class="item">
+      <p><input type="radio" name="vote" value="7" onclick="getVote(this.value)"></p>
+      <img src="../Images/o_A8fBmg.jpeg">
+    </div>
+
   </div>
+</form>
+  <br><br>
+  
+  
 
 
 
