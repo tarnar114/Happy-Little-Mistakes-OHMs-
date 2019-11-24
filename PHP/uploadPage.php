@@ -37,4 +37,3 @@ if (isset($_POST['submit'])) {
 
 
 
-<?php include_once '../HTML/foot.html'; ?>
