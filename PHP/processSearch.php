@@ -1,6 +1,6 @@
 <?php include '../HTML/nav.html'; ?>
 <?php
- 
+
 if (!empty($_GET)) {
 
     $servername = "localhost";
@@ -22,29 +22,47 @@ if (!empty($_GET)) {
     #endregionsearchQry
     // $sql = "SELECT * FROM users WHERE FirstName LIKE '%$searchFor%' OR LastName LIKE '%$searchFor%' OR Username LIKE '%$searchFor%' OR EmailAddress LIKE '%$searchFor%'";
     $sql = "SELECT * FROM users WHERE FirstName LIKE '%$searchFor%' OR LastName LIKE '%$searchFor%' OR Username LIKE '%$searchFor%' OR EmailAddress LIKE '%$searchFor%'";
-    $result = mysqli_query($connection,$sql);
+    $result = mysqli_query($connection, $sql);
 
     if (mysqli_num_rows($result) > 0) {
-       
-      while ($row = mysqli_fetch_assoc($result)) {
-          
+
+        while ($row = mysqli_fetch_assoc($result)) {
+
             $fname = $row['FirstName'];
             $lname = $row['LastName'];
+            $uname = $row['Username'];
+            $email = $row['EmailAddress'];
             $id = $row["Id"];
 
-            // $result = '<div>' . $fname . '  ' . $lname . '</div>';
-            echo "'<a>' Name: " . $row["FirstName"] . " Email: " . $row["EmailAddress"] . "<br>'</a>'";
 
-            echo'<li>';
-            echo '<a href="categories.php?category='.$row['Id'].'">';
-            echo $row['FirstName'];
-            echo'</a>';
+            // if ($row == $email) {
+                echo "'<h1> Name: " . $fname . " " . $lname . '<br>' . " Username: " . $uname . "<br>" . " Email: " . $email . "</h1>'";
+            // }
+            // else{
+                // if($row==$fname||$row==$lname||$row==$uname){
+                     echo '<h1 class=" w3-animate-opacity" >';
+            echo '<ul type="none" style="align-items: center">';
+            echo '<li>';
+            echo '<a href="categories.php?category=' . $id . '" style="border-radius: 0.5vw;background-color:#85a2df;">';
+            echo $email;
+            echo '</a>';
             echo '</li>';
+            echo '</ul>';
+            echo '</h1>';
+                // }
+               
+            // }
+            
+
+
+            // $result = '<div>' . $fname . '  ' . $lname . '</div>';
+
+
+
         }
-    }
-     else {
+    } else {
         // $result = "There was no search result";
-     echo "No search results";  
+        echo "No search results";
     }
     mysqli_close($connection);
     // $row=;
@@ -55,8 +73,8 @@ if (!empty($_GET)) {
 }
 
 
-    // print ("$result");
-    // $password=$_GET['password'];
+// print ("$result");
+// $password=$_GET['password'];
 
 
 // $searchFor='%' . $_GET['searchSubmit']. '%';

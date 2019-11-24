@@ -8,8 +8,8 @@
 
 <body >
 
-	<div class="container">
-		<div class="login-box">
+	<div class="container w3-animate-opacity">
+		<div class="login-box ">
 			<div class="login-left">
 				<h2> Login Here </h2><br>
 				<form action="processLogin.php" method="post">

@@ -32,7 +32,7 @@
 <!-- ======= >>>>>>> 3f010a13c91cd935fa69dec9c67e4afee892f68c -->
 
 <header class="sticky-top">
-    <div class="container">
+    <div class="container w3-animate-opacity">
 
         <nav class="navbar navbar-light">
 
@@ -49,7 +49,7 @@
             </a>
             <nav class="dropbtn">
                 <!-- <div class="dropdown"> -->
-                <div class="collapse w3-animate-left" id="navitems">
+                <div class="collapse" id="navitems">
                     <ul class="nav nav-pills">
 
                         <!-- Categories -->
@@ -115,13 +115,12 @@
 
         </nav>
         <div id="overlay" ondblclick="off()">
-            <!-- <h2 font-weight: bolder;">Double click To Exit</h2> -->
+
             <h2 class="container mb-4 alert alert-primary" role="alert" style="text-align: center;padding-top:5px;">
                 Double click to Exit!
             </h2>
             <form class="container py-4" action="../PHP/processSearch.php" method="GET" id="searchForm" onclick="on()">
                 <input type="search" name="searchSubmit" placeholder="Search">
-                <!-- value="<?php echo $_GET['searchSubmit'] ; ?>" -->
             </form>
 
         </div>
@@ -136,45 +135,6 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script>
-        //         $(document).ready(function(){
-
-        //         $(window).scroll(function(){
-        //             var scroll = $(window).scrollTop();
-        //             if (scroll>200){
-        //                 $(".navbar").css("background", "whitesmoke");
-        //             }
-
-        //             else{
-        //                 $(".navbar").css("background" , "transparent");
-        //             }
-        //         }
-        //   })
-        // })
-
-
-
-        // $(document).ready(function() {
-        //     $(window).scroll(function() {
-        //         var scroll = $(window).scrollTop();
-        //         if (scroll > 10) {
-        //             $(".navbar").css("background", "whitesmoke");
-        //         } else {
-        //             $(".navbar").css("background", "transparent");
-        //         }
-        //     })
-        // })
-
-
-
-
-        //     $('navbar').toggleClass('scrolled', $(this).scrollTop() > 200);
-        // }  
-        // $(window).scroll(function() {
-        //     $('.navbar').toggleClass('scrolled', $(this).scrollTop() > 200);
-        // })
-        // });
-    </script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
