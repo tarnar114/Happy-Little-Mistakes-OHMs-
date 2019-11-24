@@ -23,6 +23,11 @@ if (!empty($_POST)) {
   $result = mysqli_query($con, $sql);
 
   if (mysqli_num_rows($result) > 0) {
+    $activeChar='yes';
+    $active="UPDATE uploadtable SET active='yes'WHERE EmailAddress='" . $email . "' AND Password='" . $pass . "' LIMIT 1";
+    $signout="UPDATE uploadtable SET active='no'WHERE active='yes'";
+    $signOutQuery=$con->query($signout);
+    $insert=$con->query($active);
     while ($row = mysqli_fetch_assoc($result)) {
       echo "<h1>Welcome!</h1>" . $row["FirstName"] . "<br>" . $row["LastName"];
     }

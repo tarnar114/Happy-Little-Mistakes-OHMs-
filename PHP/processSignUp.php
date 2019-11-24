@@ -12,13 +12,13 @@ if (!empty($_POST)) {
   if (!$con) {
     die ("Connection failed: " . mysqli_connect_error());
   }
-
-  $sql = "INSERT INTO uploadtable (FirstName, LastName, Username, Password, EmailAddress) VALUES ('{$con->real_escape_string($_POST['fname'])}', '{$con->real_escape_string($_POST['lname'])}',
-    '{$con->real_escape_string($_POST['user'])}', '{$con->real_escape_string($_POST['email'])}', '{$con->real_escape_string($_POST['password'])}')";
-
+  $email=$_POST['email'];
+$activeString="no";
+  $sql = "INSERT INTO uploadtable (FirstName, LastName, Username, Password, EmailAddress,active) VALUES ('{$con->real_escape_string($_POST['fname'])}', '{$con->real_escape_string($_POST['lname'])}',
+    '{$con->real_escape_string($_POST['user'])}', '{$con->real_escape_string($_POST['password'])}', '{$con->real_escape_string($_POST['email'])}','{$con->real_escape_string($activeString)}')";
     $insert = $con->query($sql);
-
     if ($insert == TRUE) {
+      mkdir($email);
       echo "<h1>Welcome!</h1>";
       header('location:homePage.php');
     } else {
