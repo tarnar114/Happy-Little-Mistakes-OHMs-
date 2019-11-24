@@ -1,7 +1,8 @@
 
 <?php include '../HTML/nav.html'; ?>
 <?php
-
+// session_start();
+$idValue=$_SESSION['ID'];
 // if(!empty($_GET)){
 
 $servername = "localhost";
@@ -20,11 +21,10 @@ if (!$connection) {
 // $searchFor='%' . $_GET['searchSubmit']. '%';
 
 // WHERE username '".$username."'LIMIT 1";
-$sql = "SELECT * FROM users WHERE Id=['Id']";
+$sql = "SELECT * FROM users WHERE Id=$idValue";
 
 $result = mysqli_query($connection, $sql);
-?>
-<?php
+
 if (mysqli_num_rows($result) > 0) {
     while ($row = mysqli_fetch_assoc($result)) {
         $fname = $row['FirstName'];
