@@ -20,7 +20,6 @@ $activeString="no";
     if ($insert == TRUE) {
       mkdir($email);
       echo "<h1>Welcome!</h1>";
-      header('location:homePage.php');
     } else {
       die ("Error: {$con->erroron} : {$con->error}");
     }
