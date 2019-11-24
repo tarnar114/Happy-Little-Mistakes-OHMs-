@@ -24,8 +24,13 @@ if (!empty($_POST)) {
   $result = mysqli_query($con, $sql);
 
   if (mysqli_num_rows($result) > 0) {
+    $activeChar='yes';
+    $active="UPDATE uploadtable SET active='yes'WHERE EmailAddress='" . $email . "' AND Password='" . $pass . "' LIMIT 1";
+    $signout="UPDATE uploadtable SET active='no'WHERE active='yes'";
+    $signOutQuery=$con->query($signout);
+    $insert=$con->query($active);
     while ($row = mysqli_fetch_assoc($result)) {
-      
+
       $fname = $row['FirstName'];
       $lname = $row['LastName'];
       $uname = $row['Username'];
@@ -34,7 +39,7 @@ if (!empty($_POST)) {
       $ID = $row["Id"];
       echo "'<h1> Name: " . $fname . " " . $lname. "</h1>'";
     }
-    
+
   } else {
     echo "Incorrect login.";
   }
