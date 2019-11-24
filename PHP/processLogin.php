@@ -1,6 +1,8 @@
-<?php include '../HTML/nav.html'; ?>
-<?php
 
+<?php
+session_start();
+include("userProfile.php");
+include '../HTML/nav.html';
 if (!empty($_POST)) {
 
   $servername = "localhost";
@@ -11,7 +13,7 @@ if (!empty($_POST)) {
   $con = mysqli_connect($servername, $dbuser, $password, $dbname);
 
   if (!$con) {
-    die ("Connection failed: " . mysqli_connect_error());
+    die("Connection failed: " . mysqli_connect_error());
   }
 
   if (isset($_POST['email']) && isset($_POST['password'])) {
@@ -35,16 +37,16 @@ if (!empty($_POST)) {
       $lname = $row['LastName'];
       $uname = $row['Username'];
       $email = $row['EmailAddress'];
-      global $ID;
+      // global $ID;
       $ID = $row["Id"];
-      echo "'<h1> Name: " . $fname . " " . $lname. "</h1>'";
+      $idValue = $_SESSION[$ID];
+      $_SESSION['Id'] = $idValue;
+      echo "'<h1> Name: " . $fname . " " . $lname . "</h1>'";
     }
-
   } else {
     echo "Incorrect login.";
   }
 
   mysqli_close($con);
-
 }
 ?>
