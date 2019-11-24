@@ -47,15 +47,11 @@ fclose($finalize);
 ?>
 
 <body>
-<<<<<<< HEAD
-  <div class="container masonry">
-=======
 
     <style>
       
     </style>
   <div class="container">
->>>>>>> 5d48ef37777985ad22f35b23d0751f3aa5a64320
     <div class="item">
       <p>Votes: <?php echo(100*round($photo1/($photo1+$photo2+$photo3+$photo4+$photo5+$photo6+$photo7+$photo8),2)); ?>%</p>
       <img src="../Images/o_A8fBmg.jpeg">
