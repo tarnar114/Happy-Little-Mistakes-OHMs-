@@ -88,7 +88,7 @@ if (!empty($_GET)) {
             echo '<a href="landscape.php?category=' . $Id . '" style="border-radius: 0.5vw;background-color:#85a2df;">';
             echo '<a href="portrait.php?category=' . $Id . '" style="border-radius: 0.5vw;background-color:#85a2df;">';
             echo '<a href="recentlyuploaded.php?category=' . $Id . '" style="border-radius: 0.5vw;background-color:#85a2df;">';
-            echo '<a href="categories.php?category=' . $Id . '" style="border-radius: 0.5vw;background-color:#85a2df;">';
+            // echo '<a href="categories.php?category=' . $Id . '" style="border-radius: 0.5vw;background-color:#85a2df;">';
             echo $categories;
             echo '</a>';
             echo '</li>';
