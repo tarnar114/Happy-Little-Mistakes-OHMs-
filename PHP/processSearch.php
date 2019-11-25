@@ -57,7 +57,7 @@ if (!empty($_GET)) {
 
 
         }
-    } 
+    }
     // else {
 
     //     echo "No search results";
@@ -71,6 +71,11 @@ if (!empty($_GET)) {
 
 
             $categories = $row2['category'];
+            $homePage = $row2['Home Page'];
+            $interiorDesign = $row2['Interior Design'];
+            $landscape = $row2['Landscape'];
+            $portrait = $row2['Portrait'];
+            $recentlyUploaded = $row2['Recently Updated'];
 
 
             // if ($row == $email) {
@@ -81,26 +86,34 @@ if (!empty($_GET)) {
 
             $Id = $row2["Id"];
             echo '<h1 class=" w3-animate-opacity" >';
-            echo '<ul type="none" style="align-items: center">';
-            echo '<li>';
-            echo '<a href="homePage.php?category=' . $Id . '" style="border-radius: 0.5vw;background-color:#85a2df;">';
+            // echo '<ul type="none" style="align-items: center">';
+            // echo '<li>';
+            
+            echo '<a href="homePage.php?category=' . $Id . '" style="border-radius: 0.5vw;background-color:#85a2df;>';
+            echo $homePage;
+            echo '</a>';
             echo '<a href="interiordesign.php?category=' . $Id . '" style="border-radius: 0.5vw;background-color:#85a2df;">';
+            echo $interiorDesign;
+            echo '</a>';
             echo '<a href="landscape.php?category=' . $Id . '" style="border-radius: 0.5vw;background-color:#85a2df;">';
+            echo $landscape;
+            echo '</a>';
             echo '<a href="portrait.php?category=' . $Id . '" style="border-radius: 0.5vw;background-color:#85a2df;">';
+            echo $portrait;
+            echo '</a>';
             echo '<a href="recentlyuploaded.php?category=' . $Id . '" style="border-radius: 0.5vw;background-color:#85a2df;">';
-            // echo '<a href="categories.php?category=' . $Id . '" style="border-radius: 0.5vw;background-color:#85a2df;">';
+            echo $recentlyUploaded;
+            echo '</a>';
+            echo '<a href="categories.php?category=' . $Id . '" style="border-radius: 0.5vw;background-color:#85a2df;">';
+            // echo '</a>';
             echo $categories;
             echo '</a>';
-            echo '</li>';
-            echo '</ul>';
+            // echo '</li>';
+            // echo '</ul>';
             echo '</h1>';
         }
-    } 
-    if(mysqli_num_rows($result2) < 0) {
-
-        echo "No search results";
-    }
-    if(mysqli_num_rows($result) < 0) {
+    } else {
+        // (mysqli_num_rows($result2) < 0) {
 
         echo "No search results";
     }

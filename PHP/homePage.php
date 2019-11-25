@@ -82,8 +82,8 @@
    
 
     <!-- <form> -->
-      <div class="container">
-        <div class=" masonry w3-animate-opacity" id="votingpoll">
+      <div class="container masonry">
+        <div class="  w3-animate-opacity" id="votingpoll">
           <div class="item">
             <!-- <p> -->
             <img src="../Images/o_A8fBmg.jpeg">
