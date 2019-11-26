@@ -71,38 +71,33 @@ if (!empty($_GET)) {
 
 
             $categories = $row2['category'];
-            $homePage = $row2['Home Page'];
-            $interiorDesign = $row2['Interior Design'];
-            $landscape = $row2['Landscape'];
-            $portrait = $row2['Portrait'];
-            $recentlyUploaded = $row2['Recently Updated'];
+            // $homePage = $row2['Home Page'];
+            // $interiorDesign = $row2['Interior Design'];
+            // $landscape = $row2['Landscape'];
+            // $portrait = $row2['Portrait'];
+            // $recentlyUploaded = $row2['Recently Updated'];
 
 
-            // if ($row == $email) {
-            // echo "'<h1> Name: " . $fname . " " . $lname . '<br>' . " Username: " . $uname . "<br>" . " Email: " . $email . "</h1>'";
-            // }
-            // else{
-            // if($row==$fname||$row==$lname||$row==$uname){
-
+           
             $Id = $row2["Id"];
             echo '<h1 class=" w3-animate-opacity" >';
             // echo '<ul type="none" style="align-items: center">';
             // echo '<li>';
             
             echo '<a href="homePage.php?category=' . $Id . '" style="border-radius: 0.5vw;background-color:#85a2df;>';
-            echo $homePage;
+            // echo $homePage;
             echo '</a>';
             echo '<a href="interiordesign.php?category=' . $Id . '" style="border-radius: 0.5vw;background-color:#85a2df;">';
-            echo $interiorDesign;
+            // echo $interiorDesign;
             echo '</a>';
-            echo '<a href="landscape.php?category=' . $Id . '" style="border-radius: 0.5vw;background-color:#85a2df;">';
-            echo $landscape;
+            echo '<a href="landscape.php?Landscape=' . $Id . '" style="border-radius: 0.5vw;background-color:#85a2df;">';
+            // echo $landscape;
             echo '</a>';
             echo '<a href="portrait.php?category=' . $Id . '" style="border-radius: 0.5vw;background-color:#85a2df;">';
-            echo $portrait;
+            // echo $portrait;
             echo '</a>';
             echo '<a href="recentlyuploaded.php?category=' . $Id . '" style="border-radius: 0.5vw;background-color:#85a2df;">';
-            echo $recentlyUploaded;
+            // echo $recentlyUploaded;
             echo '</a>';
             echo '<a href="categories.php?category=' . $Id . '" style="border-radius: 0.5vw;background-color:#85a2df;">';
             // echo '</a>';
