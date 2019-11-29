@@ -8,69 +8,9 @@
   <legend>Category</legend>
   <input list="Category">
   <datalist id="Category">
-    <option value="Animals">
-    <option value="Architecture">
-    <option value="Background">
-    <option value="Beauty">
-    <option value="Business">
-    <option value="Children">
-    <option value="Communication">
-    <option value="Environment">
-    <option value="Family">
-    <option value="Food">
-    <option value="Health">
-    <option value="Holiday">
-    <option value="Home">
-    <option value="Horizor">
-    <option value="Icons">
-    <option value="Industry">
-    <option value="Internet">
+    <option value="Interiour Design">
     <option value="Landscape">
-    <option value="Love">
-    <option value="Music">
-    <option value="Nature">
-    <option value="Party">
-    <option value="People">
     <option value="Portrait">
-    <option value="Smile">
-    <option value="Sports">
-    <option value="Texture">
-    <option value="Transportation">
-    <option value="Travel">
-  </datalist>
-  <legend>Secondary Category</legend>
-  <input list="Secondary Category">
-  <datalist id="Secondary Category">
-    <option value="Animals">
-    <option value="Architecture">
-    <option value="Background">
-    <option value="Beauty">
-    <option value="Business">
-    <option value="Children">
-    <option value="Communication">
-    <option value="Environment">
-    <option value="Family">
-    <option value="Food">
-    <option value="Health">
-    <option value="Holiday">
-    <option value="Home">
-    <option value="Horizor">
-    <option value="Icons">
-    <option value="Industry">
-    <option value="Internet">
-    <option value="Landscape">
-    <option value="Love">
-    <option value="Music">
-    <option value="Nature">
-    <option value="Party">
-    <option value="People">
-    <option value="Portrait">
-    <option value="Smile">
-    <option value="Sports">
-    <option value="Texture">
-    <option value="Transportation">
-    <option value="Business">
-    <option value="Travel">
   </datalist>
   <br><br>
   <button type="submit" name="submit" id="submit">UPLOAD</button>
