@@ -47,8 +47,15 @@ if (!empty($_POST)) {
       echo " Name: " . $fname . " " . $lname . "";
       echo "<hr>";
       echo "</h1>'";
-      include ("../PHP/showImages.php");
+      // include("../PHP/showImages.php");
+      $images = glob("../PHP/'$email'*.*", GLOB_BRACE);
 
+      // foreach ($images as $image) {echo $images[0];
+          
+      // }
+      for($i=1;$i<=count($images);$i++){
+echo "<img src=' $images[$i]' style='width:100px;height:100px;'><br>";
+      }
 
     }
   } else {

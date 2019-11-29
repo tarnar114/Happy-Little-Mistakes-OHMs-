@@ -56,25 +56,41 @@ if (isset($_POST['submit'])) {
           echo "<div class='container' style='display:grid'> ";
           // echo ($fileDestination);
           // readfile($image)
-          $image = glob($fileDestination);
+          // $images = glob($fileDestination . "*.*");
+
+          // for ($i = 0; $i < count($images); $i++) {
+
+          //   $image = $images[$i];
+          //   echo '<img style="width: 200px; height:200px;"  src="' . $image . '" alt="Random image" />' . "<br /><br />";
+          // }
+
+
+          // foreach (glob("'../'$fileDestination{*.gif,*.jpg,*.png,*.jpeg}", GLOB_BRACE) as $image) {
+          //   // $image = ;
+          //   // file_get_contents($fileDestination);
+          //   
+          // }
+
+
+
           // echo $fileDestination;
           // echo $image[1];
           // $images=array();
           // $images[]=$image;
           // foreach($fileDestination as $image){
-          if (is_dir($fileDestination)) {
+          // if (is_dir($fileDestination)) {
 
 
 
 
 
-            $images = scandir($fileDestination);
-            for ($i = 0; $i <= count($images); $i++) {
-              if($images[$i] != '.' && $images!='..'){
-              echo '<img style="width: 200px; height:200px;"  src="' . $fileDestination . $images[$i] . '" alt="Random image" />' . "<br /><br />";
-              }
-            }
-          }
+          //   $images = scandir($fileDestination);
+          //   for ($i = 0; $i <= count($images); $i++) {
+          //     // if($images[$i] != '.' && $images!='..'){
+          //     echo '<img style="width: 200px; height:200px;"  src="' . $fileDestination . $images[$i] . '" alt="Random image" />' . "<br /><br />";
+          //     // }
+          //   }
+          // }
           // for ($i = 0; $i < count($fileD); $i++) {
           //   $image = $file[$i];
           //   echo basename($image) . "<br />"; // show only image name if you want to show full path then use this code // echo $image."<br />";
@@ -117,5 +133,10 @@ if (isset($_POST['submit'])) {
   } else {
     echo "<h1>Please Sign Up</h1>";
   }
+
+
+
+
+
 }
 ?>
