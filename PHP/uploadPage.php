@@ -36,7 +36,6 @@
     <option value="Sports">
     <option value="Texture">
     <option value="Transportation">
-    <option value="Business">
     <option value="Travel">
   </datalist>
   <legend>Secondary Category</legend>
