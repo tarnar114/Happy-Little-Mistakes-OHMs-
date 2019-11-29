@@ -3,7 +3,6 @@
 
 <?php
 $vote = $_REQUEST['vote'];
-
 $nameoffile = "voting.txt";
 $content = file($nameoffile);
 $array = explode("||", $content[0]);
