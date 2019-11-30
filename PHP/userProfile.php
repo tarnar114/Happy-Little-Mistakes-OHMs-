@@ -45,7 +45,6 @@ if (mysqli_num_rows($result) > 0) {
 
         echo "'<h1> Name: " . $fname . " " . $lname . '<br>' . " Username: " . $uname . "<br>" . " Email: " . $email . "</h1>";
         include "../PHP/showImages.php";
-        echo "images";
     }
 }
 
