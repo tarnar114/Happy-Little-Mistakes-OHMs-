@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php include '../HTML/nav.html'; ?>
+<?php include '../HTML/nav.php'; ?>
 
 <style>
   <?php include '../CSS/masonry.css'; ?>

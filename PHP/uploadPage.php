@@ -1,4 +1,4 @@
-<?php include_once '../HTML/nav.html'; ?>
+<?php include_once '../HTML/nav.php'; ?>
 <!-- <fieldset> -->
 <br>
 <form class="container w3-animate-opacity" action="uploadPage.php" method="post" enctype="multipart/form-data" id="inputForm">
@@ -8,70 +8,9 @@
   <legend>Category</legend>
   <input list="Category">
   <datalist id="Category">
-    <option value="Animals">
-    <option value="Architecture">
-    <option value="Background">
-    <option value="Beauty">
-    <option value="Business">
-    <option value="Children">
-    <option value="Communication">
-    <option value="Environment">
-    <option value="Family">
-    <option value="Food">
-    <option value="Health">
-    <option value="Holiday">
-    <option value="Home">
-    <option value="Horizor">
-    <option value="Icons">
-    <option value="Industry">
-    <option value="Internet">
+    <option value="Interiour Design">
     <option value="Landscape">
-    <option value="Love">
-    <option value="Music">
-    <option value="Nature">
-    <option value="Party">
-    <option value="People">
     <option value="Portrait">
-    <option value="Smile">
-    <option value="Sports">
-    <option value="Texture">
-    <option value="Transportation">
-    <option value="Business">
-    <option value="Travel">
-  </datalist>
-  <legend>Secondary Category</legend>
-  <input list="Secondary Category">
-  <datalist id="Secondary Category">
-    <option value="Animals">
-    <option value="Architecture">
-    <option value="Background">
-    <option value="Beauty">
-    <option value="Business">
-    <option value="Children">
-    <option value="Communication">
-    <option value="Environment">
-    <option value="Family">
-    <option value="Food">
-    <option value="Health">
-    <option value="Holiday">
-    <option value="Home">
-    <option value="Horizor">
-    <option value="Icons">
-    <option value="Industry">
-    <option value="Internet">
-    <option value="Landscape">
-    <option value="Love">
-    <option value="Music">
-    <option value="Nature">
-    <option value="Party">
-    <option value="People">
-    <option value="Portrait">
-    <option value="Smile">
-    <option value="Sports">
-    <option value="Texture">
-    <option value="Transportation">
-    <option value="Business">
-    <option value="Travel">
   </datalist>
   <br><br>
   <button type="submit" name="submit" id="submit">UPLOAD</button>
@@ -125,25 +64,41 @@ if (isset($_POST['submit'])) {
           echo "<div class='container' style='display:grid'> ";
           // echo ($fileDestination);
           // readfile($image)
-          $image = glob($fileDestination);
+          // $images = glob($fileDestination . "*.*");
+
+          // for ($i = 0; $i < count($images); $i++) {
+
+          //   $image = $images[$i];
+          //   echo '<img style="width: 200px; height:200px;"  src="' . $image . '" alt="Random image" />' . "<br /><br />";
+          // }
+
+
+          // foreach (glob("'../'$fileDestination{*.gif,*.jpg,*.png,*.jpeg}", GLOB_BRACE) as $image) {
+          //   // $image = ;
+          //   // file_get_contents($fileDestination);
+          //   
+          // }
+
+
+
           // echo $fileDestination;
           // echo $image[1];
           // $images=array();
           // $images[]=$image;
           // foreach($fileDestination as $image){
-          if (is_dir($fileDestination)) {
+          // if (is_dir($fileDestination)) {
 
 
 
 
 
-            $images = scandir($fileDestination);
-            for ($i = 0; $i <= count($images); $i++) {
-              if($images[$i] != '.' && $images!='..'){
-              echo '<img style="width: 200px; height:200px;"  src="' . $fileDestination . $images[$i] . '" alt="Random image" />' . "<br /><br />";
-              }
-            }
-          }
+          //   $images = scandir($fileDestination);
+          //   for ($i = 0; $i <= count($images); $i++) {
+          //     // if($images[$i] != '.' && $images!='..'){
+          //     echo '<img style="width: 200px; height:200px;"  src="' . $fileDestination . $images[$i] . '" alt="Random image" />' . "<br /><br />";
+          //     // }
+          //   }
+          // }
           // for ($i = 0; $i < count($fileD); $i++) {
           //   $image = $file[$i];
           //   echo basename($image) . "<br />"; // show only image name if you want to show full path then use this code // echo $image."<br />";
@@ -186,5 +141,10 @@ if (isset($_POST['submit'])) {
   } else {
     echo "<h1>Please Sign Up</h1>";
   }
+
+
+
+
+
 }
 ?>

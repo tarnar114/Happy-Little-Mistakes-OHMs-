@@ -2,7 +2,7 @@
 <?php
 // session_start();
 
-include '../HTML/nav.html';
+include '../HTML/nav.php';
 if (!empty($_POST)) {
 
   $servername = "localhost";
@@ -28,8 +28,6 @@ if (!empty($_POST)) {
   if (mysqli_num_rows($result) > 0) {
     $activeChar = 'yes';
     $active = "UPDATE uploadtable SET active='yes'WHERE EmailAddress='" . $email . "' AND Password='" . $pass . "' LIMIT 1";
-    $signout = "UPDATE uploadtable SET active='no'WHERE active='yes'";
-    $signOutQuery = $con->query($signout);
     $insert = $con->query($active);
     while ($row = mysqli_fetch_assoc($result)) {
 
@@ -47,9 +45,17 @@ if (!empty($_POST)) {
       echo " Name: " . $fname . " " . $lname . "";
       echo "<hr>";
       echo "</h1>'";
-      include ("../PHP/showImages.php");
+      // include("../PHP/showImages.php");
+//       $images = glob("../PHP/'$email'*.*", GLOB_BRACE);
+// // echo $images;
+//       // foreach ($images as $image) {echo $images[0];
 
+//       // }
 
+//       for ($i = 1; $i <= count($images); $i++) {
+//         echo $images;
+//         echo "<img src=' $images[$i]' style='width:100px;height:100px;'><br>";
+//       }
     }
   } else {
     echo "Incorrect login.";
