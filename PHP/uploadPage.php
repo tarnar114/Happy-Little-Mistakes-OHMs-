@@ -62,73 +62,7 @@ if (isset($_POST['submit'])) {
           // [, bool $use_include_path = FALSE [, resource $context ]] 
           // readfile($fileName, $fileDestination, $context)
           echo "<div class='container' style='display:grid'> ";
-          // echo ($fileDestination);
-          // readfile($image)
-          // $images = glob($fileDestination . "*.*");
-
-          // for ($i = 0; $i < count($images); $i++) {
-
-          //   $image = $images[$i];
-          //   echo '<img style="width: 200px; height:200px;"  src="' . $image . '" alt="Random image" />' . "<br /><br />";
-          // }
-
-
-          // foreach (glob("'../'$fileDestination{*.gif,*.jpg,*.png,*.jpeg}", GLOB_BRACE) as $image) {
-          //   // $image = ;
-          //   // file_get_contents($fileDestination);
-          //   
-          // }
-
-
-
-          // echo $fileDestination;
-          // echo $image[1];
-          // $images=array();
-          // $images[]=$image;
-          // foreach($fileDestination as $image){
-          // if (is_dir($fileDestination)) {
-
-
-
-
-
-          //   $images = scandir($fileDestination);
-          //   for ($i = 0; $i <= count($images); $i++) {
-          //     // if($images[$i] != '.' && $images!='..'){
-          //     echo '<img style="width: 200px; height:200px;"  src="' . $fileDestination . $images[$i] . '" alt="Random image" />' . "<br /><br />";
-          //     // }
-          //   }
-          // }
-          // for ($i = 0; $i < count($fileD); $i++) {
-          //   $image = $file[$i];
-          //   echo basename($image) . "<br />"; // show only image name if you want to show full path then use this code // echo $image."<br />";
-          //   // echo '<img src="' . $image . '" alt="Random image" />' . "<br /><br />";
-
-          // }
-
-
-          // $files = glob($fileDestination);
-          // for ($i = 0; $i < count($files); $i++) {
-          //   $image = $files[$i];
-          //   $supported_file = array(
-          //     'gif',
-          //     'jpg',
-          //     'jpeg',
-          //     'png'
-          //   );
-
-          //   while ($ext = strtolower(pathinfo($image, PATHINFO_EXTENSION))) {
-          //     if (in_array($ext, $supported_file)) {
-          //       echo basename($image) . "<br />"; // show only image name if you want to show full path then use this code // echo $image."<br />";
-          //       echo '<img style="width: 200px; height:200px;"  src="' . $image . '" alt="Random image" />' . "<br /><br />";
-          //     } else {
-          //       continue;
-          //     }
-          //   }
-
-
-          // echo "<img style='width: 200px; height:200px; ,'". ($images[0])."> " ;
-          // }
+          include "../PHP/showImages.php";
           echo "</div>";
         }
       } else {
