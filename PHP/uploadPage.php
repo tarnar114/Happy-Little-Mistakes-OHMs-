@@ -1,4 +1,4 @@
-<?php include_once '../HTML/nav.html'; ?>
+<?php include_once '../HTML/nav.php'; ?>
 <!-- <fieldset> -->
 <br>
 <form class="container w3-animate-opacity" action="uploadPage.php" method="post" enctype="multipart/form-data" id="inputForm">

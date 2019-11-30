@@ -1,3 +1,5 @@
+<DOCTYPE HTML>
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -82,11 +84,17 @@
 
                             </div>
                         </li>
-                        <!-- Sign Up/Login -->
                         <li class="nav-item active">
+                        <?php include_once '../PHP/CheckLogin.php'; ?>
+                        <span class="sr-only">(current)</span></a>
+                        </li>
+                        <!-- Sign Up/Login -->
+                        <!--<li class="nav-item active">
                             <a class="nav-link" href="../PHP/sign_up.php">SignUp
                                 <span class="sr-only">(current)</span></a>
-                        </li>
+                        </li> -->
+
+
 
 
                     </ul>
@@ -136,3 +144,4 @@
     <script src="../JavaScript/index.js">
     </script>
 </header>
+</html>

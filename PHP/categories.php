@@ -1,5 +1,5 @@
 
-<?php include_once '../HTML/nav.html'; ?>
+<?php include_once '../HTML/nav.php'; ?>
 <h1 class="w3-display-middle w3-animate-opacity">
     <ul type="none" style="align-items: center">
         <li><a href="homePage.php?category=<?php ['Id'] ?>">Home Page</a></li>

@@ -2,7 +2,7 @@
 <?php
 // session_start();
 
-include '../HTML/nav.html';
+include '../HTML/nav.php';
 if (!empty($_POST)) {
 
   $servername = "localhost";
@@ -28,8 +28,6 @@ if (!empty($_POST)) {
   if (mysqli_num_rows($result) > 0) {
     $activeChar = 'yes';
     $active = "UPDATE uploadtable SET active='yes'WHERE EmailAddress='" . $email . "' AND Password='" . $pass . "' LIMIT 1";
-    $signout = "UPDATE uploadtable SET active='no'WHERE active='yes'";
-    $signOutQuery = $con->query($signout);
     $insert = $con->query($active);
     while ($row = mysqli_fetch_assoc($result)) {
 

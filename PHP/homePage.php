@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<?php include_once '../HTML/nav.html'; ?>
+<?php include_once '../HTML/nav.php'; ?>
  <style>
     <?php include '../CSS/masonry.css'; ?>
   </style>
