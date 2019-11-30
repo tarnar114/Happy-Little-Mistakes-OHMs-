@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<?php include_once '../HTML/nav.html'; ?>
+<?php include_once '../HTML/nav.php'; ?>
  <style>
     <?php include '../CSS/masonry.css'; ?>
   </style>
@@ -26,7 +26,7 @@
           <h2 class="display-10 mb-0">"We don't make mistakes, just happy little accidents.”</h2>
           <footer class="blockquote-footer">Bob Ross</footer>
         </blockquote>
-        
+
         <hr class="my-4">
         <p class="text-right">"Talent is a pursued interest. Anything that you're willing to practice, you can do.”</p>
         <a class="btn btn-primary btn-xlg" href="#trending" role="button">Editors Choices</a>
@@ -37,12 +37,12 @@
   </div>
 
 
- 
-  
+
+
 
   <!-- <br><br><br> -->
 
- 
+
   <div style="height:50px"></div>
 
 
@@ -79,7 +79,7 @@
     <p ><button onclick="DescriptionAlert()" style="background-color:transparent; border-color:#85a2df; border-radius:2vw; ">Description</button></p>
     <br>
 
-   
+
 
     <!-- <form> -->
       <div class="container masonry">
@@ -89,63 +89,63 @@
             <img src="../Images/o_A8fBmg.jpeg">
               <input type="radio" name="vote" value="0" onclick="getVote(this.value)">
             <!-- </p> -->
-            
+
           </div>
 
           <div class="item">
             <!-- <p> -->
             <img src="../Images/o_A8fBmg.jpeg">   <input type="radio" name="vote" value="1" onclick="getVote(this.value)">
             <!-- </p> -->
-            
-           
+
+
           </div>
 
           <div class="item">
             <!-- <p> -->
             <img src="../Images/o_A8fBmg.jpeg">  <input type="radio" name="vote" value="2" onclick="getVote(this.value)">
             <!-- </p> -->
-            
+
           </div>
 
           <div class="item">
             <!-- <p> -->
            <img src="../Images/o_A8fBmg.jpeg">   <input type="radio" name="vote" value="3" onclick="getVote(this.value)">
             <!-- </p> -->
-            
+
           </div>
 
           <div class="item">
             <!-- <p> -->
            <img src="../Images/o_A8fBmg.jpeg">   <input type="radio" name="vote" value="4" onclick="getVote(this.value)">
             <!-- </p> -->
-            
+
           </div>
 
           <div class="item">
             <!-- <p> -->
             <img src="../Images/o_A8fBmg.jpeg">  <input type="radio" name="vote" value="5" onclick="getVote(this.value)">
             <!-- </p> -->
-            
+
           </div>
 
           <div class="item">
             <!-- <p> -->
             <img src="../Images/o_A8fBmg.jpeg">  <input type="radio" name="vote" value="6" onclick="getVote(this.value)">
             <!-- </p> -->
-            
+
           </div>
 
           <div class="item">
             <!-- <p> -->
           <img src="../Images/o_A8fBmg.jpeg">    <input type="radio" name="vote" value="7" onclick="getVote(this.value)">
             <!-- </p> -->
-            
+
           </div>
           <div class="item">
             <!-- <p> -->
           <img src="../Images/o_A8fBmg.jpeg">    <input type="radio" name="vote" value="8" onclick="getVote(this.value)">
             <!-- </p> -->
-            
+
           </div>
 
         </div>
@@ -153,7 +153,7 @@
     <!-- </form> -->
     <br><br>
   </div>
-  
+
  <script>
       function getVote(int) {
         if (window.XMLHttpRequest) {

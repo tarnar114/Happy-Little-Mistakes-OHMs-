@@ -1,21 +1,15 @@
 <?php
-function showImages()
-{
-    $servername = "localhost";
-    $dbuser = "root";
-    $password = "admin";
-    $dbname = "OHMs";
 
-    $con = mysqli_connect($servername, $dbuser, $password, $dbname);
-    if (!$con) {
-        die("Connection failed: " . mysqli_connect_error());
-    }
 
-    $sql = "SELECT * FROM uploadtable";
-    $result = mysqli_query($con, $sql);
-    while ($row = mysqli_fetch_assoc($result)) {
-        // echo $file;
-     }
-     mysqli_close($con);
+
+echo "<div class='container' style='display:grid'> ";
+$images = glob("$email/*.*");
+for ($i = 0; $i < count($images); $i++) {
+    $image = $images[$i];
+    // echo basename($image) . "<br />"; // show only image name if you want to show full path then use this code // echo $image."<br />";
+    echo "<img src=' $images[$i]' style='width:100px;height:100px;'><br>";
+
 }
+echo "</div>";
+
 ?>

@@ -1,6 +1,7 @@
-
-<?php
-include "../HTML/nav.html"; ?>
+<link href="https://fonts.googleapis.com/css?family=Lato:100|Pacifico|Permanent+Marker|Roboto:100,400|Satisfy|Shadows+Into+Light&display=swap&subset=latin-ext" rel="stylesheet">
+<style>
+  <?php include('../CSS/nav.css'); ?>
+</style>
 <?php
 // include "../HTML/nav.html";
 
@@ -23,7 +24,13 @@ if (!empty($_POST)) {
   $insert = $con->query($sql);
   if ($insert == TRUE) {
     mkdir($email);
-    echo "<h1 class='sign w3-display-middle w3-animate-opacity style='font-size:10vw' >Welcome!</h1>";
+    echo "<h1 class='sign w3-display-middle w3-animate-opacity'  style='font-size:8vw' >Welcome!";
+    
+    // echo "<button href='../PHP/homePage.php' style='background-color:transparent; border-color:#85a2df; border-radius:2vw; justify-content:center;'>Home Page</button>";
+    echo "<br><a class='' href='../PHP/homepage.php' role='button' style='font-size:50%;background-color:transparent; border-color:#85a2df; border-radius:2vw;'>OHM Page</a>";
+    
+    echo "</h1>";
+    
   } else {
     die("Error: {$con->erroron} : {$con->error}");
   }

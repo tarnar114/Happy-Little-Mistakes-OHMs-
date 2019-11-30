@@ -1,5 +1,6 @@
-<?php include_once '../HTML/nav.html'; ?>
+<?php include_once '../HTML/nav.php'; ?>
 <!-- <fieldset> -->
+<br>
 <form class="container w3-animate-opacity" action="uploadPage.php" method="post" enctype="multipart/form-data" id="inputForm">
   <legend>IMG File Upload</legend>
   <input type="file" name="file" id="fileselect">
@@ -42,6 +43,7 @@ if (isset($_POST['submit'])) {
   if (mysqli_num_rows($result)>0){
     if (in_array($fileActExt,$AllowedType)){
       if ($fileError===0){
+
         while ($row=mysqli_fetch_assoc($result)) {
           $fileNameNew = uniqid('', true) . "." . $fileActExt;
           $fileDestination = $row['EmailAddress'].'/'. $fileNameNew;

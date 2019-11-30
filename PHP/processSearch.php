@@ -1,4 +1,4 @@
-<?php include '../HTML/nav.html'; ?>
+<?php include '../HTML/nav.php'; ?>
 <?php
 
 if (!empty($_GET)) {
