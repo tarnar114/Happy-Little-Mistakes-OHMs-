@@ -4,18 +4,12 @@
 <form class="container w3-animate-opacity" action="uploadPage.php" method="post" enctype="multipart/form-data" id="inputForm">
   <legend>IMG File Upload</legend>
   <input type="file" name="file" id="fileselect">
-  <br><br>
-  <legend>Category</legend>
-  <!-- <input type="" name="" value=""> -->
-  <select  list="Category" style="border-color: #85a2df;">
-    <datalist id="Category">
-     <option>Categories</option>
-     <div class="dropdown-divider"></div>
-      <option value="Interior Design">Interior Design</option>
-
-      <option value="Landscape">Landscape</option>
-      <option value="Portrait">Portrait</option>
-    </datalist>
+  <br>
+  <br>
+  <select name="Categories" id="Categories">
+    <option value="Landscape">landscape</option>
+    <option value="Portrait">Portrait</option>
+    <option value="Interior">Interior Design</option>
   </select>
   <br>
   <br>
@@ -49,13 +43,14 @@ if (isset($_POST['submit'])) {
   if (mysqli_num_rows($result)>0){
     if (in_array($fileActExt,$AllowedType)){
       if ($fileError===0){
-
         while ($row=mysqli_fetch_assoc($result)) {
           $fileNameNew = uniqid('', true) . "." . $fileActExt;
           $fileDestination = $row['EmailAddress'].'/'. $fileNameNew;
           $CategoryDest=$Category.'/'.$fileNameNew;
+          $RecentDest="Recent/".$fileNameNew;
           move_uploaded_file($fileTempName, $fileDestination);
           copy($fileDestination,$CategoryDest);
+          copy($CategoryDest,$RecentDest);
           echo "<h1>file uploaded</h1>";
         }
       }
