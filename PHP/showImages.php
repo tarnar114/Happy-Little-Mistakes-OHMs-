@@ -15,15 +15,11 @@ $images = glob("$email/*.*");
 foreach ($images as $image) {
 
     ?>
-    <div class="container masonry">
-        <div class=" container w3-animate-opacity">
-            <!-- <div class="w3-animate-opacity" id="votingpoll"> -->
-            <div class="item">
-                <!-- <p> -->
-                <?php echo "<img src='$image'>"; ?>
 
-            </div>
-        </div>
-    </div>
-    </div>
+    <?php
+        echo "<div class='item'>";
+        echo "<img src='$image'>";
+        echo "</div>" ?>
+
+
 <?php } ?>

@@ -66,7 +66,7 @@ if (isset($_POST['submit'])) {
 
           // [, bool $use_include_path = FALSE [, resource $context ]] 
           // readfile($fileName, $fileDestination, $context)
-          echo "<div class='container' style='display:grid'> ";
+          echo "<div class='container masonry w3-animate-opacity'> ";
           include "../PHP/showImages.php";
           echo "</div>";
         }
