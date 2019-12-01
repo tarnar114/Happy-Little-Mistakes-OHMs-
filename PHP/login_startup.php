@@ -32,9 +32,9 @@
           <input type="password" name="password" placeholder="Password" class="form-control" required>
         </div>
         <br>
-        <div class="form-group">
+        <!-- <div class="form-group"> -->
           <small id="emailHelp" class="form-text text-muted">Don't have an account? Sign up <a href="../PHP/start_up.php"> <b style="color:#85a2df; font-size:large">here</b> </a></small>
-        </div>
+        <!-- </div> -->
         <br>
         <button type="submit" class="btn"> Login </button>
       </form>
