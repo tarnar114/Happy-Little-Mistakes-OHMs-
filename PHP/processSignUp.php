@@ -28,7 +28,7 @@ if (!empty($_POST)) {
 
     // echo "<button href='../PHP/homePage.php' style='background-color:transparent; border-color:#85a2df; border-radius:2vw; justify-content:center;'>Home Page</button>";
 
-    echo "<br><a class='' href='../PHP/homepage.php' role='button' style='font-size:50%;background-color:transparent; border-color:#85a2df; border-radius:2vw;'>OHM Page</a>";
+    echo "<br><a href='../PHP/homepage.php' role='button' style='font-size:50%;background-color:transparent; border-color:#85a2df; border-radius:2vw;'>OHM Page</a>";
 
     echo "</h1>";
 

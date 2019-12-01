@@ -6,12 +6,17 @@
   <input type="file" name="file" id="fileselect">
   <br><br>
   <legend>Category</legend>
-  <input list="Category">
-  <datalist id="Category">
-    <option value="Interiour Design">
-    <option value="Landscape">
-    <option value="Portrait">
-  </datalist>
+  <!-- <input type="" name="" value=""> -->
+  <select  list="Category" style="border-color: #85a2df;">
+    <!-- <datalist id="Category"> -->
+     <option>Categories</option>
+     <div class="dropdown-divider"></div>
+      <option value="Interiour Design">Interior Design</option>
+      
+      <option value="Landscape">Landscape</option>
+      <option value="Portrait">Portrait</option>
+    <!-- </datalist> -->
+  </select>
   <br><br>
   <button type="submit" name="submit" id="submit">UPLOAD</button>
 </form>
@@ -75,10 +80,5 @@ if (isset($_POST['submit'])) {
   } else {
     echo "<h1>Please Sign Up</h1>";
   }
-
-
-
-
-
 }
 ?>
