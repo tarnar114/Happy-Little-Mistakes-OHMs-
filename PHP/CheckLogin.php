@@ -10,10 +10,20 @@ if (!$con) {
 }
 $sql = "SELECT * FROM uploadtable WHERE active='yes'";
 ?>
-<?php $result = mysqli_query($con, $sql); 
-  if (mysqli_num_rows($result) > 0) { ?>
-    <a href="../PHP/userProfile.php">My Profile</a>
-    <a href="../PHP/logout.php">Logout</a>
+<?php $result = mysqli_query($con, $sql);
+if (mysqli_num_rows($result) > 0) { ?>
+  <li class="nav-item active">
+    <a class="nav-link" href="../PHP/userProfile.php">My Profile
+      <span class="sr-only">(current)</span></a>
+
+  </li>
+  <li class="nav-item active">
+    <a class="nav-link" href="../PHP/logout.php">Logout
+    <span class="sr-only">(current)</span></a>
+  </li>
 <?php } else { ?>
-    <a href="sign_up.php">Login/Register</a>
+  <li class="nav-item active">
+    <a class="nav-link" href="sign_up.php">Login/Register
+      <span class="sr-only">(current)</span></a>
+  </li>
 <?php } ?>

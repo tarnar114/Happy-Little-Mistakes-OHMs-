@@ -1,20 +1,23 @@
+<!-- Bootstrap -->
 <link href="https://fonts.googleapis.com/css?family=Lato:100|Pacifico|Permanent+Marker|Roboto:100,400|Satisfy|Shadows+Into+Light&display=swap&subset=latin-ext" rel="stylesheet">
+
 <style>
     <?php include("../CSS/masonry.css") ?>
 </style>
+<!-- W3 School CSS -->
+<!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
 <?php
 
 
 
-// echo "<div class='container' style='display:grid'> ";
+
 $images = glob("$email/*.*");
 foreach ($images as $image) {
-    // $image = $images[$i];
-    // echo basename($image) . "<br />"; // show only image name if you want to show full path then use this code // echo $image."<br />";
+    
     ?>
     <div class="container">
         <div class="masonry">
-            <div class="  w3-animate-opacity" id="votingpoll">
+            <div class="w3-animate-opacity" id="votingpoll">
                 <div class="item">
                     <!-- <p> -->
                     <?php echo "<img src='$image'>"; ?>

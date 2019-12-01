@@ -41,7 +41,8 @@ if (!empty($_GET)) {
 
 
             // if ($row == $email) {
-            echo "'<h1> Name: " . $fname . " " . $lname . '<br>' . " Username: " . $uname . "<br>" . " Email: " . $email . "</h1>'";
+            echo "<h1> Name: " . $fname . " " . $lname . '<br>' . " Username: " . $uname . "<br>" . " Email: " . $email . "</h1>'";
+            include "showImages.php";
             // // }
             // // else{
             //     // if($row==$fname||$row==$lname||$row==$uname){
@@ -65,7 +66,7 @@ if (!empty($_GET)) {
 
 
     // Search to display list of categories from categories.php
-    if (mysqli_num_rows($result2) > 0) {
+    else if (mysqli_num_rows($result2) > 0) {
 
         while ($row2 = mysqli_fetch_assoc($result2)) {
 
@@ -78,12 +79,12 @@ if (!empty($_GET)) {
             // $recentlyUploaded = $row2['Recently Updated'];
 
 
-           
+
             $Id = $row2["Id"];
             echo '<h1 class=" w3-animate-opacity" >';
             // echo '<ul type="none" style="align-items: center">';
             // echo '<li>';
-            
+
             echo '<a href="homePage.php?category=' . $Id . '" style="border-radius: 0.5vw;background-color:#85a2df;>';
             // echo $homePage;
             echo '</a>';
@@ -110,7 +111,7 @@ if (!empty($_GET)) {
     } else {
         // (mysqli_num_rows($result2) < 0) {
 
-        echo "No search results";
+        echo "<h1>No search results</h1>";
     }
     mysqli_close($connection);
 }
@@ -118,4 +119,3 @@ if (!empty($_GET)) {
 
 
 ?>
-<?php include_once '../HTML/foot.html'; ?>

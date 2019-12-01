@@ -1,50 +1,100 @@
 body {
-  background: #ecf0f1;
-  font-family: 'Permanent Marker', cursive;
+    background-image: linear-gradient( rgba(0, 0, 0, .5), rgba(0, 0, 0, .88)), url("../Images/bobross(real).png");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* justify-content: center;*/
+    /* align-content: center; */
+    /* filter: grayscale(20%); */
+    font-family: 'Permanent Marker', cursive;
 }
 
 h2 {
-  text-align: center;
-  text-transform: uppercase;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Permanent Marker', cursive;
 }
 
+
+/* width: 380px;
+box-sizing: border-box;
+padding: 5px;
+margin-bottom: 25px;
+background: rgba(0, 0, 0, 0.5);
+color: #fff;
+top: 50%;
+left: 50%;
+position: absolute;
+transform: translate(-50%, -50%);
+box-sizing: border-box; */
+
 .login-box {
-  width: 380px;
-  box-sizing: border-box;
-  padding: 5px;
-  margin-bottom: 25px;
-  background: rgba(0, 0, 0, 0.5);
-  color: #fff;
-  top: 50%;
-  left: 50%;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  box-sizing: border-box;
+    width: max-content;
+    /* max-width: max-content; */
+    /* box-sizing: border-box; */
+    padding: 2vw;
+    justify-content: center;
+    /* margin-bottom: 25px; */
+    /* background-color: whitesmoke; */
+    /* margin: 3vw; */
+    /* margin: auto; */
+    /* rgba(0, 0, 0, 0.5); */
+    /* color: #fff; */
+    /* align-content: center; */
+    /* top: 50%; */
+    /* left: 50%; */
+    /* position: absolute; */
+    /* transform: translate(-20%, -20%); */
+    border: 3vw;
+    /* justify-content: center; */
+    border-radius: 2vw;
+    /* display: flex; */
+    /* box-sizing: border-box; */
+}
+
+form {
+    justify-content: center;
+    margin: 4.8vw;
+    /* padding: 6vw; */
+    background-color: whitesmoke;
+    align-self: center;
+    /* padding: 2vw; */
+    /* width: 60%; */
+    /* position: relative; */
+    border-radius: 3vw;
+}
+
+.form-group {
+    font-family: 'Montserrat', sans-serif;
 }
 
 .form-control {
-  width: 95%;
-  box-sizing: border-box;
-  padding: 5px;
-  border: 2px solid #e9eaea;
-  color: #3e3e40;
-  font-size: 14px;
-  margin: 10px;
-  outline: none;
-  transition: all 0.5s ease;
-  border-radius: 2vw;
+    width: 95%;
+    /* box-sizing: border-box; */
+    padding: 2vw;
+    border: 1px solid;
+    color: #85a2df;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    /* margin: 10px; */
+    /* outline: none; */
+    transition: all 0.5s ease;
+    border-radius: 2vw;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .btn {
     width: 95%;
-    background-color: #34b3a0;
+    background-color: #85a2df;
     height: 60px;
     text-align: center;
-    line-height: 60px;
+    /* line-height: 60px; */
     text-transform: uppercase;
     color: #fff;
     font-weight: bold;
     letter-spacing: 1px;
     margin: 10px;
     cursor: pointer;
+    align-content: center;
 }

@@ -27,7 +27,7 @@
           <footer class="blockquote-footer">Bob Ross</footer>
         </blockquote>
 
-        <hr class="my-4">
+        <hr class=" ">
         <p class="text-right">"Talent is a pursued interest. Anything that you're willing to practice, you can do.”</p>
         <a class="btn btn-primary btn-xlg" href="#trending" role="button">Editors Choices</a>
       </div>
@@ -59,7 +59,7 @@
 
 
         <div class="col-md">
-          <hr class="my-4">
+          <hr class=" ">
         </div>
 
 
@@ -68,7 +68,7 @@
         </div>
 
         <div class="col-md">
-          <hr class="my-4">
+          <hr class=" ">
         </div>
 
       </div>
@@ -83,8 +83,8 @@
 
     <!-- <form> -->
       <div class="container masonry">
-        <div class="  w3-animate-opacity" id="votingpoll">
-          <div class="item">
+        <div class=" container w3-animate-opacity" id="votingpoll">
+          <div class="item  ">
             <!-- <p> -->
             <img src="../Images/o_A8fBmg.jpeg">
               <input type="radio" name="vote" value="0" onclick="getVote(this.value)">
@@ -92,7 +92,7 @@
 
           </div>
 
-          <div class="item">
+          <div class="item  ">
             <!-- <p> -->
             <img src="../Images/o_A8fBmg.jpeg">   <input type="radio" name="vote" value="1" onclick="getVote(this.value)">
             <!-- </p> -->
@@ -100,48 +100,48 @@
 
           </div>
 
-          <div class="item">
+          <div class="item  ">
             <!-- <p> -->
             <img src="../Images/o_A8fBmg.jpeg">  <input type="radio" name="vote" value="2" onclick="getVote(this.value)">
             <!-- </p> -->
 
           </div>
 
-          <div class="item">
+          <div class="item  ">
             <!-- <p> -->
            <img src="../Images/o_A8fBmg.jpeg">   <input type="radio" name="vote" value="3" onclick="getVote(this.value)">
             <!-- </p> -->
 
           </div>
 
-          <div class="item">
+          <div class="item  ">
             <!-- <p> -->
            <img src="../Images/o_A8fBmg.jpeg">   <input type="radio" name="vote" value="4" onclick="getVote(this.value)">
             <!-- </p> -->
 
           </div>
 
-          <div class="item">
+          <div class="item  ">
             <!-- <p> -->
             <img src="../Images/o_A8fBmg.jpeg">  <input type="radio" name="vote" value="5" onclick="getVote(this.value)">
             <!-- </p> -->
 
           </div>
 
-          <div class="item">
+          <div class="item  ">
             <!-- <p> -->
             <img src="../Images/o_A8fBmg.jpeg">  <input type="radio" name="vote" value="6" onclick="getVote(this.value)">
             <!-- </p> -->
 
           </div>
 
-          <div class="item">
+          <div class="item  ">
             <!-- <p> -->
           <img src="../Images/o_A8fBmg.jpeg">    <input type="radio" name="vote" value="7" onclick="getVote(this.value)">
             <!-- </p> -->
 
           </div>
-          <div class="item">
+          <div class="item  ">
             <!-- <p> -->
           <img src="../Images/o_A8fBmg.jpeg">    <input type="radio" name="vote" value="8" onclick="getVote(this.value)">
             <!-- </p> -->
