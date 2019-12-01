@@ -18,7 +18,7 @@ foreach ($images as $image) {
 
     <?php
         echo "<div class='item'>";
-        echo "<a href='$image'>";
+        echo "<a href='$image' data-lightbox='image' data-title='User Images' data-alt='userimage'> ";
         echo "<img src='$image'>";
         echo "</div>" ?>
 

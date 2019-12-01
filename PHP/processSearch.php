@@ -1,4 +1,8 @@
 <?php include '../HTML/nav.php'; ?>
+
+<style>
+    <?php include '../CSS/masonry.css'; ?>
+  </style>
 <?php
 
 if (!empty($_GET)) {
@@ -41,8 +45,12 @@ if (!empty($_GET)) {
 
 
             // if ($row == $email) {
-            echo "<h1> Name: " . $fname . " " . $lname . '<br>' . " Username: " . $uname . "<br>" . " Email: " . $email . "</h1>'";
+            echo "<h1> Name: " . $fname . ' ' . $lname . '<br>' . ' Username: ' . $uname . '<br>' . ' Email: ' . $email . "</h1>";
+           echo "<div class='container'>";
+            echo "<div class='container masonry w3-animate-opacity'">
             include "showImages.php";
+            echo "</div>";
+            echo "</div>";
             // // }
             // // else{
             //     // if($row==$fname||$row==$lname||$row==$uname){
@@ -117,5 +125,33 @@ if (!empty($_GET)) {
 }
 
 
+
+?>
+<?php
+
+function displayImages()
+{
+
+  ?>
+
+  <?php
+
+    $images = glob("Interior Design/*.*");
+    foreach ($images as $image) {
+      ?>
+
+
+    <?php
+        echo "<div class='item'>";
+        echo "<a href='$image'>";
+        echo "<img src='$image'>";
+        echo "</div>"
+        ?>
+
+
+
+  <?php } ?>
+<?php
+}
 
 ?>

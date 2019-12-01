@@ -28,15 +28,7 @@
 
   <div class="container masonry w3-animate-opacity">
 
-    <?php displayImages(); ?>
-  </div>
-
-
-</body>
-<?php include_once '../HTML/foot.html'; ?>
-
-</html>
-<?php
+    <?php displayImages(); ?><?php
 
 function displayImages()
 {
@@ -52,8 +44,9 @@ function displayImages()
 
     <?php
         echo "<div class='item'>";
-        echo "<a href='$image'>";
+        echo "<a href='$image' data-lightbox='landscape' data-title='Landscape' data-alt='landscape'> ";
         echo "<img src='$image'>";
+        echo "</a>";
         echo "</div>"
         ?>
 
@@ -64,3 +57,10 @@ function displayImages()
 }
 
 ?>
+  </div>
+
+
+</body>
+<?php include_once '../HTML/foot.html'; ?>
+
+</html>

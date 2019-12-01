@@ -18,7 +18,7 @@ h4 {
     /* -webkit-column-gap: 1em; */
     /* -moz-column-gap: 1em; */
     column-gap: 1em;
-    margin: 1.5em;
+    /* margin: 1.5em; */
     padding: 0;
     /* -moz-column-gap: 1.5em; */
     /* -webkit-column-gap: 1.5em; */
@@ -28,20 +28,35 @@ h4 {
 }
 
 .item {
-    display: inline-block;
+    display: inline-grid;
+    background: #fff;
+    /* padding: 1em; */
+    margin: 1.5em;
+    /* width: 100%; */
+    box-shadow: 2px 2px 4px 0 #ccc;
+}
+
+.itemHome {
+    display: inline-grid;
     background: #fff;
     padding: 1em;
-    margin: 0 0 1.5em;
-    width: 100%;
+    margin: 1.5em;
     box-shadow: 2px 2px 4px 0 #ccc;
 }
 
 
 /* Sets the size of max size of image */
 
-.item img {
+.item img,
+.itemHome img {
     max-width: 100%;
-    max-height: 100%;
+    /* transition: 0.5s; */
+}
+
+.item img:hover,
+.itemHome img:hover {
+    max-width: 105%;
+    transition: 0.5s;
 }
 
 

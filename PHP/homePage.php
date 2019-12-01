@@ -1,13 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
 
 <?php include_once '../HTML/nav.php'; ?>
- <style>
-    <?php include '../CSS/masonry.css'; ?>
-  </style>
+<style>
+  <?php include '../CSS/masonry.css'; ?>
+</style>
+
 <body>
 
-  <div class="container">
+  <!-- <div class="container">
     <div class="notice">
       <div class="alert alert-warning alert-dismissible fade show" role="alert">
         <strong>Want to interact with content and art work?</strong> Signup <a href="../PHP/sign_up.php">here</a> now!
@@ -16,7 +15,7 @@
         </button>
       </div>
     </div>
-  </div>
+  </div> -->
   <div class="container">
     <div class="jumbotron w3-animate-opacity">
       <div class="container share">
@@ -35,12 +34,6 @@
     </div>
 
   </div>
-
-
-
-
-
-  <!-- <br><br><br> -->
 
 
   <div style="height:50px"></div>
@@ -76,102 +69,103 @@
 
 
 
-    <p ><button onclick="DescriptionAlert()" style="background-color:transparent; border-color:#85a2df; border-radius:2vw; ">Description</button></p>
+    <p><button onclick="DescriptionAlert()" style="background-color:transparent; border-color:#85a2df; border-radius:2vw; ">Description</button></p>
     <br>
 
 
 
     <!-- <form> -->
-      <div class="container masonry">
-        <div class=" container w3-animate-opacity" id="votingpoll">
-          <div class="item">
-          <a href='$image'>
+    <div class="container masonry">
+      <div class="w3-animate-opacity" id="votingpoll">
+        <div class="itemHome">
+          <a href='../Images/o_A8fBmg.jpeg' data-lightbox="choice1">
             <img src="../Images/o_A8fBmg.jpeg">
-              <input type="radio" name="vote" value="0" onclick="getVote(this.value)">
+            <input type="radio" name="vote" value="0" onclick="getVote(this.value)">
             <!-- </p> -->
-
-          </div>
-
-          <div class="item  ">
-          <a href='$image'>
-            <img src="../Images/o_A8fBmg.jpeg">   <input type="radio" name="vote" value="1" onclick="getVote(this.value)">
-            <!-- </p> -->
-
-
-          </div>
-
-          <div class="item  ">
-          <a href='$image'>
-            <img src="../Images/o_A8fBmg.jpeg">  <input type="radio" name="vote" value="2" onclick="getVote(this.value)">
-            <!-- </p> -->
-
-          </div>
-
-          <div class="item  ">
-          <a href='$image'>
-           <img src="../Images/o_A8fBmg.jpeg">   <input type="radio" name="vote" value="3" onclick="getVote(this.value)">
-            <!-- </p> -->
-
-          </div>
-
-          <div class="item  ">
-          <a href='$image'>
-           <img src="../Images/o_A8fBmg.jpeg">   <input type="radio" name="vote" value="4" onclick="getVote(this.value)">
-            <!-- </p> -->
-
-          </div>
-
-          <div class="item  ">
-          <a href='$image'>
-            <a href='$image'>
-            <img src="../Images/o_A8fBmg.jpeg">  <input type="radio" name="vote" value="5" onclick="getVote(this.value)">
-            <!-- </p> -->
-
-          </div>
-
-          <div class="item  ">
-          <a href='$image'>
-            <img src="../Images/o_A8fBmg.jpeg">  <input type="radio" name="vote" value="6" onclick="getVote(this.value)">
-            <!-- </p> -->
-
-          </div>
-
-          <div class="item  ">
-          <a href='$image'>
-          <img src="../Images/o_A8fBmg.jpeg">    <input type="radio" name="vote" value="7" onclick="getVote(this.value)">
-            <!-- </p> -->
-
-          </div>
-          <div class="item  ">
-          <a href='$image'>
-          <img src="../Images/o_A8fBmg.jpeg">    <input type="radio" name="vote" value="8" onclick="getVote(this.value)">
-            <!-- </p> -->
-
-          </div>
+          </a>
 
         </div>
+
+        <div class="itemHome">
+          <a href='../Images/o_A8fBmg.jpeg' data-lightbox="choice1">
+            <img src="../Images/o_A8fBmg.jpeg"> <input type="radio" name="vote" value="1" onclick="getVote(this.value)">
+            <!-- </p> -->
+          </a>
+
+        </div>
+
+        <div class="itemHome">
+          <a href='../Images/o_A8fBmg.jpeg' data-lightbox="choice3">
+            <img src="../Images/o_A8fBmg.jpeg"> <input type="radio" name="vote" value="2" onclick="getVote(this.value)">
+            <!-- </p> -->
+          </a>
+        </div>
+
+        <div class="itemHome">
+          <a href='../Images/o_A8fBmg.jpeg' data-lightbox="choice4">
+            <img src="../Images/o_A8fBmg.jpeg"> <input type="radio" name="vote" value="3" onclick="getVote(this.value)">
+            <!-- </p> -->
+          </a>
+        </div>
+
+        <div class="itemHome">
+          <a href='../Images/o_A8fBmg.jpeg' data-lightbox="choice5">
+            <img src="../Images/o_A8fBmg.jpeg"> <input type="radio" name="vote" value="4" onclick="getVote(this.value)">
+            <!-- </p> -->
+          </a>
+        </div>
+
+        <div class="itemHome">
+
+          <a href='../Images/o_A8fBmg.jpeg' data-lightbox="choice6">
+            <img src="../Images/o_A8fBmg.jpeg"> <input type="radio" name="vote" value="5" onclick="getVote(this.value)">
+            <!-- </p> -->
+          </a>
+        </div>
+
+        <div class="itemHome">
+          <a href='../Images/o_A8fBmg.jpeg' data-lightbox="choice7">
+            <img src="../Images/o_A8fBmg.jpeg"> <input type="radio" name="vote" value="6" onclick="getVote(this.value)">
+            <!-- </p> -->
+          </a>
+        </div>
+
+        <div class="itemHome">
+          <a href='../Images/o_A8fBmg.jpeg' data-lightbox="choice8">
+            <img src="../Images/o_A8fBmg.jpeg"> <input type="radio" name="vote" value="7" onclick="getVote(this.value)">
+            <!-- </p> -->
+          </a>
+        </div>
+        <div class="itemHome">
+          <a href='../Images/o_A8fBmg.jpeg' data-lightbox="choice9">
+            <img src="../Images/o_A8fBmg.jpeg"> <input type="radio" name="vote" value="8" onclick="getVote(this.value)">
+            <!-- </p> -->
+          </a>
+        </div>
+
       </div>
+    </div>
     <!-- </form> -->
     <br><br>
   </div>
 
- <script>
-      function getVote(int) {
-        if (window.XMLHttpRequest) {
-          // code for IE7+, Firefox, Chrome, Opera, Safari
-          xmlhttp = new XMLHttpRequest();
-        } else { // code for IE6, IE5
-          xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
-        }
-        xmlhttp.onreadystatechange = function() {
-          if (this.readyState == 4 && this.status == 200) {
-            document.getElementById("votingpoll").innerHTML = this.responseText;
-          }
-        }
-        xmlhttp.open("GET", "VotingPoll.php?vote=" + int, true);
-        xmlhttp.send();
+  <script>
+    function getVote(int) {
+      if (window.XMLHttpRequest) {
+        // code for IE7+, Firefox, Chrome, Opera, Safari
+        xmlhttp = new XMLHttpRequest();
+      } else { // code for IE6, IE5
+        xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
       }
-    </script>
+      xmlhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          document.getElementById("votingpoll").innerHTML = this.responseText;
+        }
+      }
+      xmlhttp.open("GET", "VotingPoll.php?vote=" + int, true);
+      xmlhttp.send();
+    }
+  </script>
 </body>
 
 <?php include_once '../HTML/foot.html'; ?>

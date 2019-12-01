@@ -58,8 +58,9 @@ function displayImages()
 
     <?php
         echo "<div class='item'>";
-        echo "<a href='$image'>";
+        echo "<a href='$image' data-lightbox='interior' data-title='Interior Design' data-alt='interior design'>";
         echo "<img src='$image'>";
+        echo "</a>";
         echo "</div>"
         ?>
 

@@ -242,7 +242,7 @@ hr {
 /* Floating Buttons @ the bottom right of the screen*/
 
 
-/* For upload */
+/* For upload page */
 
 .uploadbtn {
     position: fixed;
@@ -251,8 +251,7 @@ hr {
     bottom: 20px;
     right: 20px;
     background-color: #85a2df;
-    color: #FFF;
-    border-radius: 30px;
+    /* border-radius: 30px; */
     text-align: center;
     box-shadow: 2px 2px 3px #999;
     align-content: center;
@@ -261,7 +260,7 @@ hr {
 }
 
 
-/* For Profiles */
+/* For Profile pages */
 
 .profilebtn {
     position: fixed;
@@ -270,8 +269,6 @@ hr {
     bottom: 100px;
     right: 20px;
     background-color: #85a2df;
-    color: #FFF;
-    border-radius: 30px;
     text-align: center;
     box-shadow: 2px 2px 3px #999;
     align-content: center;
@@ -279,10 +276,16 @@ hr {
     display: inline-grid;
 }
 
+
+/* Jumbotron color nad display style */
+
 .jumbotron {
     background-color: transparent;
     display: inline-flex;
 }
+
+
+/* Background color of the floating btn */
 
 .btn {
     background-color: #85a2df;
@@ -296,14 +299,3 @@ hr {
     align-content: center;
     justify-content: center;
 }
-
-
-/* .sign {
-    font-size: 5vw;
-    transition: width 2s;
-    transition: height 2s;
-}
-
-.sign:hover {
-    font-size: 10vw;
-} */
