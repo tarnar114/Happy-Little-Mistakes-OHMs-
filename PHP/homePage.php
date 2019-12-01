@@ -46,30 +46,36 @@
 
   </div>
 
-
+<!-- Heading for the editors choice section -->
 <h1>Editors Choices!</h1>
 
-
-<p ><button onclick="DescriptionAlert()" style="background-color:transparent; border-color:#85a2df; border-radius:2vw; ">Description</button></p>
+<!-- Creating a button below the Editor's Choice heading, called "Description". When clicked, it displays an alert, telling the user about our voting system -->
+<p>
+<button onclick="DescriptionAlert()" style="background-color:transparent; border-color:#85a2df; border-radius:2vw; ">Description</button>
+</p>
 <br>
 
 
 
-    <!-- <form> -->
+      <!-- Creating a class referred to as "container masonry". This will alow us to create containers to dislpay the images -->
       <div class="container masonry">
+        <!-- Creating a class container, with an animation and id known as votingpoll. Where the images and voting poll will take place-->
         <div class=" container w3-animate-opacity" id="votingpoll">
-          <div class="item">
-          <a href='$image'>
-            <img src="../Images/o_A8fBmg.jpeg">
-              <input type="radio" name="vote" value="0" onclick="getVote(this.value)">
-            <!-- </p> -->
-
+        <!-- Creating another class for the image, item -->
+        <div class="item">
+        <!-- Referring and searching for the images for the voting system -->
+        <a href='$image'>
+        <!-- Searching for the image selected by the editor -->
+        <img src="../Images/o_A8fBmg.jpeg">
+        <!-- Creating a type radio, referring to the name of vote. With the onclick of the function getVote(). This allows us to add a
+        radio button for the user to select the image they like the best, then displaying an updated vote total. -->
+        <input type="radio" name="vote" value="0" onclick="getVote(this.value)">
+          <!-- Ending the division for this specific image -->
           </div>
 
           <div class="item  ">
           <a href='$image'>
             <img src="../Images/o_A8fBmg.jpeg">   <input type="radio" name="vote" value="1" onclick="getVote(this.value)">
-            <!-- </p> -->
 
 
           </div>
@@ -77,21 +83,18 @@
           <div class="item  ">
           <a href='$image'>
             <img src="../Images/o_A8fBmg.jpeg">  <input type="radio" name="vote" value="2" onclick="getVote(this.value)">
-            <!-- </p> -->
 
           </div>
 
           <div class="item  ">
           <a href='$image'>
            <img src="../Images/o_A8fBmg.jpeg">   <input type="radio" name="vote" value="3" onclick="getVote(this.value)">
-            <!-- </p> -->
 
           </div>
 
           <div class="item  ">
           <a href='$image'>
            <img src="../Images/o_A8fBmg.jpeg">   <input type="radio" name="vote" value="4" onclick="getVote(this.value)">
-            <!-- </p> -->
 
           </div>
 
@@ -99,42 +102,47 @@
           <a href='$image'>
             <a href='$image'>
             <img src="../Images/o_A8fBmg.jpeg">  <input type="radio" name="vote" value="5" onclick="getVote(this.value)">
-            <!-- </p> -->
 
           </div>
 
           <div class="item  ">
           <a href='$image'>
             <img src="../Images/o_A8fBmg.jpeg">  <input type="radio" name="vote" value="6" onclick="getVote(this.value)">
-            <!-- </p> -->
 
           </div>
 
           <div class="item  ">
           <a href='$image'>
           <img src="../Images/o_A8fBmg.jpeg">    <input type="radio" name="vote" value="7" onclick="getVote(this.value)">
-            <!-- </p> -->
 
           </div>
           <div class="item  ">
           <a href='$image'>
           <img src="../Images/o_A8fBmg.jpeg">    <input type="radio" name="vote" value="8" onclick="getVote(this.value)">
-            <!-- </p> -->
+
+      <!-- Ending the divisions -->
 
           </div>
 
         </div>
+
       </div>
-    <!-- </form> -->
+    
+    <!-- Creating 2 breaks in the website, providing spacing to the bottom of the page -->
     <br><br>
+
   </div>
 
  <script>
+  //  Creating the function to calculate the amount of votes
       function getVote(int) {
         if (window.XMLHttpRequest) {
-          // code for IE7+, Firefox, Chrome, Opera, Safari
+          // For general browsers
           xmlhttp = new XMLHttpRequest();
-        } else { // code for IE6, IE5
+        } 
+        else 
+        { 
+          // code for Internet explorer
           xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
         }
         xmlhttp.onreadystatechange = function() {
@@ -142,12 +150,13 @@
             document.getElementById("votingpoll").innerHTML = this.responseText;
           }
         }
+        // Opening and sending the VotingPoll.php to revieve, add and store the vote amount
         xmlhttp.open("GET", "VotingPoll.php?vote=" + int, true);
         xmlhttp.send();
       }
     </script>
 </body>
-
+<!-- Including the footnote -->
 <?php include_once '../HTML/foot.html'; ?>
 
 </html>
