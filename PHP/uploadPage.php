@@ -4,12 +4,18 @@
 <form class="container w3-animate-opacity" action="uploadPage.php" method="post" enctype="multipart/form-data" id="inputForm">
   <legend>IMG File Upload</legend>
   <input type="file" name="file" id="fileselect">
-  <br>
-  <br>
-  <select name="Categories" id="Categories">
-    <option value="Landscape">landscape</option>
-    <option value="Portrait">portrait</option>
-    <option value="Interior">Interior</option>
+  <br><br>
+  <legend>Category</legend>
+  <!-- <input type="" name="" value=""> -->
+  <select  list="Category" style="border-color: #85a2df;">
+    <datalist id="Category">
+     <option>Categories</option>
+     <div class="dropdown-divider"></div>
+      <option value="Interior Design">Interior Design</option>
+
+      <option value="Landscape">Landscape</option>
+      <option value="Portrait">Portrait</option>
+    </datalist>
   </select>
   <br>
   <br>
