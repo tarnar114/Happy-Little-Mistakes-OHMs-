@@ -13,24 +13,14 @@
 
 $images = glob("$email/*.*");
 foreach ($images as $image) {
-    
+
     ?>
-    <div class="container">
-        <div class="masonry">
-            <div class="w3-animate-opacity" id="votingpoll">
-                <div class="item">
-                    <!-- <p> -->
-                    <?php echo "<img src='$image'>"; ?>
-                    <!-- <input type="radio" name="vote" value="0" onclick="getVote(this.value)"> -->
-                    <!-- </p> -->
 
-                </div>
+    <?php
+        echo "<div class='item'>";
+        echo "<a href='$image'>";
+        echo "<img src='$image'>";
+        echo "</div>" ?>
 
-            </div>
-        </div>
-    </div>
-    <!-- </form> -->
-    <!-- <br><br> -->
-    <!-- </div> -->
 
 <?php } ?>

@@ -28,14 +28,31 @@ if (!empty($_POST)) {
 
     // echo "<button href='../PHP/homePage.php' style='background-color:transparent; border-color:#85a2df; border-radius:2vw; justify-content:center;'>Home Page</button>";
 
-    echo "<br><a class='' href='../PHP/homepage.php' role='button' style='font-size:50%;background-color:transparent; border-color:#85a2df; border-radius:2vw;'>OHM Page</a>";
+    echo "<br><a href='../PHP/homepage.php' role='button' style='font-size:50%;background-color:transparent; border-color:#85a2df; border-radius:2vw;'>OHM Page</a>";
 
     echo "</h1>";
 
   } else {
     die("Error: {$con->erroron} : {$con->error}");
   }
+<<<<<<< HEAD
+  $email=$_POST['email'];
+$activeString="no";
+  $sql = "INSERT INTO uploadtable (FirstName, LastName, Username, Password, EmailAddress,active) VALUES ('{$con->real_escape_string($_POST['fname'])}', '{$con->real_escape_string($_POST['lname'])}',
+    '{$con->real_escape_string($_POST['user'])}', '{$con->real_escape_string($_POST['password'])}', '{$con->real_escape_string($_POST['email'])}','{$con->real_escape_string($activeString)}')";
+    $insert = $con->query($sql);
+    if ($insert == TRUE) {
+      mkdir($email);
+      echo "<h1>Welcome!</h1>";
+      header('location:homePage.php');
+    } else {
+      die ("Error: {$con->erroron} : {$con->error}");
+    }
+
+    $con->close();
+=======
 
   $con->close();
+>>>>>>> 95d5dd206b9ab5bf0424f09dc2cc312fdd907e2c
 }
 ?>

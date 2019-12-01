@@ -1,42 +1,56 @@
-<?php include_once '../HTML/nav.php'; ?>
+<?php include_once '../HTML/nav.php';?>
+<style>
+
+#inputForm{
+  /* justify-content: center; */
+  /* display: grid; */
+  align-self: center;
+  margin: auto;
+  /* left: 20px; */
+  top: 30px;
+  background-color: whitesmoke;
+  width: max-content;
+  padding: 5px;
+  border-radius: 5px;
+
+}
+
+</style>
 <!-- <fieldset> -->
-<br>
-<form class="container w3-animate-opacity" action="uploadPage.php" method="post" enctype="multipart/form-data" id="inputForm">
-  <legend>IMG File Upload</legend>
-  <input type="file" name="file" id="fileselect">
-  <br><br>
-  <legend>Category</legend>
-  <input list="Category">
-  <datalist id="Category">
-    <option value="Interiour Design">
-    <option value="Landscape">
-    <option value="Portrait">
-  </datalist>
-  <br><br>
+<!-- <br> -->
+
+
+<form class="my-5 w3-animate-zoom" action="uploadPage.php" method="post" enctype="multipart/form-data" id="inputForm" >
+
+  <h1><img src="https://icon.now.sh/cloud" alt="upload" style="align-content: center; height:80px; width:80px;"> <br> IMG File Upload</h1>
+ <!-- <div class="container" style="align-content:center; display:grid"> -->
+ <div class="py-4"> <input type="file" name="file" id="fileselect">
+  <br>
+  <br>
+  
+  <select name="Categories" id="Categories">
+    <option value="Landscape">Landscape</option>
+    <option value="Portrait">Portrait</option>
+    <option value="Interior">Interior Design</option>
+  </select>
+  <br>
+  <br>
   <button type="submit" name="submit" id="submit">UPLOAD</button>
+  <br></div>
+<!-- </div> -->
 </form>
+
 <!-- <br> -->
 <!-- </fieldset> -->
 <!-- </form> -->
 
 
 <?php
-
-// session_start();
-// $idValue=$_GET['Id'];
-// // if(!empty($_GET)){
-
 $servername = "localhost";
 $dbuser = "root";
 $password = "admin";
 $dbname = "OHMs";
 $con = mysqli_connect($servername, $dbuser, $password, $dbname);
-// Check connection
-if (!$con) {
-  die("Connection failed: " . mysqli_connect_error());
-}
-
-
 if (isset($_POST['submit'])) {
   $file = $_FILES['file'];
   $fileName = $_FILES['file']['name'];
@@ -44,6 +58,7 @@ if (isset($_POST['submit'])) {
   $fileSize = $_FILES['file']['size'];
   $fileError = $_FILES['file']['error'];
   $fileType = $_FILES['file']['type'];
+  $Category = $_POST['Categories'];
   $fileExt = explode('.', $fileName);
   $fileActExt = strtolower(end($fileExt));
   $AllowedType = array('jpg', 'jpeg', 'png');
@@ -55,15 +70,21 @@ if (isset($_POST['submit'])) {
         while ($row = mysqli_fetch_assoc($result)) {
           $fileNameNew = uniqid('', true) . "." . $fileActExt;
           $fileDestination = $row['EmailAddress'] . '/' . $fileNameNew;
+          $CategoryDest = $Category . '/' . $fileNameNew;
+          $RecentDest = "Recently Uploaded/" . $fileNameNew;
           move_uploaded_file($fileTempName, $fileDestination);
-          echo "<h1>file uploaded</h1>";
+          copy($fileDestination, $CategoryDest);
+          copy($CategoryDest, $RecentDest);
+          echo "<h1>file uploaded
+          <br><img src='https://icon.now.sh/done_all' alt='success' style='align-content: center; height:50px; width:50px;'>
+          </h1>";
           // $context=  get_resource_type($fileType);
 
           // [, bool $use_include_path = FALSE [, resource $context ]] 
           // readfile($fileName, $fileDestination, $context)
-          echo "<div class='container' style='display:grid'> ";
-          include "../PHP/showImages.php";
-          echo "</div>";
+          // echo "<div class='container masonry w3-animate-opacity'> ";
+          // include "../PHP/showImages.php";
+          // echo "</div>";
         }
       } else {
         echo "<h1>Error Occured with picture file</h1>";
@@ -71,14 +92,8 @@ if (isset($_POST['submit'])) {
     } else {
       echo "<h1>Please enter either a png, jpg, or jpeg</h1>";
     }
-    // echo $file;
   } else {
     echo "<h1>Please Sign Up</h1>";
   }
-
-
-
-
-
 }
 ?>

@@ -44,15 +44,13 @@ if (mysqli_num_rows($result) > 0) {
         // $id = $idValue;
 
         echo "'<h1> Name: " . $fname . " " . $lname . '<br>' . " Username: " . $uname . "<br>" . " Email: " . $email . "</h1>";
+        echo "<div class='container'>";
+        echo "<div class='container masonry w3-animate-opacity'>";
+        // 
         include "../PHP/showImages.php";
+        echo "</div>";
+        echo "</div>";
     }
 }
 
 mysqli_close($connection);
-// $statement= $pdo->prepare($sql);
-// $statement->bindValue(1,$searchFor);
-// $statement->execute();
-
-
-
-// }

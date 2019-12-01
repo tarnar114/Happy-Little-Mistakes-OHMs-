@@ -45,7 +45,11 @@ if (!empty($_POST)) {
       echo " Name: " . $fname . " " . $lname . "";
       echo "<hr>";
       echo "</h1>'";
-     include "../PHP/showImages.php";
+      echo "<div class='container'>";
+      echo "<div class='container masonry w3-animate-opacity'>";
+      include "../PHP/showImages.php";
+      echo "</div>";
+      echo "</div>";
     }
   } else {
     echo "Incorrect login.";
