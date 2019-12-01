@@ -1,7 +1,7 @@
 <?php include_once '../HTML/nav.php';?>
 <style>
 
-form{
+#inputForm{
   /* justify-content: center; */
   /* display: grid; */
   align-self: center;
