@@ -1,13 +1,13 @@
 <?php include_once '../HTML/nav.php'; ?>
 <!-- <fieldset> -->
 <br>
-<form class="container w3-animate-opacity" action="uploadPage.php" method="post" enctype="multipart/form-data" id="inputForm">
+<form class="container w3-animate-opacity" action="uploadPage.php" method="post" enctype="multipart/form-data" id="inputForm" style="align-content:center;">
   <legend>IMG File Upload</legend>
   <input type="file" name="file" id="fileselect">
   <br>
   <br>
   <select name="Categories" id="Categories">
-    <option value="Landscape">landscape</option>
+    <option value="Landscape">Landscape</option>
     <option value="Portrait">Portrait</option>
     <option value="Interior">Interior Design</option>
   </select>
@@ -47,21 +47,20 @@ if (isset($_POST['submit'])) {
           $fileNameNew = uniqid('', true) . "." . $fileActExt;
           $fileDestination = $row['EmailAddress'].'/'. $fileNameNew;
           $CategoryDest=$Category.'/'.$fileNameNew;
-          $RecentDest="Recent/".$fileNameNew;
+          $RecentDest="Recently Uploaded/".$fileNameNew;
           move_uploaded_file($fileTempName, $fileDestination);
           copy($fileDestination,$CategoryDest);
           copy($CategoryDest,$RecentDest);
-          echo "<h1>file uploaded</h1>";
-<<<<<<< HEAD
-          // $context=  get_resource_type($fileType);
+          echo "<h1>file uploaded
+          <br><img src='https://icon.now.sh/done_all' style='align-content: center; height:50px; width:50px;'>
+          </h1>";
+           // $context=  get_resource_type($fileType);
 
           // [, bool $use_include_path = FALSE [, resource $context ]] 
           // readfile($fileName, $fileDestination, $context)
-          echo "<div class='container masonry w3-animate-opacity'> ";
-          include "../PHP/showImages.php";
-          echo "</div>";
-=======
->>>>>>> 054565dcab3771a8eb39509a1c60962a07a87890
+          // echo "<div class='container masonry w3-animate-opacity'> ";
+          // include "../PHP/showImages.php";
+          // echo "</div>";
         }
       }
       else{

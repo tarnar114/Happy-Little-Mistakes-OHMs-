@@ -49,10 +49,4 @@ if (mysqli_num_rows($result) > 0) {
 }
 
 mysqli_close($connection);
-// $statement= $pdo->prepare($sql);
-// $statement->bindValue(1,$searchFor);
-// $statement->execute();
 
-
-
-// }
