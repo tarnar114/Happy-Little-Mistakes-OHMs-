@@ -1,11 +1,33 @@
-<?php include_once '../HTML/nav.php'; ?>
+<?php include_once '../HTML/nav.php';?>
+<style>
+
+form{
+  /* justify-content: center; */
+  /* display: grid; */
+  align-self: center;
+  margin: auto;
+  /* left: 20px; */
+  top: 30px;
+  background-color: whitesmoke;
+  width: max-content;
+  padding: 5px;
+  border-radius: 5px;
+
+}
+
+</style>
 <!-- <fieldset> -->
-<br>
-<form class="container w3-animate-opacity" action="uploadPage.php" method="post" enctype="multipart/form-data" id="inputForm" style="align-content:center;">
-  <legend>IMG File Upload</legend>
-  <input type="file" name="file" id="fileselect">
+<!-- <br> -->
+
+
+<form class="my-5 w3-animate-zoom" action="uploadPage.php" method="post" enctype="multipart/form-data" id="inputForm" >
+
+  <h1><img src="https://icon.now.sh/cloud" alt="upload" style="align-content: center; height:80px; width:80px;"> <br> IMG File Upload</h1>
+ <!-- <div class="container" style="align-content:center; display:grid"> -->
+ <div class="py-4"> <input type="file" name="file" id="fileselect">
   <br>
   <br>
+  
   <select name="Categories" id="Categories">
     <option value="Landscape">Landscape</option>
     <option value="Portrait">Portrait</option>
@@ -14,8 +36,10 @@
   <br>
   <br>
   <button type="submit" name="submit" id="submit">UPLOAD</button>
-  <br>
+  <br></div>
+<!-- </div> -->
 </form>
+
 <!-- <br> -->
 <!-- </fieldset> -->
 <!-- </form> -->
@@ -34,27 +58,27 @@ if (isset($_POST['submit'])) {
   $fileSize = $_FILES['file']['size'];
   $fileError = $_FILES['file']['error'];
   $fileType = $_FILES['file']['type'];
-  $Category=$_POST['Categories'];
+  $Category = $_POST['Categories'];
   $fileExt = explode('.', $fileName);
   $fileActExt = strtolower(end($fileExt));
   $AllowedType = array('jpg', 'jpeg', 'png');
-  $sql="SELECT * FROM uploadtable WHERE active='yes'";
-  $result=mysqli_query($con,$sql);
-  if (mysqli_num_rows($result)>0){
-    if (in_array($fileActExt,$AllowedType)){
-      if ($fileError===0){
-        while ($row=mysqli_fetch_assoc($result)) {
+  $sql = "SELECT * FROM uploadtable WHERE active='yes'";
+  $result = mysqli_query($con, $sql);
+  if (mysqli_num_rows($result) > 0) {
+    if (in_array($fileActExt, $AllowedType)) {
+      if ($fileError === 0) {
+        while ($row = mysqli_fetch_assoc($result)) {
           $fileNameNew = uniqid('', true) . "." . $fileActExt;
-          $fileDestination = $row['EmailAddress'].'/'. $fileNameNew;
-          $CategoryDest=$Category.'/'.$fileNameNew;
-          $RecentDest="Recently Uploaded/".$fileNameNew;
+          $fileDestination = $row['EmailAddress'] . '/' . $fileNameNew;
+          $CategoryDest = $Category . '/' . $fileNameNew;
+          $RecentDest = "Recently Uploaded/" . $fileNameNew;
           move_uploaded_file($fileTempName, $fileDestination);
-          copy($fileDestination,$CategoryDest);
-          copy($CategoryDest,$RecentDest);
+          copy($fileDestination, $CategoryDest);
+          copy($CategoryDest, $RecentDest);
           echo "<h1>file uploaded
-          <br><img src='https://icon.now.sh/done_all' style='align-content: center; height:50px; width:50px;'>
+          <br><img src='https://icon.now.sh/done_all' alt='success' style='align-content: center; height:50px; width:50px;'>
           </h1>";
-           // $context=  get_resource_type($fileType);
+          // $context=  get_resource_type($fileType);
 
           // [, bool $use_include_path = FALSE [, resource $context ]] 
           // readfile($fileName, $fileDestination, $context)
@@ -62,17 +86,14 @@ if (isset($_POST['submit'])) {
           // include "../PHP/showImages.php";
           // echo "</div>";
         }
-      }
-      else{
+      } else {
         echo "<h1>Error Occured with picture file</h1>";
       }
-    }
-    else {
+    } else {
       echo "<h1>Please enter either a png, jpg, or jpeg</h1>";
     }
+  } else {
+    echo "<h1>Please Sign Up</h1>";
   }
-else {
-  echo"<h1>Please Sign Up</h1>";
-}
 }
 ?>

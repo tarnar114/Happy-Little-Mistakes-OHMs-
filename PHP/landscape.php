@@ -52,7 +52,7 @@ function displayImages()
 
     <?php
         echo "<div class='item'>";
-
+        echo "<a href='$image'>";
         echo "<img src='$image'>";
         echo "</div>"
         ?>

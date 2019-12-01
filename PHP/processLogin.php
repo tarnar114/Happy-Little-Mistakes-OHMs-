@@ -26,17 +26,9 @@ if (!empty($_POST)) {
   $result = mysqli_query($con, $sql);
 
   if (mysqli_num_rows($result) > 0) {
-<<<<<<< HEAD
-    $activeChar='yes';
-    $active="UPDATE uploadtable SET active='yes'WHERE EmailAddress='" . $email . "' AND Password='" . $pass . "' LIMIT 1";
-    $signout="UPDATE uploadtable SET active='no'WHERE active='yes'";
-    $signOutQuery=$con->query($signout);
-    $insert=$con->query($active);
-=======
     $activeChar = 'yes';
     $active = "UPDATE uploadtable SET active='yes'WHERE EmailAddress='" . $email . "' AND Password='" . $pass . "' LIMIT 1";
     $insert = $con->query($active);
->>>>>>> 95d5dd206b9ab5bf0424f09dc2cc312fdd907e2c
     while ($row = mysqli_fetch_assoc($result)) {
 
       $fname = $row['FirstName'];
@@ -53,7 +45,11 @@ if (!empty($_POST)) {
       echo " Name: " . $fname . " " . $lname . "";
       echo "<hr>";
       echo "</h1>'";
-     include "../PHP/showImages.php";
+      echo "<div class='container'>";
+      echo "<div class='container masonry w3-animate-opacity'>";
+      include "../PHP/showImages.php";
+      echo "</div>";
+      echo "</div>";
     }
   } else {
     echo "Incorrect login.";

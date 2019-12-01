@@ -51,14 +51,14 @@ function displayImages()
 
   <?php
 
-    $images = glob("Interior Design/*.*");
+    $images = glob("Interior/*.*");
     foreach ($images as $image) {
       ?>
 
 
     <?php
         echo "<div class='item'>";
-
+        echo "<a href='$image'>";
         echo "<img src='$image'>";
         echo "</div>"
         ?>

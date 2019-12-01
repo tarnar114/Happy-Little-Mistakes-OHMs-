@@ -85,7 +85,7 @@
       <div class="container masonry">
         <div class=" container w3-animate-opacity" id="votingpoll">
           <div class="item">
-            <!-- <p> -->
+          <a href='$image'>
             <img src="../Images/o_A8fBmg.jpeg">
               <input type="radio" name="vote" value="0" onclick="getVote(this.value)">
             <!-- </p> -->
@@ -93,7 +93,7 @@
           </div>
 
           <div class="item  ">
-            <!-- <p> -->
+          <a href='$image'>
             <img src="../Images/o_A8fBmg.jpeg">   <input type="radio" name="vote" value="1" onclick="getVote(this.value)">
             <!-- </p> -->
 
@@ -101,48 +101,49 @@
           </div>
 
           <div class="item  ">
-            <!-- <p> -->
+          <a href='$image'>
             <img src="../Images/o_A8fBmg.jpeg">  <input type="radio" name="vote" value="2" onclick="getVote(this.value)">
             <!-- </p> -->
 
           </div>
 
           <div class="item  ">
-            <!-- <p> -->
+          <a href='$image'>
            <img src="../Images/o_A8fBmg.jpeg">   <input type="radio" name="vote" value="3" onclick="getVote(this.value)">
             <!-- </p> -->
 
           </div>
 
           <div class="item  ">
-            <!-- <p> -->
+          <a href='$image'>
            <img src="../Images/o_A8fBmg.jpeg">   <input type="radio" name="vote" value="4" onclick="getVote(this.value)">
             <!-- </p> -->
 
           </div>
 
           <div class="item  ">
-            <!-- <p> -->
+          <a href='$image'>
+            <a href='$image'>
             <img src="../Images/o_A8fBmg.jpeg">  <input type="radio" name="vote" value="5" onclick="getVote(this.value)">
             <!-- </p> -->
 
           </div>
 
           <div class="item  ">
-            <!-- <p> -->
+          <a href='$image'>
             <img src="../Images/o_A8fBmg.jpeg">  <input type="radio" name="vote" value="6" onclick="getVote(this.value)">
             <!-- </p> -->
 
           </div>
 
           <div class="item  ">
-            <!-- <p> -->
+          <a href='$image'>
           <img src="../Images/o_A8fBmg.jpeg">    <input type="radio" name="vote" value="7" onclick="getVote(this.value)">
             <!-- </p> -->
 
           </div>
           <div class="item  ">
-            <!-- <p> -->
+          <a href='$image'>
           <img src="../Images/o_A8fBmg.jpeg">    <input type="radio" name="vote" value="8" onclick="getVote(this.value)">
             <!-- </p> -->
 
