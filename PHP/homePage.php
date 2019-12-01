@@ -47,47 +47,11 @@
   </div>
 
 
+<h1>Editors Choices!</h1>
 
 
-
-  <!-- <br><br><br> -->
-
-
-  <div style="height:50px"></div>
-
-
-
-  <h1></h1>
-  <div style="height:50px"></div>
-
-
-
-  <div id="trending">
-    <div style="height:150px"></div>
-    <div class="container ">
-      <div class="row">
-
-
-        <div class="col-md">
-          <hr class=" ">
-        </div>
-
-
-        <div class="col-sm-3">
-          <h1>Editors Choices!</h1>
-        </div>
-
-        <div class="col-md">
-          <hr class=" ">
-        </div>
-
-      </div>
-    </div>
-
-
-
-    <p ><button onclick="DescriptionAlert()" style="background-color:transparent; border-color:#85a2df; border-radius:2vw; ">Description</button></p>
-    <br>
+<p ><button onclick="DescriptionAlert()" style="background-color:transparent; border-color:#85a2df; border-radius:2vw; ">Description</button></p>
+<br>
 
 
 
