@@ -53,17 +53,7 @@ if (!empty($_POST)) {
       echo " Name: " . $fname . " " . $lname . "";
       echo "<hr>";
       echo "</h1>'";
-      // include("../PHP/showImages.php");
-//       $images = glob("../PHP/'$email'*.*", GLOB_BRACE);
-// // echo $images;
-//       // foreach ($images as $image) {echo $images[0];
-
-//       // }
-
-//       for ($i = 1; $i <= count($images); $i++) {
-//         echo $images;
-//         echo "<img src=' $images[$i]' style='width:100px;height:100px;'><br>";
-//       }
+     include "../PHP/showImages.php";
     }
   } else {
     echo "Incorrect login.";

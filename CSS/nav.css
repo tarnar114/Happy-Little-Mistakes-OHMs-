@@ -153,13 +153,13 @@ input[type=search]:focus {
     }
     .nav {
         /* background-color: brown; */
-        margin-right: 0;
+        margin-right: 5px;
         position: absolute;
-        right: -30px;
+        right: -10px;
         top: 46px;
         /* text-align: right; */
         padding: 20px 0;
-        z-index: 5;
+        /* z-index: 5; */
         background: whitesmoke;
         border-radius: 2vw;
     }
