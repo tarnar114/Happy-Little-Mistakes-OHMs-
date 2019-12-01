@@ -1,10 +1,3 @@
-<!-- 
-    Objectives:
-               Create a homepage for the website. This page will include a navigation bar, allowing the user to direct the website at ease.
-               Create a voting poll, where the user can vote on their favorite image from a select amount of images.
-               Create a welcoming jumbotron for the website.
- -->
-
 <!DOCTYPE html>
 <html lang="en">
 
