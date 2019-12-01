@@ -84,7 +84,7 @@
     <!-- <form> -->
       <div class="container masonry">
         <div class=" container w3-animate-opacity" id="votingpoll">
-          <div class="item  ">
+          <div class="item">
             <!-- <p> -->
             <img src="../Images/o_A8fBmg.jpeg">
               <input type="radio" name="vote" value="0" onclick="getVote(this.value)">

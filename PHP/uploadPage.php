@@ -8,14 +8,14 @@
   <legend>Category</legend>
   <!-- <input type="" name="" value=""> -->
   <select  list="Category" style="border-color: #85a2df;">
-    <!-- <datalist id="Category"> -->
+    <datalist id="Category">
      <option>Categories</option>
      <div class="dropdown-divider"></div>
-      <option value="Interiour Design">Interior Design</option>
+      <option value="Interior Design">Interior Design</option>
       
       <option value="Landscape">Landscape</option>
       <option value="Portrait">Portrait</option>
-    <!-- </datalist> -->
+    </datalist>
   </select>
   <br><br>
   <button type="submit" name="submit" id="submit">UPLOAD</button>

@@ -26,97 +26,47 @@
         </div>
       </div>
     </div>
+
+
     <!-- <h1></h1> -->
 
     <div class="container masonry w3-animate-opacity">
-      <a href="../PHP/trending.php">
-        <div class="item">
-          <p>@Cameron</p>
-          <img src="../Images/o_A8fBmg.jpeg">
-        </div>
-      </a>
-
-      <a href="../PHP/trending.php">
-        <div class="item">
-          <p>@Cameron</p>
-          <img src="../Images/o_A8fBmg.jpeg">
-        </div>
-      </a>
-
-      <a href="../PHP/trending.php">
-        <div class="item">
-          <p>@Tiwa</p>
-          <img src="../Images/o_A8fBmg.jpeg">
-        </div>
-      </a>
-
-      <a href="../PHP/trending.php">
-        <div class="item">
-          <p>@Deepak</p>
-          <img src="../Images/o_A8fBmg.jpeg">
-        </div>
-      </a>
-
-      <a href="../PHP/trending.php">
-        <div class="item">
-          <p>@Tiwa</p>
-          <img src="../Images/o_A8fBmg.jpeg">
-        </div>
-      </a>
-
-      <a href="../PHP/trending.php">
-        <div class="item">
-          <p>@John</p>
-          <img src="../Images/o_A8fBmg.jpeg">
-        </div>
-      </a>
-
-      <a href="../PHP/trending.php">
-        <div class="item">
-          <p>@Tanzir</p>
-          <img src="../Images/o_A8fBmg.jpeg">
-        </div>
-      </a>
-
-      <a href="../PHP/trending.php">
-        <div class="item">
-          <p>@Tiwa</p>
-          <img src="../Images/o_A8fBmg.jpeg">
-        </div>
-      </a>
-
-      <a href="../PHP/trending.php">
-        <div class="item">
-          <p>@Tanzir</p>
-          <img src="../Images/o_A8fBmg.jpeg">
-        </div>
-      </a>
-
-      <a href="../PHP/trending.php">
-        <div class="item">
-          <p>@Chris</p>
-          <img src="../Images/o_A8fBmg.jpeg">
-        </div>
-      </a>
-
-      <a href="../PHP/trending.php">
-        <div class="item">
-          <p>@Cameron</p>
-          <img src="../Images/o_A8fBmg.jpeg">
-        </div>
-      </a>
-
-      <a href="../PHP/trending.php">
-        <div class="item">
-          <p>@Deepak</p>
-          <img src="../Images/o_A8fBmg.jpeg">
-        </div>
-      </a>
-
+    
+        <?php displayImages(); ?>
+     
     </div>
+  </div>
 
 
 </body>
 <?php include_once '../HTML/foot.html'; ?>
 
 </html>
+<?php
+
+function displayImages()
+{
+
+  ?>
+
+  <?php
+
+    $images = glob("Interior Design/*.*");
+    foreach ($images as $image) {
+      ?>
+
+
+    <?php
+        echo "<div class='item'>";
+
+        echo "<img src='$image'>";
+        echo "</div>"
+        ?>
+
+
+
+  <?php } ?>
+<?php
+}
+
+?>
