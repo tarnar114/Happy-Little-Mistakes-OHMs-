@@ -4,21 +4,17 @@
 <form class="container w3-animate-opacity" action="uploadPage.php" method="post" enctype="multipart/form-data" id="inputForm">
   <legend>IMG File Upload</legend>
   <input type="file" name="file" id="fileselect">
-  <br><br>
-  <legend>Category</legend>
-  <!-- <input type="" name="" value=""> -->
-  <select  list="Category" style="border-color: #85a2df;">
-    <datalist id="Category">
-     <option>Categories</option>
-     <div class="dropdown-divider"></div>
-      <option value="Interior Design">Interior Design</option>
-      
-      <option value="Landscape">Landscape</option>
-      <option value="Portrait">Portrait</option>
-    </datalist>
+  <br>
+  <br>
+  <select name="Categories" id="Categories">
+    <option value="Landscape">landscape</option>
+    <option value="Portrait">Portrait</option>
+    <option value="Interior">Interior Design</option>
   </select>
-  <br><br>
+  <br>
+  <br>
   <button type="submit" name="submit" id="submit">UPLOAD</button>
+  <br>
 </form>
 <!-- <br> -->
 <!-- </fieldset> -->
@@ -26,22 +22,11 @@
 
 
 <?php
-
-// session_start();
-// $idValue=$_GET['Id'];
-// // if(!empty($_GET)){
-
 $servername = "localhost";
 $dbuser = "root";
 $password = "admin";
 $dbname = "OHMs";
 $con = mysqli_connect($servername, $dbuser, $password, $dbname);
-// Check connection
-if (!$con) {
-  die("Connection failed: " . mysqli_connect_error());
-}
-
-
 if (isset($_POST['submit'])) {
   $file = $_FILES['file'];
   $fileName = $_FILES['file']['name'];
@@ -49,19 +34,25 @@ if (isset($_POST['submit'])) {
   $fileSize = $_FILES['file']['size'];
   $fileError = $_FILES['file']['error'];
   $fileType = $_FILES['file']['type'];
+  $Category=$_POST['Categories'];
   $fileExt = explode('.', $fileName);
   $fileActExt = strtolower(end($fileExt));
   $AllowedType = array('jpg', 'jpeg', 'png');
-  $sql = "SELECT * FROM uploadtable WHERE active='yes'";
-  $result = mysqli_query($con, $sql);
-  if (mysqli_num_rows($result) > 0) {
-    if (in_array($fileActExt, $AllowedType)) {
-      if ($fileError === 0) {
-        while ($row = mysqli_fetch_assoc($result)) {
+  $sql="SELECT * FROM uploadtable WHERE active='yes'";
+  $result=mysqli_query($con,$sql);
+  if (mysqli_num_rows($result)>0){
+    if (in_array($fileActExt,$AllowedType)){
+      if ($fileError===0){
+        while ($row=mysqli_fetch_assoc($result)) {
           $fileNameNew = uniqid('', true) . "." . $fileActExt;
-          $fileDestination = $row['EmailAddress'] . '/' . $fileNameNew;
+          $fileDestination = $row['EmailAddress'].'/'. $fileNameNew;
+          $CategoryDest=$Category.'/'.$fileNameNew;
+          $RecentDest="Recent/".$fileNameNew;
           move_uploaded_file($fileTempName, $fileDestination);
+          copy($fileDestination,$CategoryDest);
+          copy($CategoryDest,$RecentDest);
           echo "<h1>file uploaded</h1>";
+<<<<<<< HEAD
           // $context=  get_resource_type($fileType);
 
           // [, bool $use_include_path = FALSE [, resource $context ]] 
@@ -69,16 +60,20 @@ if (isset($_POST['submit'])) {
           echo "<div class='container masonry w3-animate-opacity'> ";
           include "../PHP/showImages.php";
           echo "</div>";
+=======
+>>>>>>> 054565dcab3771a8eb39509a1c60962a07a87890
         }
-      } else {
+      }
+      else{
         echo "<h1>Error Occured with picture file</h1>";
       }
-    } else {
+    }
+    else {
       echo "<h1>Please enter either a png, jpg, or jpeg</h1>";
     }
-    // echo $file;
-  } else {
-    echo "<h1>Please Sign Up</h1>";
   }
+else {
+  echo"<h1>Please Sign Up</h1>";
+}
 }
 ?>

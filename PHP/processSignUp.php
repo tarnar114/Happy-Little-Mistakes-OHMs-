@@ -35,7 +35,24 @@ if (!empty($_POST)) {
   } else {
     die("Error: {$con->erroron} : {$con->error}");
   }
+<<<<<<< HEAD
+  $email=$_POST['email'];
+$activeString="no";
+  $sql = "INSERT INTO uploadtable (FirstName, LastName, Username, Password, EmailAddress,active) VALUES ('{$con->real_escape_string($_POST['fname'])}', '{$con->real_escape_string($_POST['lname'])}',
+    '{$con->real_escape_string($_POST['user'])}', '{$con->real_escape_string($_POST['password'])}', '{$con->real_escape_string($_POST['email'])}','{$con->real_escape_string($activeString)}')";
+    $insert = $con->query($sql);
+    if ($insert == TRUE) {
+      mkdir($email);
+      echo "<h1>Welcome!</h1>";
+      header('location:homePage.php');
+    } else {
+      die ("Error: {$con->erroron} : {$con->error}");
+    }
+
+    $con->close();
+=======
 
   $con->close();
+>>>>>>> 95d5dd206b9ab5bf0424f09dc2cc312fdd907e2c
 }
 ?>
