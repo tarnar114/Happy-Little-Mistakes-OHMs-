@@ -32,7 +32,6 @@ h4 {
     background: #fff;
     /* padding: 1em; */
     margin: 1.5em;
-    /* width: 100%; */
     box-shadow: 2px 2px 4px 0 #ccc;
 }
 
@@ -41,6 +40,7 @@ h4 {
     background: #fff;
     padding: 1em;
     margin: 1.5em;
+    /* width: 100%; */
     box-shadow: 2px 2px 4px 0 #ccc;
 }
 
