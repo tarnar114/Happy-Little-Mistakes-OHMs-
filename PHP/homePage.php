@@ -102,55 +102,55 @@
         <div class="itemHome">
           <a href='../Images/o_A8fBmg.jpeg' data-lightbox="choice1" data-alt="editorschoice1">
             <img src="../Images/o_A8fBmg.jpeg">
-            </a><input type="radio" name="vote" value="0" onclick="getVote(this.value)"> 
+          </a><input type="radio" name="vote" value="0" onclick="getVote(this.value)">
         </div>
 
         <div class="itemHome">
-       <input type="radio" name="vote" value="1" onclick="getVote(this.value)">   <a href='../Images/o_A8fBmg.jpeg' data-lightbox="choice2" data-alt="editorschoice2">
+          <a href='../Images/o_A8fBmg.jpeg' data-lightbox="choice2" data-alt="editorschoice2">
             <img src="../Images/o_A8fBmg.jpeg">
-          </a>
+          </a><input type="radio" name="vote" value="1" onclick="getVote(this.value)">
         </div>
 
         <div class="itemHome">
-        <input type="radio" name="vote" value="2" onclick="getVote(this.value)">  <a href='../Images/o_A8fBmg.jpeg' data-lightbox="choice3" data-alt="editorschoice3">
+          <a href='../Images/o_A8fBmg.jpeg' data-lightbox="choice3" data-alt="editorschoice3">
             <img src="../Images/o_A8fBmg.jpeg">
-          </a>
+          </a><input type="radio" name="vote" value="2" onclick="getVote(this.value)">
         </div>
 
         <div class="itemHome">
-         <input type="radio" name="vote" value="3" onclick="getVote(this.value)"> <a href='../Images/o_A8fBmg.jpeg' data-lightbox="choice4" data-alt="editorschoice4">
+          <a href='../Images/o_A8fBmg.jpeg' data-lightbox="choice4" data-alt="editorschoice4">
             <img src="../Images/o_A8fBmg.jpeg">
-          </a>
+          </a> <input type="radio" name="vote" value="3" onclick="getVote(this.value)">
         </div>
 
         <div class="itemHome">
-         <input type="radio" name="vote" value="4" onclick="getVote(this.value)">  <a href='../Images/o_A8fBmg.jpeg' data-lightbox="choice5" data-alt="editorschoice5">
+          <a href='../Images/o_A8fBmg.jpeg' data-lightbox="choice5" data-alt="editorschoice5">
             <img src="../Images/o_A8fBmg.jpeg">
-          </a>
+          </a><input type="radio" name="vote" value="4" onclick="getVote(this.value)">
         </div>
 
         <div class="itemHome">
-        <input type="radio" name="vote" value="5" onclick="getVote(this.value)">  <a href='../Images/o_A8fBmg.jpeg' data-lightbox="choice6" data-alt="editorschoice6">
+          <a href='../Images/o_A8fBmg.jpeg' data-lightbox="choice6" data-alt="editorschoice6">
             <img src="../Images/o_A8fBmg.jpeg">
-          </a>
+          </a> <input type="radio" name="vote" value="5" onclick="getVote(this.value)">
         </div>
 
         <div class="itemHome">
-        <input type="radio" name="vote" value="6" onclick="getVote(this.value)">  <a href='../Images/o_A8fBmg.jpeg' data-lightbox="choice7" data-alt="editorschoice7">
+          <a href='../Images/o_A8fBmg.jpeg' data-lightbox="choice7" data-alt="editorschoice7">
             <img src="../Images/o_A8fBmg.jpeg">
-          </a>
+          </a><input type="radio" name="vote" value="6" onclick="getVote(this.value)">
         </div>
 
         <div class="itemHome">
-        <input type="radio" name="vote" value="7" onclick="getVote(this.value)"><a href='../Images/o_A8fBmg.jpeg' data-lightbox="choice8" data-alt="editorschoice8">
+          <a href='../Images/o_A8fBmg.jpeg' data-lightbox="choice8" data-alt="editorschoice8">
             <img src="../Images/o_A8fBmg.jpeg">
-          </a>
+          </a> <input type="radio" name="vote" value="7" onclick="getVote(this.value)">
         </div>
 
         <div class="itemHome">
-          <input type="radio" name="vote" value="8" onclick="getVote(this.value)"><a href='../Images/o_A8fBmg.jpeg' data-lightbox="choice9" data-alt="editorschoice9">
+          <a href='../Images/o_A8fBmg.jpeg' data-lightbox="choice9" data-alt="editorschoice9">
             <img src="../Images/o_A8fBmg.jpeg">
-          </a>
+          </a><input type="radio" name="vote" value="8" onclick="getVote(this.value)">
         </div>
 
       </div>
