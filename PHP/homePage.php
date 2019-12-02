@@ -51,13 +51,6 @@
 
   <div style="height:50px"></div>
 
-
-
-  <h1></h1>
-  <div style="height:50px"></div>
-
-
-
   <div id="trending">
     <div style="height:150px"></div>
     <div class="container ">
