@@ -10,8 +10,10 @@ if (!empty($_POST)) {
   $password = "admin";
   $dbname = "OHMs";
 
+  //connect to sql database
   $con = mysqli_connect($servername, $dbuser, $password, $dbname);
 
+  //check if the connection failed
   if (!$con) {
     die("Connection failed: " . mysqli_connect_error());
   }
@@ -21,6 +23,7 @@ if (!empty($_POST)) {
     $pass = $_POST['password'];
   }
 
+  //reading and store info from the table
   $sql = "SELECT * FROM uploadtable WHERE EmailAddress='" . $email . "' AND Password='" . $pass . "' LIMIT 1";
 
   $result = mysqli_query($con, $sql);

@@ -18,6 +18,7 @@
 <body>
   <div class="container w3-rounded w3-animate-opacity w3-animate-zoom login-box">
 
+    <!-- create the signup form -->
     <div id="signupform">
 
       <form class="container py-4 col-form-label-lg" action="processSignup.php" method="post">
@@ -48,6 +49,7 @@
           <small id="emailHelp" class="form-text text-muted">Already have an account? Log in <a href="../PHP/login_startup.php"><b style="color:#85a2df; font-size:large">here</b></a></small>
         </div>
         <br>
+        <!-- create button for submitting the form -->
         <button type="submit" class="btn"> Submit </button>
       </form>
     </div>
