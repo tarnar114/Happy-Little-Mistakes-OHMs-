@@ -1,29 +1,6 @@
 
 <?php include '../HTML/nav.php'; ?>
 <?php
-// session_start();
-// $idValue=$_GET['Id'];
-// // if(!empty($_GET)){
-
-// $servername = "localhost";
-// $dbuser = "root";
-// $password = "admin";
-// $dbname = "assignment3";
-// $connection = mysqli_connect($servername, $dbuser, $password, $dbname);
-// // Check connection
-// if (!$connection) {
-//     die("Connection failed: " . mysqli_connect_error());
-// }
-// if(isset($_GET[$idValue])){
-//     $username=$_GET[$idValue];
-//     // $password=$_POST['password'];
-// }
-// // $searchFor='%' . $_GET['searchSubmit']. '%';
-
-// // WHERE username '".$username."'LIMIT 1";
-// $sql = "SELECT * FROM users WHERE Id=$idValue";
-
-// $result = mysqli_query($connection, $sql);
 $servername = "localhost";
 $dbuser = "root";
 $password = "admin";
@@ -45,8 +22,7 @@ if (mysqli_num_rows($result) > 0) {
 
         echo "'<h1> Name: " . $fname . " " . $lname . '<br>' . " Username: " . $uname . "<br>" . " Email: " . $email . "</h1>";
         echo "<div class='container'>";
-        echo "<div class='container masonry w3-animate-opacity'>";
-        // 
+        echo "<div class='container masonry w3-animate-opacity'>"; 
         include "../PHP/showImages.php";
         echo "</div>";
         echo "</div>";

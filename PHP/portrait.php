@@ -11,7 +11,28 @@
 
 <body>
   <!-- Creating the heading Landscape -->
-  <h1>Portrait</h1>
+  <div id="trending">
+    
+    <div class="container ">
+      <div class="row">
+
+
+        <div class="col-md">
+          <hr >
+        </div>
+
+
+        <div class="col-sm-3">
+          <h1>Portrait</h1>
+        </div>
+
+        <div class="col-md">
+          <hr >
+        </div>
+
+      </div>
+    </div>
+  </div>
     <!-- Creating a class container to display the images uploaded in the landscape category -->
     <div class="container masonry w3-animate-opacity">
       <!-- Including the displayImages() method, to pull all the landscape images -->

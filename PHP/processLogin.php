@@ -35,12 +35,10 @@ if (!empty($_POST)) {
       $lname = $row['LastName'];
       $uname = $row['Username'];
       $email = $row['EmailAddress'];
-      // global $ID;
+      
       $ID = $row["Id"];
-      // $idValue = $_SESSION[$ID];
-      // $_SESSION['Id'] = $idValue;
-      // include("userProfile.php");
-      echo "'<h1 class:'sign' style='font-size: 7vw'>";
+      
+      echo "<h1 class:'sign' style='font-size: 7vw'>";
       echo "Welcome <br> ";
       echo " Name: " . $fname . " " . $lname . "";
       echo "<hr>";
@@ -48,11 +46,12 @@ if (!empty($_POST)) {
       echo "<div class='container'>";
       echo "<div class='container masonry w3-animate-opacity'>";
       include "../PHP/showImages.php";
+      echo "<div style='height:150px'></div>";
       echo "</div>";
       echo "</div>";
     }
   } else {
-    echo "Incorrect login.";
+    echo "<h1>Incorrect login.</h1>";
   }
 
   mysqli_close($con);

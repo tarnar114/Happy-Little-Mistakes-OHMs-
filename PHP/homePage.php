@@ -47,19 +47,13 @@
   </div>
 
   <!-- Heading for the editors choice section -->
-  <h1>Editors Choices!</h1>
-
-  <div style="height:50px"></div>
-
-
-
-  <h1></h1>
-  <div style="height:50px"></div>
+  
+  <div style="height:150px"></div>
 
 
 
   <div id="trending">
-    <div style="height:150px"></div>
+    <div style="height:100px"></div>
     <div class="container ">
       <div class="row">
 
@@ -99,59 +93,59 @@
 
       <div class=" container w3-animate-opacity" id="votingpoll">
 
-        <div class="itemHome">
-          <a href='../Images/o_A8fBmg.jpeg' data-lightbox="choice1" data-alt="editorschoice1">
-            <img src="../Images/o_A8fBmg.jpeg">
+        <div class="item">
+          <a href='../PHP/Recently Uploaded/5de4a5600f3437.18553115.jpg' data-lightbox="choice1" data-alt="editorschoice1">
+            <img src="../PHP/Recently Uploaded/5de4a5600f3437.18553115.jpg">
           </a><input type="radio" name="vote" value="0" onclick="getVote(this.value)">
         </div>
 
-        <div class="itemHome">
-          <a href='../Images/o_A8fBmg.jpeg' data-lightbox="choice2" data-alt="editorschoice2">
-            <img src="../Images/o_A8fBmg.jpeg">
+        <div class="item">
+          <a href='../PHP\Recently Uploaded\simon stalenhag landscape1.jpg' data-lightbox="choice2" data-alt="editorschoice2">
+            <img src="../PHP\Recently Uploaded\simon stalenhag landscape1.jpg">
           </a><input type="radio" name="vote" value="1" onclick="getVote(this.value)">
         </div>
 
-        <div class="itemHome">
-          <a href='../Images/o_A8fBmg.jpeg' data-lightbox="choice3" data-alt="editorschoice3">
-            <img src="../Images/o_A8fBmg.jpeg">
+        <div class="item">
+          <a href='../PHP\Recently Uploaded\stunning-portrait-48.jpg' data-lightbox="choice3" data-alt="editorschoice3">
+            <img src="../PHP\Recently Uploaded\stunning-portrait-48.jpg">
           </a><input type="radio" name="vote" value="2" onclick="getVote(this.value)">
         </div>
 
-        <div class="itemHome">
-          <a href='../Images/o_A8fBmg.jpeg' data-lightbox="choice4" data-alt="editorschoice4">
-            <img src="../Images/o_A8fBmg.jpeg">
+        <div class="item">
+          <a href='../PHP\Recently Uploaded\(Finished) Modern House Fliped-Podium edit 2016-12-06 15045500000 edit (1.2).jpg' data-lightbox="choice4" data-alt="editorschoice4">
+            <img src="../PHP\Recently Uploaded\(Finished) Modern House Fliped-Podium edit 2016-12-06 15045500000 edit (1.2).jpg">
           </a> <input type="radio" name="vote" value="3" onclick="getVote(this.value)">
         </div>
 
-        <div class="itemHome">
-          <a href='../Images/o_A8fBmg.jpeg' data-lightbox="choice5" data-alt="editorschoice5">
-            <img src="../Images/o_A8fBmg.jpeg">
+        <div class="item">
+          <a href='../PHP\Recently Uploaded\(Finished and cleaned) Modern House Fliped-0-0 2016-12-04 21535200000.jpg' data-lightbox="choice5" data-alt="editorschoice5">
+            <img src="../PHP\Recently Uploaded\(Finished and cleaned) Modern House Fliped-0-0 2016-12-04 21535200000.jpg">
           </a><input type="radio" name="vote" value="4" onclick="getVote(this.value)">
         </div>
 
-        <div class="itemHome">
-          <a href='../Images/o_A8fBmg.jpeg' data-lightbox="choice6" data-alt="editorschoice6">
-            <img src="../Images/o_A8fBmg.jpeg">
+        <div class="item">
+          <a href='../PHP\Recently Uploaded\im1503415478.png' data-lightbox="choice6" data-alt="editorschoice6">
+            <img src="../PHP\Recently Uploaded\im1503415478.png">
           </a> <input type="radio" name="vote" value="5" onclick="getVote(this.value)">
         </div>
 
-        <div class="itemHome">
-          <a href='../Images/o_A8fBmg.jpeg' data-lightbox="choice7" data-alt="editorschoice7">
-            <img src="../Images/o_A8fBmg.jpeg">
+        <div class="item">
+          <a href='../PHP\Recently Uploaded\Top-10-photographers-for-travel-portraits14__700.jpg' data-lightbox="choice7" data-alt="editorschoice7">
+            <img src="../PHP\Recently Uploaded\Top-10-photographers-for-travel-portraits14__700.jpg">
           </a><input type="radio" name="vote" value="6" onclick="getVote(this.value)">
         </div>
 
-        <div class="itemHome">
-          <a href='../Images/o_A8fBmg.jpeg' data-lightbox="choice8" data-alt="editorschoice8">
-            <img src="../Images/o_A8fBmg.jpeg">
+        <div class="item">
+          <a href='../Images/PHP\Recently Uploaded\Great-Depression-Portraits-by-Dorothea-Lange.jpg' data-lightbox="choice8" data-alt="editorschoice8">
+            <img src="../PHP\Recently Uploaded\Great-Depression-Portraits-by-Dorothea-Lange.jpg">
           </a> <input type="radio" name="vote" value="7" onclick="getVote(this.value)">
         </div>
 
-        <div class="itemHome">
+        <!-- <div class="item">
           <a href='../Images/o_A8fBmg.jpeg' data-lightbox="choice9" data-alt="editorschoice9">
             <img src="../Images/o_A8fBmg.jpeg">
           </a><input type="radio" name="vote" value="8" onclick="getVote(this.value)">
-        </div>
+        </div> -->
 
       </div>
     </div>

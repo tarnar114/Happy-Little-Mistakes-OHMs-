@@ -12,50 +12,28 @@ h4 {
 }
 
 .masonry {
-    /* -webkit-column-count: 4; */
-    /* -moz-column-count: 4; */
-    /* column-count: 4; */
-    /* -webkit-column-gap: 1em; */
-    /* -moz-column-gap: 1em; */
     column-gap: 1em;
-    /* margin: 1.5em; */
     padding: 0;
-    /* -moz-column-gap: 1.5em; */
-    /* -webkit-column-gap: 1.5em; */
     column-count: 3;
-    /* column-gap: 1.5em; */
     font-size: .85em;
 }
 
 .item {
-    display: inline-grid;
-    background: #fff;
-    /* padding: 1em; */
-    margin: 1.5em;
+    padding: 10px;
+    margin-bottom: 10px;
     box-shadow: 2px 2px 4px 0 #ccc;
-}
-
-.itemHome {
-    display: inline-grid;
-    background: #fff;
-    padding: 1em;
-    margin: 1.5em;
-    /* width: 100%; */
-    box-shadow: 2px 2px 4px 0 #ccc;
+    /* align-content: center; */
 }
 
 
 /* Sets the size of max size of image */
 
-.item img,
-.itemHome img {
-    max-width: 100%;
-    /* transition: 0.5s; */
+.item img {
+    width: 100%;
 }
 
-.item img:hover,
-.itemHome img:hover {
-    max-width: 105%;
+.item img:hover {
+    transform: scale(1.2);
     transition: 0.5s;
 }
 

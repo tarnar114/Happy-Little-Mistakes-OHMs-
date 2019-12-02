@@ -11,12 +11,35 @@
 
 <body>
   <!-- Creating the heading Recently Uploaded -->
-  <h1>Recently Uploaded</h1>
+  <div id="trending">
+    
+    <div class="container ">
+      <div class="row">
+
+
+        <div class="col-md">
+          <hr >
+        </div>
+
+
+        <div class="col-sm-3">
+          <h1>recently Updated</h1>
+        </div>
+
+        <div class="col-md">
+          <hr >
+        </div>
+
+      </div>
+    </div>
+  </div>
     <!-- Creating a class container to display the images uploaded in the recently uploaded category -->
     <div class="container masonry w3-animate-opacity">
+      <div class="container">
         <!-- Including the displayImages() method, to pull all the recently uploadeds images -->
         <?php displayImages(); ?>
 
+</div>
 </div>
 
 

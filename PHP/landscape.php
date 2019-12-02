@@ -11,9 +11,8 @@
 
 <body>
   <!-- Creates the heading Landscape -->
-  
+
   <div id="trending">
-    <div style="height:150px"></div>
     <div class="container ">
       <div class="row">
 

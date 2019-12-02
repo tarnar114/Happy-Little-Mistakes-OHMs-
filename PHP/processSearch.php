@@ -2,7 +2,7 @@
 
 <style>
     <?php include '../CSS/masonry.css'; ?>
-  </style>
+</style>
 <?php
 
 if (!empty($_GET)) {
@@ -45,14 +45,18 @@ if (!empty($_GET)) {
 
 
             // if ($row == $email) {
-            echo "<h1> Name: " . $fname . ' ' . $lname . '<br>' . ' Username: ' . $uname . '<br>' . ' Email: ' . $email . "</h1>";
-           echo "<div class='container'>";
-            echo "<div class='container masonry w3-animate-opacity'">
-            include "showImages.php";
+            // $imagess = ;
+            echo "<h1>  Name: " . $fname . ' ' . $lname . '<br>' . ' Username: ' . $uname . " </h1>";
+            // echo;
+
+            // echo  "</a>";
+            echo "<div class='container masonry w3-animate-opacity'>";
+            echo include 'showImages.php';
             echo "</div>";
-            echo "</div>";
-            // // }
-            // // else{
+            //    echo "<div class='container'>";
+
+            // }
+            // else{
             //     // if($row==$fname||$row==$lname||$row==$uname){
             //          echo '<h1 class=" w3-animate-opacity" >';
             // echo '<ul type="none" style="align-items: center">';
@@ -132,25 +136,25 @@ if (!empty($_GET)) {
 function displayImages()
 {
 
-  ?>
-
-  <?php
-
-    $images = glob("Interior Design/*.*");
-    foreach ($images as $image) {
-      ?>
-
+    ?>
 
     <?php
-        echo "<div class='item'>";
-        echo "<a href='$image'>";
-        echo "<img src='$image'>";
-        echo "</div>"
-        ?>
+
+        $images = glob("Interior Design/*.*");
+        foreach ($images as $image) {
+            ?>
+
+
+        <?php
+                echo "<div class='item'>";
+                echo "<a href='$image'>";
+                echo "<img src='$image'>";
+                echo "</div>"
+                ?>
 
 
 
-  <?php } ?>
+    <?php } ?>
 <?php
 }
 

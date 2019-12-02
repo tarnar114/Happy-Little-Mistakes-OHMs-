@@ -246,8 +246,8 @@ hr {
 
 .uploadbtn {
     position: fixed;
-    width: 60px;
-    height: 60px;
+    min-width: 5vw;
+    min-height: 5vw;
     bottom: 20px;
     right: 20px;
     background-color: #85a2df;
@@ -260,12 +260,19 @@ hr {
 }
 
 
+/* .uploadbtn img,
+.profilebtn img {
+    min-width: 2vw;
+    min-height: 2vw;
+} */
+
+
 /* For Profile pages */
 
 .profilebtn {
     position: fixed;
-    width: 60px;
-    height: 60px;
+    min-width: 5vw;
+    min-height: 5vw;
     bottom: 100px;
     right: 20px;
     background-color: #85a2df;
