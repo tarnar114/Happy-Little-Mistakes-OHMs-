@@ -57,10 +57,10 @@ fclose($finalize);
     <div class="container">
       <div class="itemHome">
         <?php echo "<p>Votes: " . (100 * round($photo1 / ($photo1 + $photo2 + $photo3 + $photo4 + $photo5 + $photo6 + $photo7 + $photo8), 2)) . "%</p>"; ?>
-        <a href='../Images/o_A8fBmg.jpeg' data-lightbox="choice1" data-alt="editorschoice1">
+        <!-- <a href='../Images/o_A8fBmg.jpeg' data-lightbox="choice1" data-alt="editorschoice1"> -->
 
-        <img src="../Images/o_A8fBmg.jpeg">
-        </a>
+          <img src="../Images/o_A8fBmg.jpeg">
+        <!-- </a> -->
       </div>
 
 
@@ -69,49 +69,49 @@ fclose($finalize);
       <div class="itemHome">
         <?php echo "<p>Votes: " . (100 * round($photo2 / ($photo1 + $photo2 + $photo3 + $photo4 + $photo5 + $photo6 + $photo7 + $photo8), 2)) . "%</p>"; ?>
         <a href='../Images/o_A8fBmg.jpeg' data-lightbox="choice2" data-alt="editorschoice2">
-        <img src="../Images/o_A8fBmg.jpeg">
+          <img src="../Images/o_A8fBmg.jpeg">
         </a>
       </div>
 
       <div class="itemHome">
         <?php echo "<p>Votes: " . (100 * round($photo3 / ($photo1 + $photo2 + $photo3 + $photo4 + $photo5 + $photo6 + $photo7 + $photo8), 2)) . "%</p>"; ?>
         <a href='../Images/o_A8fBmg.jpeg' data-lightbox="choice3" data-alt="editorschoice3">
-        <img src="../Images/o_A8fBmg.jpeg">
+          <img src="../Images/o_A8fBmg.jpeg">
         </a>
       </div>
 
       <div class="itemHome">
         <?php echo "<p>Votes: " . (100 * round($photo4 / ($photo1 + $photo2 + $photo3 + $photo4 + $photo5 + $photo6 + $photo7 + $photo8), 2)) . "%</p>"; ?>
         <a href='../Images/o_A8fBmg.jpeg' data-lightbox="choice4" data-alt="editorschoice4">
-        <img src="../Images/o_A8fBmg.jpeg">
+          <img src="../Images/o_A8fBmg.jpeg">
         </a>
       </div>
 
       <div class="itemHome">
         <?php echo "<p>Votes: " . (100 * round($photo5 / ($photo1 + $photo2 + $photo3 + $photo4 + $photo5 + $photo6 + $photo7 + $photo8), 2)) . "%</p>"; ?>
         <a href='../Images/o_A8fBmg.jpeg' data-lightbox="choice5" data-alt="editorschoice5">
-        <img src="../Images/o_A8fBmg.jpeg">
+          <img src="../Images/o_A8fBmg.jpeg">
         </a>
       </div>
 
       <div class="itemHome">
         <?php echo "<p>Votes: " . (100 * round($photo6 / ($photo1 + $photo2 + $photo3 + $photo4 + $photo5 + $photo6 + $photo7 + $photo8), 2)) . "%</p>"; ?>
         <a href='../Images/o_A8fBmg.jpeg' data-lightbox="choice6" data-alt="editorschoice6">
-        <img src="../Images/o_A8fBmg.jpeg">
+          <img src="../Images/o_A8fBmg.jpeg">
         </a>
       </div>
 
       <div class="itemHome">
         <?php echo "<p>Votes: " . (100 * round($photo7 / ($photo1 + $photo2 + $photo3 + $photo4 + $photo5 + $photo6 + $photo7 + $photo8), 2)) . "%</p>"; ?>
         <a href='../Images/o_A8fBmg.jpeg' data-lightbox="choice7" data-alt="editorschoice7">
-        <img src="../Images/o_A8fBmg.jpeg">
+          <img src="../Images/o_A8fBmg.jpeg">
         </a>
       </div>
 
       <div class="itemHome">
         <?php echo "<p>Votes: " . (100 * round($photo8 / ($photo1 + $photo2 + $photo3 + $photo4 + $photo5 + $photo6 + $photo7 + $photo8), 2)) . "%</p>"; ?>
         <a href='../Images/o_A8fBmg.jpeg' data-lightbox="choice8" data-alt="editorschoice8">
-        <img src="../Images/o_A8fBmg.jpeg">
+          <img src="../Images/o_A8fBmg.jpeg">
         </a>
       </div>
 
