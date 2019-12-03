@@ -9,6 +9,7 @@
   <?php include("../CSS/nav.css") ?>
 </style>
 
+<!-- Checks the database to deternine who is loged in and log them out upon button click. A thank you message will be displayed to the user -->
 <?php $servername = "localhost";
 $dbuser = "root";
 $password = "admin";

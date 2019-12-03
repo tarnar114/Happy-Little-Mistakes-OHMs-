@@ -62,7 +62,7 @@ if (mysqli_num_rows($result) > 0) {
   <li class="nav-item active">
     
   <!-- Redirecting to sign_up.php when "Login/Register" is clicked -->
-    <a class="nav-link" href="sign_up.php">Login/Register
+    <a class="nav-link" href="login_startup.php">Login/Register
     
       <span class="sr-only">(current)</span></a>
  

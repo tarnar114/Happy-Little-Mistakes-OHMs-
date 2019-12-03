@@ -9,37 +9,33 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Lato:100|Pacifico|Permanent+Marker|Roboto:100,400|Satisfy|Shadows+Into+Light&display=swap&subset=latin-ext" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-  <style>
-    <?php include("../CSS/masonry.css") ?>
-  </style>
+  <!-- Startup CSS -->
   <link rel="stylesheet" href="../CSS/startup.css">
 </head>
 
 <body>
-
+  <!-- A login form to permit the right user into the website. If no account is present, a link will be provided to signup -->
   <div class="container w3-rounded w3-animate-opacity w3-animate-zoom login-box" style="animation-duration: 1s;">
 
-    <!-- <div id="loginform"> -->
-     
-      <form class="container py-4 col-form-label-lg" action="processLogin.php" method="post">
-        <h2 > Login Here </h2><br>
-         <div class="form-group">
-          <!-- <label>Email-Address</label><br> -->
-          <input type="text" name="email" placeholder="Email Address" class="form-control" required>
-        </div>
-        <div class="form-group">
-          <!-- <label>Password</label><br> -->
-          <input type="password" name="password" placeholder="Password" class="form-control" required>
-        </div>
-        <br>
-        <!-- <div class="form-group"> -->
-          <small id="emailHelp" class="form-text text-muted">Don't have an account? Sign up <a href="../PHP/start_up.php"> <b style="color:#85a2df; font-size:large">here</b> </a></small>
-        <!-- </div> -->
-        <br>
-        <button type="submit" class="btn"> Login </button>
-      </form>
-    </div>
-  <!-- </div> -->
+    <form class="container py-4 col-form-label-lg" action="processLogin.php" method="post">
+      <h2> Login Here </h2><br>
+      <div class="form-group">
+
+        <input type="text" name="email" placeholder="Email Address" class="form-control" required>
+      </div>
+      <div class="form-group">
+
+        <input type="password" name="password" placeholder="Password" class="form-control" required>
+      </div>
+      <br>
+
+      <small id="emailHelp" class="form-text text-muted">Don't have an account? Sign up <a href="../PHP/start_up.php"> <b style="color:#85a2df; font-size:large">here</b> </a></small>
+
+      <br>
+      <button type="submit" class="btn"> Login </button>
+    </form>
+  </div>
+
 
 
 </body>

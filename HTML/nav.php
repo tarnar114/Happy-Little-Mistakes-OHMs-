@@ -147,10 +147,10 @@
 
 
 
-
+<!-- Lightbox resize duration -->
     <script>
         lightbox.option({
-            'resizeDuration': 200,
+            'resizeDuration': 300,
             'wrapAround': true
         })
     </script>

@@ -1,25 +1,26 @@
+/* The nav has border radius' at the bottom corrners, font size and family are also set */
+
 nav {
     border-bottom-left-radius: 1vw;
     border-bottom-right-radius: 1vw;
-    /* background-color: whitesmoke; */
     font-family: 'Permanent Marker', cursive;
     font-size: medium;
 }
 
+
+/* Smooth scrolling enabled */
+
 html {
     scroll-behavior: smooth;
-    /* overflow-y: scroll;
-    scrollbar-arrow-color: darkturquoise;
-    scrollbar-color: green;
-    scrollbar-darkshadow-color: dimgrey;
-    scroll-snap-type: proximity; */
-    /* border-radius: 3vw; */
 }
 
 
-/* body { h1
+/* body {
     background-color: whitesmoke;
 } */
+
+
+/* The brand font size is set */
 
 .navbar-brand {
     font-size: 1.58vw;
@@ -34,7 +35,6 @@ html {
 }
 
 .navbar {
-    /* display: flex; */
     padding: 2vw;
     background-color: whitesmoke;
 }
@@ -42,29 +42,39 @@ html {
 
 /* Doesn't work. Should allow to change collor upon scroll */
 
-.navbar.scrolled {
+
+/* .navbar.scrolled {
     background-color: whitesmoke;
-}
+} */
 
 
 /* /////////////////////////////////////////////////////// */
+
+
+/* Styling for when the navbutton is active */
 
 .navbutton:active {
     border: none;
     border-color: none;
 }
 
+
+/* Menu navbutton to set the background color, and border style */
+
 .navbutton {
-    float: right;
-    font-size: inherit;
+    /* float: right; */
+    /* font-size: inherit; */
     background-color: transparent;
     border: none;
-    /* float: inline-end; */
 }
 
-.collapse {
+
+/* .collapse {
     animation-name: initial;
-}
+} */
+
+
+/* Adds space around content. Displays the content inline and flexed */
 
 .dropbtn {
     justify-content: space-around;
@@ -72,7 +82,8 @@ html {
 }
 
 
-/* Search bar icon and its overlay */
+/* Search bar icon and its overlay.
+Overlay covers the screen, fixed in position, set to display nothing by default with a faded background */
 
 #overlay {
     height: 100%;
@@ -86,11 +97,17 @@ html {
     font-family: 'Permanent Marker', cursive;
 }
 
+
+/* Sets size of Icon img */
+
 #searchIcon img {
     width: inherit;
     height: inherit;
     size: inherit;
 }
+
+
+/* Search button styling. Height, width, background color are set. No border */
 
 .searchbtn {
     height: 30px;
@@ -100,18 +117,15 @@ html {
 }
 
 
-/* Initial width is 25%, no border, */
+/* Initial width is 25%, no border, color and font size are set, box shadow and some padding are included.
+A transition with animation for form to span width upon focus is included*/
 
 input[type=search] {
     width: 25%;
     border: none;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
     border-radius: 2vw;
-    font-size: 2vw;
-    color: black;
-    background-image: url("../Images/search.png");
-    background-position: 10px 10px;
-    background-repeat: no-repeat;
+    font-size: 150%;
     padding: 12px 20px 12px 40px;
     transition: width 0.8s ease-in-out;
     margin-top: 10vw;
@@ -130,14 +144,11 @@ input[type=search]:focus {
 @media all and (max-width: 800px) {
     nav {
         position: absolute;
-        /* top: 0px; */
         right: 0;
         text-align: right;
         min-height: initial;
-        /* display: inline; */
     }
     .navbar-brand {
-        /* z-index: 500; */
         display: none;
     }
     .brand {
@@ -152,21 +163,18 @@ input[type=search]:focus {
         text-align: end;
     }
     .nav {
-        /* background-color: brown; */
         margin-right: 5px;
         position: absolute;
         right: -10px;
         top: 46px;
-        /* text-align: right; */
         padding: 20px 0;
-        /* z-index: 5; */
         background: whitesmoke;
         border-radius: 2vw;
     }
 }
 
 
-/* Navbar Items p */
+/* All list link color uses the previous styling color and will change upon hover. The dropdown list will display inline and blocked*/
 
 li a {
     color: inherit;
@@ -174,7 +182,7 @@ li a {
 
 li a:hover {
     color: lightblue;
-    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
 
 li a:active {
@@ -186,15 +194,14 @@ li.dropdown {
 }
 
 
-/* Dropdown menu */
+/* Dropdown menu. Position is abolute. Background color is set, box shadow is included
+Menu links display in block styling and text aligned to the left
+Display dropdown menu on hover */
 
 .dropdown-menu {
-    /* display: none; */
     position: absolute;
     background-color: whitesmoke;
-    /* border-radius: 2vw; */
-    /* min-width: max-content; */
-    box-shadow: 0px 8px 8px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
@@ -208,16 +215,21 @@ li.dropdown {
     display: block;
 }
 
+
+/* Sets heading styling */
+
 h1 {
     text-align: center;
     font-family: 'Permanent Marker', cursive;
-    /* margin-top: 50px; */
 }
 
 h2 {
     font-weight: 200 !important;
     font-family: 'Roboto', sans-serif;
 }
+
+
+/* line break color, width and style*/
 
 hr {
     border-color: #85a2df;
@@ -239,15 +251,17 @@ hr {
 }
 
 
-/* Floating Buttons @ the bottom right of the screen*/
+/* Floating Buttons @ the bottom right of the screen.
+Position is fixed to the bottom right with a set background color.
+Size of buttons are set, boxshadows are included and content are aligned to the center of button*/
 
 
 /* For upload page */
 
 .uploadbtn {
     position: fixed;
-    width: 60px;
-    height: 60px;
+    min-width: 5vw;
+    min-height: 5vw;
     bottom: 20px;
     right: 20px;
     background-color: #85a2df;
@@ -260,12 +274,19 @@ hr {
 }
 
 
+/* .uploadbtn img,
+.profilebtn img {
+    min-width: 2vw;
+    min-height: 2vw;
+} */
+
+
 /* For Profile pages */
 
 .profilebtn {
     position: fixed;
-    width: 60px;
-    height: 60px;
+    min-width: 5vw;
+    min-height: 5vw;
     bottom: 100px;
     right: 20px;
     background-color: #85a2df;

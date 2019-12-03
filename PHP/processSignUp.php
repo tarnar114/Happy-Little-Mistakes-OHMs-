@@ -3,8 +3,8 @@
   <?php include('../CSS/nav.css'); ?>
 </style>
 <?php
-// include "../HTML/nav.html";
 
+// if the inputs aren't empty the browser accesses the browser and creates a new Id and fills a column of the table with the new users credentials
 if (!empty($_POST)) {
 
   $servername = "localhost";
@@ -25,8 +25,6 @@ if (!empty($_POST)) {
   if ($insert == TRUE) {
     mkdir($email);
     echo "<h1 class='sign w3-display-middle w3-animate-opacity'  style='font-size:8vw' >Welcome!";
-
-    // echo "<button href='../PHP/homePage.php' style='background-color:transparent; border-color:#85a2df; border-radius:2vw; justify-content:center;'>Home Page</button>";
 
     echo "<br><a href='../PHP/homepage.php' role='button' style='font-size:50%;background-color:transparent; border-color:#85a2df; border-radius:2vw;'>OHM Page</a>";
 

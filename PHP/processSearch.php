@@ -2,7 +2,7 @@
 
 <style>
     <?php include '../CSS/masonry.css'; ?>
-  </style>
+</style>
 <?php
 
 if (!empty($_GET)) {
@@ -18,15 +18,14 @@ if (!empty($_GET)) {
     if (!$connection && !$connection2) {
         die("Connection failed: " . mysqli_connect_error());
     }
-    // $sql=;
-
+ 
+// Gets the search query and sets as a local variable
     if (isset($_GET['searchSubmit'])) {
         $searchFor = $_GET['searchSubmit'];
     }
 
-    //  
-    #endregionsearchQry
-    // $sql = "SELECT * FROM users WHERE FirstName LIKE '%$searchFor%' OR LastName LIKE '%$searchFor%' OR Username LIKE '%$searchFor%' OR EmailAddress LIKE '%$searchFor%'";
+    // Checks the database for a match within the fields for the users info and categories.
+    // If a match is found it will be displayed alon with its corresponding contents
     $sql = "SELECT * FROM uploadtable WHERE FirstName LIKE '%$searchFor%' OR LastName LIKE '%$searchFor%' OR Username LIKE '%$searchFor%' OR EmailAddress LIKE '%$searchFor%'";
     $sql2 = "SELECT * FROM categories WHERE category LIKE '%$searchFor%'";
     $result = mysqli_query($connection, $sql);
@@ -41,38 +40,18 @@ if (!empty($_GET)) {
             $uname = $row['Username'];
             $email = $row['EmailAddress'];
             $id = $row["Id"];
-            // $categories = $row['category'];
-
-
-            // if ($row == $email) {
-            echo "<h1> Name: " . $fname . ' ' . $lname . '<br>' . ' Username: ' . $uname . '<br>' . ' Email: ' . $email . "</h1>";
-           echo "<div class='container'>";
-            echo "<div class='container masonry w3-animate-opacity'">
-            include "showImages.php";
+        //   Displays the user idenity and images
+            echo "<h1>  Name: " . $fname . ' ' . $lname . '<br>' . ' Username: ' . $uname . " </h1>";
+          
+            echo "<div class='container masonry w3-animate-opacity'>";
+            echo include 'showImages.php';
             echo "</div>";
-            echo "</div>";
-            // // }
-            // // else{
-            //     // if($row==$fname||$row==$lname||$row==$uname){
-            //          echo '<h1 class=" w3-animate-opacity" >';
-            // echo '<ul type="none" style="align-items: center">';
-            // echo '<li>';
-            // echo '<a href="userProfile.php?category=' . $id . '" style="border-radius: 0.5vw;background-color:#85a2df;">';
-            // echo $categories;
-            // echo '</a>';
-            // echo '</li>';
-            // echo '</ul>';
-            // echo '</h1>';
+            
 
 
         }
     }
-    // else {
-
-    //     echo "No search results";
-    // }
-
-
+   
     // Search to display list of categories from categories.php
     else if (mysqli_num_rows($result2) > 0) {
 
@@ -80,45 +59,36 @@ if (!empty($_GET)) {
 
 
             $categories = $row2['category'];
-            // $homePage = $row2['Home Page'];
-            // $interiorDesign = $row2['Interior Design'];
-            // $landscape = $row2['Landscape'];
-            // $portrait = $row2['Portrait'];
-            // $recentlyUploaded = $row2['Recently Updated'];
-
-
-
+          
+// Displays a list of the categories
             $Id = $row2["Id"];
             echo '<h1 class=" w3-animate-opacity" >';
-            // echo '<ul type="none" style="align-items: center">';
-            // echo '<li>';
-
+           
             echo '<a href="homePage.php?category=' . $Id . '" style="border-radius: 0.5vw;background-color:#85a2df;>';
-            // echo $homePage;
+            
             echo '</a>';
             echo '<a href="interiordesign.php?category=' . $Id . '" style="border-radius: 0.5vw;background-color:#85a2df;">';
-            // echo $interiorDesign;
+            
             echo '</a>';
             echo '<a href="landscape.php?Landscape=' . $Id . '" style="border-radius: 0.5vw;background-color:#85a2df;">';
-            // echo $landscape;
+            
             echo '</a>';
             echo '<a href="portrait.php?category=' . $Id . '" style="border-radius: 0.5vw;background-color:#85a2df;">';
-            // echo $portrait;
+            
             echo '</a>';
             echo '<a href="recentlyuploaded.php?category=' . $Id . '" style="border-radius: 0.5vw;background-color:#85a2df;">';
-            // echo $recentlyUploaded;
+            
             echo '</a>';
             echo '<a href="categories.php?category=' . $Id . '" style="border-radius: 0.5vw;background-color:#85a2df;">';
-            // echo '</a>';
+            
             echo $categories;
             echo '</a>';
-            // echo '</li>';
-            // echo '</ul>';
+           
             echo '</h1>';
         }
     } else {
-        // (mysqli_num_rows($result2) < 0) {
-
+        
+// Else the search query didn't find any results
         echo "<h1>No search results</h1>";
     }
     mysqli_close($connection);
@@ -132,25 +102,25 @@ if (!empty($_GET)) {
 function displayImages()
 {
 
-  ?>
-
-  <?php
-
-    $images = glob("Interior Design/*.*");
-    foreach ($images as $image) {
-      ?>
-
+    ?>
 
     <?php
-        echo "<div class='item'>";
-        echo "<a href='$image'>";
-        echo "<img src='$image'>";
-        echo "</div>"
-        ?>
+
+        $images = glob("Interior Design/*.*");
+        foreach ($images as $image) {
+            ?>
+
+
+        <?php
+                echo "<div class='item'>";
+                echo "<a href='$image'>";
+                echo "<img src='$image'>";
+                echo "</div>"
+                ?>
 
 
 
-  <?php } ?>
+    <?php } ?>
 <?php
 }
 

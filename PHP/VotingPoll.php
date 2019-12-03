@@ -59,63 +59,62 @@ fclose($finalize); // Closes an open file pointer, finalizes the changes to the 
 
   <div class="container">
     <div class="container">
-      <div class="itemHome">
+      <div class="item">
         <?php echo "<p>Votes: " . (100 * round($photo1 / ($photo1 + $photo2 + $photo3 + $photo4 + $photo5 + $photo6 + $photo7 + $photo8), 2)) . "%</p>"; ?>
-        <!-- <a href='../Images/o_A8fBmg.jpeg' data-lightbox="choice1" data-alt="editorschoice1"> -->
-
-          <img src="../Images/o_A8fBmg.jpeg">
-        <!-- </a> -->
+        <a href='../PHP/Recently Uploaded/5de4a5600f3437.18553115.jpg' data-lightbox="choice1" data-alt="editorschoice1">
+          <img src="../PHP/Recently Uploaded/5de4a5600f3437.18553115.jpg">
+        </a>
       </div>
 
 
 
 
-      <div class="itemHome">
+      <div class="item">
         <?php echo "<p>Votes: " . (100 * round($photo2 / ($photo1 + $photo2 + $photo3 + $photo4 + $photo5 + $photo6 + $photo7 + $photo8), 2)) . "%</p>"; ?>
-        <a href='../Images/o_A8fBmg.jpeg' data-lightbox="choice2" data-alt="editorschoice2">
-          <img src="../Images/o_A8fBmg.jpeg">
+        <a href='../PHP\Recently Uploaded\simon stalenhag landscape1.jpg' data-lightbox="choice2" data-alt="editorschoice2">
+          <img src='../PHP\Recently Uploaded\simon stalenhag landscape1.jpg'>
         </a>
       </div>
 
-      <div class="itemHome">
+      <div class="item">
         <?php echo "<p>Votes: " . (100 * round($photo3 / ($photo1 + $photo2 + $photo3 + $photo4 + $photo5 + $photo6 + $photo7 + $photo8), 2)) . "%</p>"; ?>
-        <a href='../Images/o_A8fBmg.jpeg' data-lightbox="choice3" data-alt="editorschoice3">
-          <img src="../Images/o_A8fBmg.jpeg">
+        <a href='../PHP\Recently Uploaded\stunning-portrait-48.jpg' data-lightbox="choice3" data-alt="editorschoice3">
+          <img src='../PHP\Recently Uploaded\stunning-portrait-48.jpg'>
         </a>
       </div>
 
-      <div class="itemHome">
+      <div class="item">
         <?php echo "<p>Votes: " . (100 * round($photo4 / ($photo1 + $photo2 + $photo3 + $photo4 + $photo5 + $photo6 + $photo7 + $photo8), 2)) . "%</p>"; ?>
-        <a href='../Images/o_A8fBmg.jpeg' data-lightbox="choice4" data-alt="editorschoice4">
-          <img src="../Images/o_A8fBmg.jpeg">
+        <a href='../PHP\Recently Uploaded\(Finished) Modern House Fliped-Podium edit 2016-12-06 15045500000 edit (1.2).jpg' data-lightbox="choice4" data-alt="editorschoice4">
+          <img src="../PHP\Recently Uploaded\(Finished) Modern House Fliped-Podium edit 2016-12-06 15045500000 edit (1.2).jpg">
         </a>
       </div>
 
-      <div class="itemHome">
+      <div class="item">
         <?php echo "<p>Votes: " . (100 * round($photo5 / ($photo1 + $photo2 + $photo3 + $photo4 + $photo5 + $photo6 + $photo7 + $photo8), 2)) . "%</p>"; ?>
-        <a href='../Images/o_A8fBmg.jpeg' data-lightbox="choice5" data-alt="editorschoice5">
-          <img src="../Images/o_A8fBmg.jpeg">
+        <a href='../PHP\Recently Uploaded\(Finished and cleaned) Modern House Fliped-0-0 2016-12-04 21535200000.jpg' data-lightbox="choice5" data-alt="editorschoice5">
+          <img src="../PHP\Recently Uploaded\(Finished and cleaned) Modern House Fliped-0-0 2016-12-04 21535200000.jpg">
         </a>
       </div>
 
-      <div class="itemHome">
+      <div class="item">
         <?php echo "<p>Votes: " . (100 * round($photo6 / ($photo1 + $photo2 + $photo3 + $photo4 + $photo5 + $photo6 + $photo7 + $photo8), 2)) . "%</p>"; ?>
-        <a href='../Images/o_A8fBmg.jpeg' data-lightbox="choice6" data-alt="editorschoice6">
-          <img src="../Images/o_A8fBmg.jpeg">
+        <a href='../PHP\Recently Uploaded\im1503415478.png' data-lightbox="choice6" data-alt="editorschoice6">
+          <img src="../PHP\Recently Uploaded\im1503415478.png">
         </a>
       </div>
 
-      <div class="itemHome">
+      <div class="item">
         <?php echo "<p>Votes: " . (100 * round($photo7 / ($photo1 + $photo2 + $photo3 + $photo4 + $photo5 + $photo6 + $photo7 + $photo8), 2)) . "%</p>"; ?>
-        <a href='../Images/o_A8fBmg.jpeg' data-lightbox="choice7" data-alt="editorschoice7">
-          <img src="../Images/o_A8fBmg.jpeg">
+        <a href='../PHP\Recently Uploaded\Top-10-photographers-for-travel-portraits14__700.jpg' data-lightbox="choice7" data-alt="editorschoice7">
+          <img src="../PHP\Recently Uploaded\Top-10-photographers-for-travel-portraits14__700.jpg">
         </a>
       </div>
 
-      <div class="itemHome">
+      <div class="item">
         <?php echo "<p>Votes: " . (100 * round($photo8 / ($photo1 + $photo2 + $photo3 + $photo4 + $photo5 + $photo6 + $photo7 + $photo8), 2)) . "%</p>"; ?>
-        <a href='../Images/o_A8fBmg.jpeg' data-lightbox="choice8" data-alt="editorschoice8">
-          <img src="../Images/o_A8fBmg.jpeg">
+        <a href='../Images/PHP\Recently Uploaded\Great-Depression-Portraits-by-Dorothea-Lange.jpg' data-lightbox="choice8" data-alt="editorschoice8">
+          <img src="../PHP\Recently Uploaded\Great-Depression-Portraits-by-Dorothea-Lange.jpg">
         </a>
       </div>
 
