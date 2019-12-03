@@ -56,7 +56,7 @@ fclose($finalize); // Closes an open file pointer, finalizes the changes to the 
     /* Including the style provided by the css masonry.css */
     <?php include '../CSS/masonry.css'; ?>
   </style>
-
+<!-- Same code as the homepage masonry, and each category masonry -->
   <div class="container">
     <div class="container">
       <div class="item">
