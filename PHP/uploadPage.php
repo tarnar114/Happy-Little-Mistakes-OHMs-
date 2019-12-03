@@ -12,7 +12,7 @@
   }
 </style>
 
-
+<!-- COMMENT YOUR CODE -->
 
 <form class="my-5 w3-animate-zoom" action="uploadPage.php" method="post" enctype="multipart/form-data" id="inputForm">
 
