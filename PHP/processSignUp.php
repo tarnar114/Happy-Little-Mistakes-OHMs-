@@ -4,7 +4,7 @@
 </style>
 <?php
 
-
+// if the inputs aren't empty the browser accesses the browser and creates a new Id and fills a column of the table with the new users credentials
 if (!empty($_POST)) {
 
   $servername = "localhost";
