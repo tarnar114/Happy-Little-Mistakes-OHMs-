@@ -1,3 +1,5 @@
+/* style fo the paragraphs. Align the paragraph center, apply the font with a size of 60px then apply a margin at the bottom of the element */
+
 p {
     text-align: center;
     font-family: 'Permanent Marker', cursive;
@@ -5,11 +7,17 @@ p {
     margin-bottom: 60px;
 }
 
+
+/* Style for the h4 headings sets teh line height, alings the text to center, font weight is normal */
+
 h4 {
     text-align: center;
     line-height: 80px;
     font-weight: normal;
 }
+
+
+/* styling for the masonry gallery. Applyed a gap between the images and a default column-count for the images is 3 */
 
 .masonry {
     column-gap: 1em;
@@ -18,18 +26,22 @@ h4 {
     font-size: .85em;
 }
 
+
+/* Each image item has a box shadow, margin and padding around itself */
+
 .item {
     padding: 10px;
     margin-bottom: 10px;
     box-shadow: 2px 2px 4px 0 #ccc;
-    /* align-content: center; */
 }
 
 
-/* Sets the size of max size of image */
+/* Sets the size of  size of image and transition speed for when the image is in focus or not
+Then upon hover over each image, the scale of the image changes in a 1:2 ratio. */
 
 .item img {
     width: 100%;
+    transition: 0.5s;
 }
 
 .item img:hover {

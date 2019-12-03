@@ -5,6 +5,9 @@
     text-align: center;
 }
 
+
+/* Footer background colour is set with border radius' at the to corners */
+
 .footer {
     background-color: whitesmoke;
     border-top-left-radius: 1vw;

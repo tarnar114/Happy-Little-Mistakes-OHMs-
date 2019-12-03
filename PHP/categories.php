@@ -1,3 +1,4 @@
+<!-- Displays navbar then a list of the categories present -->
 
 <?php include_once '../HTML/nav.php'; ?>
 <h1 class="w3-display-middle w3-animate-opacity">

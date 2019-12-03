@@ -18,16 +18,19 @@ if (!empty($_POST)) {
     die("Connection failed: " . mysqli_connect_error());
   }
 
+  // Collects the users input for login and stores them to be used as a variable
   if (isset($_POST['email']) && isset($_POST['password'])) {
     $email = $_POST['email'];
     $pass = $_POST['password'];
   }
 
-  //reading and store info from the table
+  //reading and store info from the database table
   $sql = "SELECT * FROM uploadtable WHERE EmailAddress='" . $email . "' AND Password='" . $pass . "' LIMIT 1";
 
   $result = mysqli_query($con, $sql);
 
+  // If the input from the user matches the data collected from the database access is granted to the user and a welcome page and users images are displayed. 
+  // Else not correct, a message will be displayed for the user to try again
   if (mysqli_num_rows($result) > 0) {
     $activeChar = 'yes';
     $active = "UPDATE uploadtable SET active='yes'WHERE EmailAddress='" . $email . "' AND Password='" . $pass . "' LIMIT 1";

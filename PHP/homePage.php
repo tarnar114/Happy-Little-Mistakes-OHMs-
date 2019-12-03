@@ -17,16 +17,7 @@
 
 <body>
 
-  <!-- <div class="container">
-    <div class="notice">
-      <div class="alert alert-warning alert-dismissible fade show" role="alert">
-        <strong>Want to interact with content and art work?</strong> Signup <a href="../PHP/sign_up.php">here</a> now!
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-    </div>
-  </div> -->
+<!-- Jumbotron image and quote from bob ross to greet the user as well as a button to direct the user to the editors Choices-->
   <div class="container">
     <div class="jumbotron w3-animate-opacity">
       <div class="container share">
