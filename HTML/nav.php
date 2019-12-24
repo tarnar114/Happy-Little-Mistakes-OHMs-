@@ -151,7 +151,15 @@
     <script>
         lightbox.option({
             'resizeDuration': 300,
-            'wrapAround': true
+            'wrapAround': true,
+            'showImageNumberLabel':false,
+            'resizeLightbox':true,
+            'fitImagesInViewport':true,
+            'disableScrolling':true,
+            'imageFadeDuration':600,
+            'positionFromTop':50
+            // 'minHeight':1920,
+            // 'minWidth':1080
         })
     </script>
 

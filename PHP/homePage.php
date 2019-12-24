@@ -10,7 +10,7 @@
 <!-- Including the navagation bar at the top of the homepage -->
 <?php include_once '../HTML/nav.php'; ?>
 <style>
-  <?php include '../CSS/masonry.css'; ?><style>
+  
   /* Including the style provided by the css masonry.css */
   <?php include '../CSS/masonry.css'; ?>
 </style>
@@ -32,7 +32,7 @@
         <p class="text-right">"Talent is a pursued interest. Anything that you're willing to practice, you can do.”</p>
         <a class="btn btn-primary btn-xlg" href="#trending" role="button">Editors Choices</a>
       </div>
-      <img src="../Images/bobross.png" alt="bobross" style="width:90%;height=90%;">
+      <img src="../Images/bobross.png" alt="bobross" style="width:90%;">
     </div>
 
   </div>
