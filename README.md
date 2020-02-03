@@ -18,7 +18,7 @@ This website will also enable users to generate a presence in the visual arts co
 -------------------------|-------------------------
 <img src="Images/signin.png">  | <img src="Images/signup.png">
 
-Profile Page (Accessed through profile btn at bottom right corner of page) | Upload Images
+Profile Page (Accessed through profile btn at bottom right corner of page) | Upload Images(Accessed through upload btn at bottom right corner of page)
 -------------------------|-------------------------
 <img src="Images/profile.png"> | <img src="Images/uploadimg.png">
 
