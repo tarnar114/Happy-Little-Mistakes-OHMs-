@@ -14,7 +14,7 @@ This website will also enable users to generate a presence in the visual arts co
  
 <h2>ScreenShots<h2>
   
-#### Signin Screen | #### Signup Screen
+ Signin Screen | Signup Screen
 -------------------------|-------------------------
 <img src="Images/signin.png">  | <img src="Images/signup.png">
 
